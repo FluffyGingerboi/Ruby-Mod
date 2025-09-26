@@ -1,0 +1,39 @@
+package ruby.fluffy.helpme;
+
+import com.mojang.logging.LogUtils;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import org.slf4j.Logger;
+import ruby.fluffy.helpme.registries.RubysBlocks;
+import ruby.fluffy.helpme.registries.RubysCreativeTabs;
+import ruby.fluffy.helpme.registries.RubysItems;
+
+@Mod(RubyMod.MOD_ID)
+public class RubyMod {
+    public static final String MOD_ID = "ru3yy";
+    public static final Logger LOGGER = LogUtils.getLogger();
+
+    public RubyMod(IEventBus rubyBus, ModContainer modContainer) {
+        NeoForge.EVENT_BUS.register(this);
+
+        DeferredRegister<?>[] registers = {
+                RubysBlocks.BLOCKS,
+        };
+        for (DeferredRegister<?> register : registers) {
+            register.register(rubyBus);
+        }
+
+        RubysItems.REGISTRY.register(rubyBus);
+        RubysCreativeTabs.REGISTRY.register(rubyBus);
+    }
+
+    @SubscribeEvent
+    public void onServerStarting(ServerStartingEvent event) {
+        LOGGER.info("Blame ruby chat");
+    }
+}
