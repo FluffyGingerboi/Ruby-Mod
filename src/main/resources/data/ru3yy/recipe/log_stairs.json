@@ -1,9 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "pattern": [
-    "   ",
-    " L ",
-    " L "
+    "L  ",
+    "LL ",
+    "LLL"
   ],
   "key": {
     "L": {
@@ -11,7 +12,7 @@
     }
   },
   "result": {
-    "id": "stick",
-    "count": 16
+    "id": "ru3yy:log_stairs",
+    "count": 4
   }
 }

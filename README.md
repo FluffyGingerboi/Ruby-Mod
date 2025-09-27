@@ -1,5 +1,2 @@
 Multicolored sea lanterns, glowstone, redstone lamps, shroomlights
-Chiseled bookshelves don't need silktouch
 Blue, purple, & white wildflowers
-Dirt slab
-Log stairs

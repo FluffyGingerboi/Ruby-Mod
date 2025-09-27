@@ -1,0 +1,12 @@
+package ruby.fluffy.helpme.blocks;
+
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+
+public class DirtSlabBlock extends SlabBlock {
+    public DirtSlabBlock() {
+        super(Block.Properties.ofFullCopy(Blocks.DIRT));
+    }
+}

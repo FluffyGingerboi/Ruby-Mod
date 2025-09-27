@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "   ",
+    "GGG",
+    "   "
+  ],
+  "key": {
+    "G": {
+      "item": "gravel"
+    }
+  },
+  "result": {
+    "id": "ru3yy:gravel_slab",
+    "count": 6
+  }
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "ru3yy:block/green_lantern"
+    "all": "ru3yy:block/gren_lantern"
   }
 }

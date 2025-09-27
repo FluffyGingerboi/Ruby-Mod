@@ -26,7 +26,10 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.BLUE_LANTERN.get());
                         tabData.accept(RubysItems.LIT_BLUE_LANTERN.get());
                         tabData.accept(RubysItems.ORANGE_LANTERN.get());
-                        tabData.accept(RubysItems.GREEN_LANTERN.get());
+                        tabData.accept(RubysItems.GREN_LANTERN.get());
+                        tabData.accept(RubysItems.DIRT_SLAB.get());
+                        tabData.accept(RubysItems.GRAVEL_SLAB.get());
+                        tabData.accept(RubysItems.LOG_STAIRS.get());
                     })
                     .withSearchBar()
                     .build()
