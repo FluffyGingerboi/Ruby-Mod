@@ -1,4 +1,4 @@
-package ruby.fluffy.helpme.blocks.sea_lanterns;
+package ruby.fluffy.helpme.blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;

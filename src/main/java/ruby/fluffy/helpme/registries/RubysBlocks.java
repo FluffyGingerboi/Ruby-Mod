@@ -4,7 +4,7 @@ import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ruby.fluffy.helpme.RubyMod;
-import ruby.fluffy.helpme.blocks.sea_lanterns.RubyLanternBlock;
+import ruby.fluffy.helpme.blocks.RubyLanternBlock;
 
 public class RubysBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(RubyMod.MOD_ID);
