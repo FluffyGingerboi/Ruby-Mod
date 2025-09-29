@@ -36,4 +36,16 @@ public class RubysCreativeTabs {
                     .withSearchBar()
                     .build()
     );
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RUBYS_DISCS = REGISTRY.register(
+            "discs",
+            () -> CreativeModeTab.builder()
+                    .title(Component.translatable("itemgroup.ru3yy.discs"))
+                    .icon(() -> new ItemStack(RubysItems.DISC_505.get()))
+                    .displayItems((parameters, tabData) -> {
+                        tabData.accept(RubysItems.DISC_505.get());
+                    })
+                    .withSearchBar()
+                    .build()
+    );
 }

@@ -1,6 +1,7 @@
 package ruby.fluffy.helpme;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.neoforged.bus.api.IEventBus;
@@ -14,14 +15,15 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 import ruby.fluffy.helpme.client.RubysBlockColors;
-import ruby.fluffy.helpme.registries.RubysBlocks;
-import ruby.fluffy.helpme.registries.RubysCreativeTabs;
-import ruby.fluffy.helpme.registries.RubysItems;
+import ruby.fluffy.helpme.registries.*;
 import ruby.fluffy.helpme.worldgen.RubysPlacedFeatures;
 
 @Mod(RubyMod.MOD_ID)
 public class RubyMod {
     public static final String MOD_ID = "ru3yy";
+    public static ResourceLocation id(String name) {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
+    }
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public RubyMod(IEventBus rubyBus, ModContainer modContainer) {
@@ -36,6 +38,8 @@ public class RubyMod {
 
         RubysItems.REGISTRY.register(rubyBus);
         RubysCreativeTabs.REGISTRY.register(rubyBus);
+        RubysSongs.REGISTRY.register(rubyBus);
+        RubysSounds.REGISTRY.register(rubyBus);
         rubyBus.addListener(this::commonSetup);
     }
 
