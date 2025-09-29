@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "ru3yy:block/flowering_oak_sapling"
+  }
+}

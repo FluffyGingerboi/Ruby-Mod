@@ -1,14 +1,19 @@
 package ruby.fluffy.helpme;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
+import ruby.fluffy.helpme.client.RubysBlockColors;
 import ruby.fluffy.helpme.registries.RubysBlocks;
 import ruby.fluffy.helpme.registries.RubysCreativeTabs;
 import ruby.fluffy.helpme.registries.RubysItems;
@@ -30,6 +35,16 @@ public class RubyMod {
 
         RubysItems.REGISTRY.register(rubyBus);
         RubysCreativeTabs.REGISTRY.register(rubyBus);
+        rubyBus.addListener(this::commonSetup);
+    }
+
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(
+                    RubysBlocks.FLOWERING_OAK_SAPLING.getId(),
+                    RubysBlocks.POTTED_FLOWERING_OAK_SAPLING
+            );
+        });
     }
 
     @SubscribeEvent
