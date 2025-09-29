@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "   ",
+    " SF",
+    "   "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:oak_sapling"
+    },
+    "F": {
+      "tag": "minecraft:flowers"
+    }
+  },
+  "result": {
+    "id": "ru3yy:flowering_oak_sapling",
+    "count": 1
+  }
+}
