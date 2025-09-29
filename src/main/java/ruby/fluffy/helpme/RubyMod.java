@@ -17,6 +17,7 @@ import ruby.fluffy.helpme.client.RubysBlockColors;
 import ruby.fluffy.helpme.registries.RubysBlocks;
 import ruby.fluffy.helpme.registries.RubysCreativeTabs;
 import ruby.fluffy.helpme.registries.RubysItems;
+import ruby.fluffy.helpme.worldgen.RubysPlacedFeatures;
 
 @Mod(RubyMod.MOD_ID)
 public class RubyMod {

@@ -1,4 +1,6 @@
-// 1.21.1	2025-09-29T01:37:14.9077494	Registries
+// 1.21.1	2025-09-29T11:20:48.9953789	Registries
+bca96cc22173aa81c5656875eb3731d0ac8dd050 data/ru3yy/neoforge/biome_modifier/add_flowering_oak.json
 a345d9ce74839d4b4d8690f6c9f5f9e40053b098 data/ru3yy/worldgen/configured_feature/flowering_fancy_oak.json
 7d64a5ad7afabd0a20b62001246b8bf3f844438f data/ru3yy/worldgen/configured_feature/flowering_oak.json
 17518a7175ae7228f5fba6b715170ada431bc238 data/ru3yy/worldgen/configured_feature/flowering_oak_selector.json
+42c802cc50f24e6d3f491a59df0b32011f74a48d data/ru3yy/worldgen/placed_feature/flowering_oak_placed.json
