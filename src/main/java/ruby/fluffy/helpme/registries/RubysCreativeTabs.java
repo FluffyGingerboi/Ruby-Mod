@@ -44,6 +44,9 @@ public class RubysCreativeTabs {
                     .icon(() -> new ItemStack(RubysItems.DISC_505.get()))
                     .displayItems((parameters, tabData) -> {
                         tabData.accept(RubysItems.DISC_505.get());
+                        tabData.accept(RubysItems.DISC_SECRET_DOOR.get());
+                        tabData.accept(RubysItems.DISC_DO_I_WANNA_KNOW.get());
+                        tabData.accept(RubysItems.DISC_WORLD_CAVES_IN.get());
                     })
                     .withSearchBar()
                     .build()

@@ -3,5 +3,23 @@
     "sounds": [
       "ru3yy:disc_505"
     ]
+  },
+
+  "disc_secret_door": {
+    "sounds": [
+      "ru3yy:disc_secret_door"
+    ]
+  },
+
+  "disc_do_i_wanna_know": {
+    "sounds": [
+      "ru3yy:disc_do_i_wanna_know"
+    ]
+  },
+
+  "disc_world_caves_in": {
+    "sounds": [
+      "ru3yy:disc_world_caves_in"
+    ]
   }
 }

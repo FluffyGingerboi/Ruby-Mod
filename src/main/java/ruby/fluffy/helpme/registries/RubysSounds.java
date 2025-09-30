@@ -20,4 +20,25 @@ public class RubysSounds {
                     RubyMod.id(
                             "disc_505"))
     );
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> DISC_SECRET_DOOR = REGISTRY.register(
+            "disc_secret_door",
+            () -> SoundEvent.createVariableRangeEvent(
+                    RubyMod.id(
+                            "disc_secret_door"))
+    );
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> DISC_DO_I_WANNA_KNOW = REGISTRY.register(
+            "disc_do_i_wanna_know",
+            () -> SoundEvent.createVariableRangeEvent(
+                    RubyMod.id(
+                            "disc_do_i_wanna_know"))
+    );
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> DISC_WORLD_CAVES_IN = REGISTRY.register(
+            "disc_world_caves_in",
+            () -> SoundEvent.createVariableRangeEvent(
+                    RubyMod.id(
+                            "disc_world_caves_in"))
+    );
 }

@@ -19,5 +19,13 @@
   "block.ru3yy.flowering_oak_sapling": "Flowering Oak Sapling :3",
   "block.ru3yy.potted_flowering_oak_sapling": "Potted Flowering Oak Sapling :3",
 
-  "jukebox_song.ru3yy.disc_505": ":3"
+  "item.ru3yy.disc_505": "505 :3",
+  "item.ru3yy.disc_secret_door": "Secret Door :3",
+  "item.ru3yy.disc_do_i_wanna_know": "Do I Wanna Know :3",
+  "item.ru3yy.disc_world_caves_in": "As The World Caves In :3",
+
+  "jukebox_song.ru3yy.disc_505": "505 - Arctic Monkeys :3",
+  "jukebox_song.ru3yy.disc_secret_door": "Secret Door - Arctic Monkeys :3",
+  "jukebox_song.ru3yy.disc_do_i_wanna_know": "Do I Wanna Know - Arctic Monkeys :3",
+  "jukebox_song.ru3yy.disc_world_caves_in": "As The World Caves In - Matt Maltese :3"
 }

@@ -5,11 +5,13 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ruby.fluffy.helpme.RubyMod;
-import ruby.fluffy.helpme.items.FiveOFiveDisc;
+import ruby.fluffy.helpme.items.discs.DoIWannaKnowDisc;
+import ruby.fluffy.helpme.items.discs.FiveOFiveDisc;
+import ruby.fluffy.helpme.items.discs.SecretDoorDisc;
+import ruby.fluffy.helpme.items.discs.WorldCavesInDisc;
 
 public class RubysItems {
     public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(Registries.ITEM, RubyMod.MOD_ID);
@@ -32,6 +34,9 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> LOG_STAIRS = block(RubysBlocks.LOG_STAIRS);
 
     public static final DeferredHolder<Item,Item> DISC_505 = REGISTRY.register("disc_505", FiveOFiveDisc::new);
+    public static final DeferredHolder<Item,Item> DISC_SECRET_DOOR = REGISTRY.register("disc_secret_door", SecretDoorDisc::new);
+    public static final DeferredHolder<Item,Item> DISC_DO_I_WANNA_KNOW = REGISTRY.register("disc_do_i_wanna_know", DoIWannaKnowDisc::new);
+    public static final DeferredHolder<Item,Item> DISC_WORLD_CAVES_IN = REGISTRY.register("disc_world_caves_in", WorldCavesInDisc::new);
 
     private static DeferredHolder<Item, Item> block(DeferredHolder<Block, Block> block) {
         return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

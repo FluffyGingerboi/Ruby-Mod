@@ -18,12 +18,29 @@ public class RubysSongs {
             RubyMod.MOD_ID
     );
 
-public static final DeferredHolder<JukeboxSong, JukeboxSong> DISC_505 = register(
+    public static final DeferredHolder<JukeboxSong, JukeboxSong> DISC_505 = register(
             "disc_505",
             RubysSounds.DISC_505,
             254f
     );
 
+    public static final DeferredHolder<JukeboxSong, JukeboxSong> DISC_SECRET_DOOR = register(
+            "disc_secret_door",
+            RubysSounds.DISC_SECRET_DOOR,
+            223f
+    );
+
+    public static final DeferredHolder<JukeboxSong, JukeboxSong> DISC_DO_I_WANNA_KNOW = register(
+            "disc_do_i_wanna_know",
+            RubysSounds.DISC_DO_I_WANNA_KNOW,
+            265f
+    );
+
+    public static final DeferredHolder<JukeboxSong, JukeboxSong> DISC_WORLD_CAVES_IN = register(
+            "disc_world_caves_in",
+            RubysSounds.DISC_WORLD_CAVES_IN,
+            214f
+    );
 
     private static DeferredHolder<JukeboxSong, JukeboxSong> register(
             String id,
