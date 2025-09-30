@@ -8,15 +8,12 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
-import ruby.fluffy.helpme.client.RubysBlockColors;
 import ruby.fluffy.helpme.registries.*;
-import ruby.fluffy.helpme.worldgen.RubysPlacedFeatures;
 
 @Mod(RubyMod.MOD_ID)
 public class RubyMod {
@@ -29,17 +26,11 @@ public class RubyMod {
     public RubyMod(IEventBus rubyBus, ModContainer modContainer) {
         NeoForge.EVENT_BUS.register(this);
 
-        DeferredRegister<?>[] registers = {
-                RubysBlocks.BLOCKS,
-        };
-        for (DeferredRegister<?> register : registers) {
-            register.register(rubyBus);
-        }
-
         RubysItems.REGISTRY.register(rubyBus);
         RubysCreativeTabs.REGISTRY.register(rubyBus);
         RubysSongs.REGISTRY.register(rubyBus);
         RubysSounds.REGISTRY.register(rubyBus);
+        RubysBlocks.registerBlocks(rubyBus);
         rubyBus.addListener(this::commonSetup);
     }
 

@@ -1,12 +1,10 @@
-package ruby.fluffy.helpme.client;
+package ruby.fluffy.helpme.events.client;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.world.level.FoliageColor;
 import ruby.fluffy.helpme.registries.RubysBlocks;
-
-import java.util.Objects;
 
 public class RubysBlockColors {
     public static void registerBlockColors() {
