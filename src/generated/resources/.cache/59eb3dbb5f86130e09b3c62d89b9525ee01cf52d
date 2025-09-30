@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-29T20:10:38.6183324	Loot Tables
+// 1.21.1	2025-09-29T20:33:52.7655009	Loot Tables
 fabe2060babefa3650316f893920259649a6daaa data/ru3yy/loot_table/blocks/blue_lantern.json
 8a8fdad5bd67300418a69caaa61175415cec1700 data/ru3yy/loot_table/blocks/dirt_slab.json
 fe8574c7c0174e366969a6b727b74f3b2b6110b1 data/ru3yy/loot_table/blocks/flowering_oak_leaves.json
@@ -11,4 +11,5 @@ e053f0447fd35f012fb734ab06f2a304a803b89e data/ru3yy/loot_table/blocks/gren_lante
 b95308bc2c015ecd0e1e34c32000ea395cad6689 data/ru3yy/loot_table/blocks/potted_flowering_oak_sapling.json
 86bdcdd61348d4b42a526de23e61118fb69272e4 data/ru3yy/loot_table/blocks/purpur_lantern.json
 11709a0a4a55801bc2478160bec98eaf2e736c7b data/ru3yy/loot_table/blocks/red_lantern.json
+85b65b31e46609538de4a917b60c43e4a29571cd data/ru3yy/loot_table/blocks/sand_slab.json
 127156d8cb4854ecbc1d6cbb38ad7812289edd4b data/ru3yy/loot_table/blocks/yeller_lantern.json

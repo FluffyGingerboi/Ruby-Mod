@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ruby.fluffy.helpme.RubyMod;
+import ruby.fluffy.helpme.blocks.CherryChestBlock;
 import ruby.fluffy.helpme.items.discs.DoIWannaKnowDisc;
 import ruby.fluffy.helpme.items.discs.FiveOFiveDisc;
 import ruby.fluffy.helpme.items.discs.SecretDoorDisc;
@@ -15,6 +16,8 @@ import ruby.fluffy.helpme.items.discs.WorldCavesInDisc;
 
 public class RubysItems {
     public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(Registries.ITEM, RubyMod.MOD_ID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(RubyMod.MOD_ID);
+
 
     public static final DeferredHolder<Item,Item> RED_LANTERN = block(RubysBlocks.RED_LANTERN);
     public static final DeferredHolder<Item,Item> PURPUR_LANTERN = block(RubysBlocks.PURPUR_LANTERN);
@@ -30,8 +33,11 @@ public class RubysItems {
 
     public static final DeferredHolder<Item,Item> DIRT_SLAB = block(RubysBlocks.DIRT_SLAB);
     public static final DeferredHolder<Item,Item> GRAVEL_SLAB = block(RubysBlocks.GRAVEL_SLAB);
+    public static final DeferredHolder<Item,Item> SAND_SLAB = block(RubysBlocks.SAND_SLAB);
 
     public static final DeferredHolder<Item,Item> LOG_STAIRS = block(RubysBlocks.LOG_STAIRS);
+
+    public static final DeferredHolder<Item,Item> CHERRY_CHEST = ITEMS.register("cherry_chest", () -> new BlockItem(RubysBlocks.CHERRY_CHEST.get(), new Item.Properties()));
 
     public static final DeferredHolder<Item,Item> DISC_505 = REGISTRY.register("disc_505", FiveOFiveDisc::new);
     public static final DeferredHolder<Item,Item> DISC_SECRET_DOOR = REGISTRY.register("disc_secret_door", SecretDoorDisc::new);

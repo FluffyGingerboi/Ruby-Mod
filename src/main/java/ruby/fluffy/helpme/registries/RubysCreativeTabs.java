@@ -29,7 +29,9 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.GREN_LANTERN.get());
                         tabData.accept(RubysItems.DIRT_SLAB.get());
                         tabData.accept(RubysItems.GRAVEL_SLAB.get());
+                        tabData.accept(RubysItems.SAND_SLAB.get());
                         tabData.accept(RubysItems.LOG_STAIRS.get());
+                        tabData.accept(RubysItems.CHERRY_CHEST.get());
                         tabData.accept(RubysItems.FLOWERING_OAK_LEAVES.get());
                         tabData.accept(RubysItems.FLOWERING_OAK_SAPLING.get());
                     })

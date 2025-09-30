@@ -1,4 +1,4 @@
-package ruby.fluffy.helpme.datagen;
+package ruby.fluffy.helpme.datagen.providers;
 
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
@@ -9,8 +9,8 @@ import ruby.fluffy.helpme.registries.RubysBlocks;
 
 import java.util.Set;
 
-public class RubysLootTableGen extends BlockLootSubProvider {
-    protected RubysLootTableGen(HolderLookup.Provider registries) {
+public class RubysLootTableProvider extends BlockLootSubProvider {
+    public RubysLootTableProvider(HolderLookup.Provider registries) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
     }
 
@@ -32,6 +32,8 @@ public class RubysLootTableGen extends BlockLootSubProvider {
                 block -> createSlabItemTable(RubysBlocks.DIRT_SLAB.get()));
         add(RubysBlocks.GRAVEL_SLAB.get(),
                 block -> createSlabItemTable(RubysBlocks.GRAVEL_SLAB.get()));
+        add(RubysBlocks.SAND_SLAB.get(),
+                block -> createSlabItemTable(RubysBlocks.SAND_SLAB.get()));
 
         this.dropSelf(RubysBlocks.FLOWERING_OAK_SAPLING.get());
         add(RubysBlocks.POTTED_FLOWERING_OAK_SAPLING.get(),

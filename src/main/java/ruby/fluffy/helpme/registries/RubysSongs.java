@@ -10,7 +10,7 @@ import net.minecraft.world.item.JukeboxSong;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ruby.fluffy.helpme.RubyMod;
-import ruby.fluffy.helpme.datagen.RubysDiscGen;
+import ruby.fluffy.helpme.datagen.providers.RubysDiscProvider;
 
 public class RubysSongs {
     public static final DeferredRegister<JukeboxSong> REGISTRY = DeferredRegister.create(
@@ -54,7 +54,7 @@ public class RubysSongs {
                 15
         );
 
-        RubysDiscGen.SONGS.add(Pair.of(
+        RubysDiscProvider.SONGS.add(Pair.of(
                 song,
                 ResourceLocation.fromNamespaceAndPath(REGISTRY.getNamespace(), id)
         ));

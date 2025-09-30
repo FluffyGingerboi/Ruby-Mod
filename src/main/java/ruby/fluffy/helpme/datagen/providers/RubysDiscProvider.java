@@ -1,4 +1,4 @@
-package ruby.fluffy.helpme.datagen;
+package ruby.fluffy.helpme.datagen.providers;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -17,13 +17,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-public class RubysDiscGen implements DataProvider {
+public class RubysDiscProvider implements DataProvider {
     public static final List<Pair<JukeboxSong, ResourceLocation>> SONGS = new ArrayList<>();
 
     private final CompletableFuture<HolderLookup.Provider> lookupProvider;
     private final PackOutput.PathProvider pathProvider;
 
-    public RubysDiscGen(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+    public RubysDiscProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
         this.lookupProvider = lookupProvider;
         this.pathProvider = output.createPathProvider(PackOutput.Target.DATA_PACK, "jukebox_song");
     }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/chest",
+  "textures": {
+    "texture": "ru3yy:block/cherry_chest",
+    "particle": "minecraft:block/cherry_planks"
+  }
+}
