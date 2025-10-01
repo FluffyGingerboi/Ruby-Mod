@@ -31,6 +31,7 @@ public class RubyMod {
         RubysSongs.REGISTRY.register(rubyBus);
         RubysSounds.REGISTRY.register(rubyBus);
         RubysBlocks.registerBlocks(rubyBus);
+        RubysItems.registerItems(rubyBus);
         rubyBus.addListener(this::commonSetup);
     }
 

@@ -43,7 +43,6 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> DISC_DO_I_WANNA_KNOW = REGISTRY.register("disc_do_i_wanna_know", DoIWannaKnowDisc::new);
     public static final DeferredHolder<Item,Item> DISC_WORLD_CAVES_IN = REGISTRY.register("disc_world_caves_in", WorldCavesInDisc::new);
 
-    public static final DeferredItem<BlockItem> OAK_CHEST_I = registerItem("oak", RubysBlocks.OAK_CHEST);
     public static final DeferredItem<BlockItem> SPRUCE_CHEST_I = registerItem("spruce", RubysBlocks.SPRUCE_CHEST);
     public static final DeferredItem<BlockItem> BIRCH_CHEST_I = registerItem("birch", RubysBlocks.BIRCH_CHEST);
     public static final DeferredItem<BlockItem> JUNGLE_CHEST_I = registerItem("jungle", RubysBlocks.JUNGLE_CHEST);
