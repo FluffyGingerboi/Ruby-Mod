@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:black_dye"
+    },
+    [
+      {
+        "item": "ru3yy:blue_wool"
+      },
+      {
+        "item": "ru3yy:brown_wool"
+      },
+      {
+        "item": "ru3yy:cyan_wool"
+      },
+      {
+        "item": "ru3yy:gray_wool"
+      },
+      {
+        "item": "ru3yy:green_wool"
+      },
+      {
+        "item": "ru3yy:light_blue_wool"
+      },
+      {
+        "item": "ru3yy:light_gray_wool"
+      },
+      {
+        "item": "ru3yy:lime_wool"
+      },
+      {
+        "item": "ru3yy:magenta_wool"
+      },
+      {
+        "item": "ru3yy:orange_wool"
+      },
+      {
+        "item": "ru3yy:pink_wool"
+      },
+      {
+        "item": "ru3yy:purple_wool"
+      },
+      {
+        "item": "ru3yy:red_wool"
+      },
+      {
+        "item": "ru3yy:yellow_wool"
+      },
+      {
+        "item": "ru3yy:white_wool"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "ru3yy:black_wool"
+  }
+}
