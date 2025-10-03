@@ -27,6 +27,14 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> ORANGE_LANTERN = block(RubysBlocks.ORANGE_LANTERN);
     public static final DeferredHolder<Item,Item> GREN_LANTERN = block(RubysBlocks.GREN_LANTERN);
     public static final DeferredHolder<Item,Item> LIT_BLUE_LANTERN = block(RubysBlocks.LIT_BLUE_LANTERN);
+    public static final DeferredHolder<Item,Item> LIT_GREYPE_LANTERN = block(RubysBlocks.LIT_GREYPE_LANTERN);
+    public static final DeferredHolder<Item,Item> GREYPE_LANTERN = block(RubysBlocks.GREYPE_LANTERN);
+    public static final DeferredHolder<Item,Item> BLOOCK_LANTERN = block(RubysBlocks.BLOOCK_LANTERN);
+    public static final DeferredHolder<Item,Item> LIM_LANTERN = block(RubysBlocks.LIM_LANTERN);
+    public static final DeferredHolder<Item,Item> NYAN_LANTERN = block(RubysBlocks.NYAN_LANTERN);
+    public static final DeferredHolder<Item,Item> MAGENTER_LANTERN = block(RubysBlocks.MAGENTER_LANTERN);
+    public static final DeferredHolder<Item,Item> POO_LANTERN = block(RubysBlocks.POO_LANTERN);
+    public static final DeferredHolder<Item,Item> PINKY_LANTERN = block(RubysBlocks.PINKY_LANTERN);
 
     public static final DeferredHolder<Item,Item> FLOWERING_OAK_LEAVES = block(RubysBlocks.FLOWERING_OAK_LEAVES);
 

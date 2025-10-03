@@ -26,6 +26,14 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.BLUE_LANTERN.get());
                         tabData.accept(RubysItems.LIT_BLUE_LANTERN.get());
                         tabData.accept(RubysItems.ORANGE_LANTERN.get());
+                        tabData.accept(RubysItems.LIT_GREYPE_LANTERN.get());
+                        tabData.accept(RubysItems.GREYPE_LANTERN.get());
+                        tabData.accept(RubysItems.NYAN_LANTERN.get());
+                        tabData.accept(RubysItems.LIM_LANTERN.get());
+                        tabData.accept(RubysItems.MAGENTER_LANTERN.get());
+                        tabData.accept(RubysItems.PINKY_LANTERN.get());
+                        tabData.accept(RubysItems.BLOOCK_LANTERN.get());
+                        tabData.accept(RubysItems.POO_LANTERN.get());
                         tabData.accept(RubysItems.GREN_LANTERN.get());
                         tabData.accept(RubysItems.DIRT_SLAB.get());
                         tabData.accept(RubysItems.GRAVEL_SLAB.get());

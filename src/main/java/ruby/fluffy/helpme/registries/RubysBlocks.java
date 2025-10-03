@@ -33,6 +33,14 @@ public class RubysBlocks {
     public static final DeferredBlock<Block> ORANGE_LANTERN = BLOCKS.register("orange_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> GREN_LANTERN = BLOCKS.register("gren_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> LIT_BLUE_LANTERN = BLOCKS.register("lit_blue_lantern", RubysBaseLanternBlock::new);
+    public static final DeferredBlock<Block> LIT_GREYPE_LANTERN = BLOCKS.register("lit_greype_lantern", RubysBaseLanternBlock::new);
+    public static final DeferredBlock<Block> GREYPE_LANTERN = BLOCKS.register("greype_lantern", RubysBaseLanternBlock::new);
+    public static final DeferredBlock<Block> BLOOCK_LANTERN = BLOCKS.register("bloock_lantern", RubysBaseLanternBlock::new);
+    public static final DeferredBlock<Block> LIM_LANTERN = BLOCKS.register("lim_lantern", RubysBaseLanternBlock::new);
+    public static final DeferredBlock<Block> NYAN_LANTERN = BLOCKS.register("nyan_lantern", RubysBaseLanternBlock::new);
+    public static final DeferredBlock<Block> MAGENTER_LANTERN = BLOCKS.register("magenter_lantern", RubysBaseLanternBlock::new);
+    public static final DeferredBlock<Block> POO_LANTERN = BLOCKS.register("poo_lantern", RubysBaseLanternBlock::new);
+    public static final DeferredBlock<Block> PINKY_LANTERN = BLOCKS.register("pinky_lantern", RubysBaseLanternBlock::new);
 
     public static final DeferredBlock<Block> FLOWERING_OAK_LEAVES = BLOCKS.register("flowering_oak_leaves", FloweringOakLeavesBlock::new);
 
