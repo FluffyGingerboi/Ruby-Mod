@@ -22,7 +22,7 @@ public class RubysChestBlockEntity extends ChestBlockEntity {
 
     @Override
     protected @NotNull Component getDefaultName() {
-        return Component.translatable("container.lolmcv." + getBlock().woodType + "_chest");
+        return Component.translatable("container.ru3yy." + getBlock().woodType + "_chest");
     }
 
     public RubysBaseChestBlock getBlock() {

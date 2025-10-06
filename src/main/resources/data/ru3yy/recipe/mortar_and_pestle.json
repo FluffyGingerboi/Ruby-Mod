@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    [
+      {
+        "item": "minecraft:bowl"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "ru3yy:mortar_and_pestle"
+  }
+}

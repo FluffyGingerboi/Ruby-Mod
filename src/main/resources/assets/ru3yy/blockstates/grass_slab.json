@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ru3yy:block/slabs/grass_slab"
+    },
+    "type=top": {
+      "model": "ru3yy:block/slabs/grass_slab_top"
+    },
+    "type=double": {
+      "model": "minecraft:block/grass_block"
+    }
+  }
+}

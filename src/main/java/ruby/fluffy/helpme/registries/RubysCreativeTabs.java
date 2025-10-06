@@ -38,14 +38,12 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.DIRT_SLAB.get());
                         tabData.accept(RubysItems.GRAVEL_SLAB.get());
                         tabData.accept(RubysItems.SAND_SLAB.get());
+                        tabData.accept(RubysItems.GRASS_SLAB.get());
                         tabData.accept(RubysItems.LOG_STAIRS.get());
                         tabData.accept(RubysItems.FLOWERING_OAK_LEAVES.get());
                         tabData.accept(RubysItems.FLOWERING_OAK_SAPLING.get());
-                        tabData.accept(RubysItems.SPRUCE_CHEST_I.get());
-                        tabData.accept(RubysItems.MANGROVE_CHEST_I.get());
-                        tabData.accept(RubysItems.BIRCH_CHEST_I.get());
+                        tabData.accept(RubysItems.BLUE_WHITE_WILDFLOWERS.get());
                         tabData.accept(RubysItems.CHERRY_CHEST_I.get());
-                        tabData.accept(RubysItems.CRIMSON_CHEST_I.get());
                     })
                     .withSearchBar()
                     .build()
@@ -61,6 +59,35 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.DISC_SECRET_DOOR.get());
                         tabData.accept(RubysItems.DISC_DO_I_WANNA_KNOW.get());
                         tabData.accept(RubysItems.DISC_WORLD_CAVES_IN.get());
+                    })
+                    .withSearchBar()
+                    .build()
+    );
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RUBYS_ITEMS = REGISTRY.register(
+            "items",
+            () -> CreativeModeTab.builder()
+                    .title(Component.translatable("itemgroup.ru3yy.items"))
+                    .icon(() -> new ItemStack(RubysItems.BLOOCK_PIGMENT.get()))
+                    .displayItems((parameters, tabData) -> {
+                        tabData.accept(RubysItems.BLOOCK_PIGMENT.get());
+                        tabData.accept(RubysItems.GREYPE_PIGMENT.get());
+                        tabData.accept(RubysItems.LIT_GREYPE_PIGMENT.get());
+                        tabData.accept(RubysItems.WIT_PIGMENT.get());
+                        tabData.accept(RubysItems.POO_PIGMENT.get());
+                        tabData.accept(RubysItems.RED_PIGMENT.get());
+                        tabData.accept(RubysItems.ORANG_PIGMENT.get());
+                        tabData.accept(RubysItems.YELLER_PIGMENT.get());
+                        tabData.accept(RubysItems.GREN_PIGMENT.get());
+                        tabData.accept(RubysItems.LIM_PIGMENT.get());
+                        tabData.accept(RubysItems.BLUE_PIGMENT.get());
+                        tabData.accept(RubysItems.NYAN_PIGMENT.get());
+                        tabData.accept(RubysItems.LIT_BLUE_PIGMENT.get());
+                        tabData.accept(RubysItems.PURPUR_PIGMENT.get());
+                        tabData.accept(RubysItems.MAGENTER_PIGMENT.get());
+                        tabData.accept(RubysItems.PINKY_PIGMENT.get());
+                        tabData.accept(RubysItems.MORTAR_AND_PESTLE.get());
+                        tabData.accept(RubysItems.SAW.get());
                     })
                     .withSearchBar()
                     .build()

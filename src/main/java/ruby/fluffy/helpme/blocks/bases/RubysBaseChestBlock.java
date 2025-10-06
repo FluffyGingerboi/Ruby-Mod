@@ -49,7 +49,7 @@ public class RubysBaseChestBlock extends ChestBlock {
                         return chestBlockEntity.getDisplayName();
                     } else {
                         return chestBlockEntity2.hasCustomName() ? chestBlockEntity2.getDisplayName() :
-                                Component.translatable("container.lolmcv." + woodType + "_chestDouble");
+                                Component.translatable("container.ru3yy." + woodType + "_chest_double");
                     }
                 }
             });

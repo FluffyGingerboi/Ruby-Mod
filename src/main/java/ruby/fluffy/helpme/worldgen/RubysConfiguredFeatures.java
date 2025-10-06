@@ -15,6 +15,7 @@ import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.VegetationPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
@@ -34,6 +35,8 @@ public class RubysConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERING_OAK_KEY = registerKey("flowering_oak");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERING_FANCY_OAK_KEY = registerKey("flowering_fancy_oak");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERING_OAK_SELECTOR_KEY = registerKey("flowering_oak_selector");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_WHITE_WILDFLOWERS_KEY = registerKey("blue_white_wildflowers");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         var leavesProvider = new WeightedStateProvider(

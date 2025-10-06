@@ -2,7 +2,6 @@ package ruby.fluffy.helpme.blocks;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SaplingBlock;
-import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import ruby.fluffy.helpme.worldgen.RubysTreeGrowers;
 

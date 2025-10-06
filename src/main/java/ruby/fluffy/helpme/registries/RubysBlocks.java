@@ -2,6 +2,8 @@ package ruby.fluffy.helpme.registries;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.PinkPetalsBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.material.MapColor;
@@ -12,7 +14,10 @@ import ruby.fluffy.helpme.RubyMod;
 import ruby.fluffy.helpme.blocks.*;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseChestBlock;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseLanternBlock;
+import ruby.fluffy.helpme.blocks.bases.RubysBaseLeafpileBlock;
+import ruby.fluffy.helpme.blocks.bases.RubysBaseWildflowerBlock;
 import ruby.fluffy.helpme.blocks.slabs.DirtSlabBlock;
+import ruby.fluffy.helpme.blocks.slabs.GrassSlabBlock;
 import ruby.fluffy.helpme.blocks.slabs.GravelSlabBlock;
 import ruby.fluffy.helpme.blocks.slabs.SandSlabBlock;
 import ruby.fluffy.helpme.entities.RubysChestBlockEntity;
@@ -20,6 +25,8 @@ import ruby.fluffy.helpme.entities.RubysChestBlockEntity;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
+
+import static net.minecraft.world.level.block.state.BlockBehaviour.Properties.ofFullCopy;
 
 public class RubysBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(RubyMod.MOD_ID);
@@ -46,25 +53,16 @@ public class RubysBlocks {
 
     public static final DeferredBlock<Block> FLOWERING_OAK_SAPLING = BLOCKS.register("flowering_oak_sapling", FloweringOakSaplingBlock::new);
 
+    public static final DeferredBlock<Block> BLUE_WHITE_WILDFLOWERS = BLOCKS.register("blue_white_wildflowers", RubysBaseWildflowerBlock::new);
+
     public static final DeferredBlock<Block> DIRT_SLAB = BLOCKS.register("dirt_slab", DirtSlabBlock::new);
     public static final DeferredBlock<Block> GRAVEL_SLAB = BLOCKS.register("gravel_slab", GravelSlabBlock::new);
     public static final DeferredBlock<Block> SAND_SLAB = BLOCKS.register("sand_slab", SandSlabBlock::new);
+    public static final DeferredBlock<Block> GRASS_SLAB = BLOCKS.register("grass_slab", GrassSlabBlock::new);
 
     public static final DeferredBlock<Block> LOG_STAIRS = BLOCKS.register("log_stairs", LogStairsBlock::new);
 
-    public static final DeferredBlock<Block> OAK_CHEST = registerChest("oak", () -> new RubysBaseChestBlock(MapColor.WOOD, "oak"));
-    public static final DeferredBlock<Block> SPRUCE_CHEST = registerChest("spruce", () -> new RubysBaseChestBlock(MapColor.PODZOL, "spruce"));
-    public static final DeferredBlock<Block> BIRCH_CHEST = registerChest("birch", () -> new RubysBaseChestBlock(MapColor.SAND, "birch"));
-    public static final DeferredBlock<Block> JUNGLE_CHEST = registerChest("jungle", () -> new RubysBaseChestBlock(MapColor.DIRT, "jungle"));
-    public static final DeferredBlock<Block> ACACIA_CHEST = registerChest("acacia", () -> new RubysBaseChestBlock(MapColor.COLOR_ORANGE, "acacia"));
-    public static final DeferredBlock<Block> DARK_OAK_CHEST = registerChest("dark_oak", () -> new RubysBaseChestBlock(MapColor.COLOR_BROWN, "dark_oak"));
-    public static final DeferredBlock<Block> MANGROVE_CHEST = registerChest("mangrove", () -> new RubysBaseChestBlock(MapColor.COLOR_RED, "mangrove"));
     public static final DeferredBlock<Block> CHERRY_CHEST = registerChest("cherry", () -> new RubysBaseChestBlock(MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, "cherry"));
-    public static final DeferredBlock<Block> BAMBOO_CHEST = registerChest("bamboo", () -> new RubysBaseChestBlock(MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo"));
-    public static final DeferredBlock<Block> CRIMSON_CHEST = registerChest("crimson", () -> new RubysBaseChestBlock(MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson"));
-    public static final DeferredBlock<Block> WARPED_CHEST = registerChest("warped", () -> new RubysBaseChestBlock(MapColor.WARPED_STEM, SoundType.NETHER_WOOD, "warped"));
-
-
 
     public static final DeferredBlock<Block> POTTED_FLOWERING_OAK_SAPLING =
             BLOCKS.register("potted_flowering_oak_sapling",
@@ -74,17 +72,7 @@ public class RubysBlocks {
     public static final List<DeferredBlock<Block>> more_chest = new ArrayList<>();
 
     public static void registerBlocks(IEventBus modBus) {
-        addToArray(OAK_CHEST);
-        addToArray(SPRUCE_CHEST);
-        addToArray(BIRCH_CHEST);
-        addToArray(JUNGLE_CHEST);
-        addToArray(ACACIA_CHEST);
-        addToArray(DARK_OAK_CHEST);
-        addToArray(MANGROVE_CHEST);
         addToArray(CHERRY_CHEST);
-        addToArray(BAMBOO_CHEST);
-        addToArray(CRIMSON_CHEST);
-        addToArray(WARPED_CHEST);
 
         MORE_CHEST_BLOCK_ENTITY = BLOCKS_ENTITIES.register("chest_tile",
                 () -> BlockEntityType.Builder.of(RubysChestBlockEntity::new, more_chest.stream().map(DeferredBlock::get).toArray(Block[]::new)).build(null));

@@ -4,6 +4,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -11,6 +12,9 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ruby.fluffy.helpme.RubyMod;
+import ruby.fluffy.helpme.items.RubysBaseItem;
+import ruby.fluffy.helpme.items.RubysBasePersistentItem;
+import ruby.fluffy.helpme.items.SawItem;
 import ruby.fluffy.helpme.items.discs.DoIWannaKnowDisc;
 import ruby.fluffy.helpme.items.discs.FiveOFiveDisc;
 import ruby.fluffy.helpme.items.discs.SecretDoorDisc;
@@ -19,6 +23,7 @@ import ruby.fluffy.helpme.items.discs.WorldCavesInDisc;
 public class RubysItems {
     public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(Registries.ITEM, RubyMod.MOD_ID);
     public static final DeferredRegister.Items ITEMS_CHESTS = DeferredRegister.createItems(RubyMod.MOD_ID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(RubyMod.MOD_ID);
 
     public static final DeferredHolder<Item,Item> RED_LANTERN = block(RubysBlocks.RED_LANTERN);
     public static final DeferredHolder<Item,Item> PURPUR_LANTERN = block(RubysBlocks.PURPUR_LANTERN);
@@ -40,7 +45,10 @@ public class RubysItems {
 
     public static final DeferredHolder<Item,Item> FLOWERING_OAK_SAPLING = block(RubysBlocks.FLOWERING_OAK_SAPLING);
 
+    public static final DeferredItem<BlockItem> BLUE_WHITE_WILDFLOWERS = ITEMS.registerSimpleBlockItem(RubysBlocks.BLUE_WHITE_WILDFLOWERS);
+
     public static final DeferredHolder<Item,Item> DIRT_SLAB = block(RubysBlocks.DIRT_SLAB);
+    public static final DeferredHolder<Item,Item> GRASS_SLAB = block(RubysBlocks.GRASS_SLAB);
     public static final DeferredHolder<Item,Item> GRAVEL_SLAB = block(RubysBlocks.GRAVEL_SLAB);
     public static final DeferredHolder<Item,Item> SAND_SLAB = block(RubysBlocks.SAND_SLAB);
 
@@ -51,16 +59,28 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> DISC_DO_I_WANNA_KNOW = REGISTRY.register("disc_do_i_wanna_know", DoIWannaKnowDisc::new);
     public static final DeferredHolder<Item,Item> DISC_WORLD_CAVES_IN = REGISTRY.register("disc_world_caves_in", WorldCavesInDisc::new);
 
-    public static final DeferredItem<BlockItem> SPRUCE_CHEST_I = registerItem("spruce", RubysBlocks.SPRUCE_CHEST);
-    public static final DeferredItem<BlockItem> BIRCH_CHEST_I = registerItem("birch", RubysBlocks.BIRCH_CHEST);
-    public static final DeferredItem<BlockItem> JUNGLE_CHEST_I = registerItem("jungle", RubysBlocks.JUNGLE_CHEST);
-    public static final DeferredItem<BlockItem> ACACIA_CHEST_I = registerItem("acacia", RubysBlocks.ACACIA_CHEST);
-    public static final DeferredItem<BlockItem> DARK_OAK_CHEST_I = registerItem("dark_oak", RubysBlocks.DARK_OAK_CHEST);
-    public static final DeferredItem<BlockItem> MANGROVE_CHEST_I = registerItem("mangrove", RubysBlocks.MANGROVE_CHEST);
+    public static final DeferredHolder<Item,Item> BLOOCK_PIGMENT = REGISTRY.register("bloock_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> GREYPE_PIGMENT = REGISTRY.register("greype_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> LIT_GREYPE_PIGMENT = REGISTRY.register("lit_greype_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> WIT_PIGMENT = REGISTRY.register("wit_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> RED_PIGMENT = REGISTRY.register("red_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> ORANG_PIGMENT = REGISTRY.register("orang_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> YELLER_PIGMENT = REGISTRY.register("yeller_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> GREN_PIGMENT = REGISTRY.register("gren_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> LIM_PIGMENT = REGISTRY.register("lim_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> BLUE_PIGMENT = REGISTRY.register("blue_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> LIT_BLUE_PIGMENT = REGISTRY.register("lit_blue_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> NYAN_PIGMENT = REGISTRY.register("nyan_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> PURPUR_PIGMENT = REGISTRY.register("purpur_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> MAGENTER_PIGMENT = REGISTRY.register("magenter_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> PINKY_PIGMENT = REGISTRY.register("pinky_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> POO_PIGMENT = REGISTRY.register("poo_pigment", RubysBaseItem::new);
+
+    public static final DeferredHolder<Item,Item> MORTAR_AND_PESTLE = REGISTRY.register("mortar_and_pestle", RubysBasePersistentItem::new);
+    public static final DeferredHolder<Item,Item> SAW = REGISTRY.register("saw", SawItem::new);
+
+
     public static final DeferredItem<BlockItem> CHERRY_CHEST_I = registerItem("cherry", RubysBlocks.CHERRY_CHEST);
-    public static final DeferredItem<BlockItem> BAMBOO_CHEST_I = registerItem("bamboo", RubysBlocks.BAMBOO_CHEST);
-    public static final DeferredItem<BlockItem> CRIMSON_CHEST_I = registerItem("crimson", RubysBlocks.CRIMSON_CHEST);
-    public static final DeferredItem<BlockItem> WARPED_CHEST_I = registerItem("warped", RubysBlocks.WARPED_CHEST);
 
     public static void registerItems(IEventBus modBus) {
         ITEMS_CHESTS.register(modBus);

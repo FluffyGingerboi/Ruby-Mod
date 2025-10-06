@@ -1,6 +1,7 @@
 {
   "itemgroup.ru3yy.blocks": "Blocks :3",
   "itemgroup.ru3yy.discs": "Music Discs :3",
+  "itemgroup.ru3yy.items": "Items :3",
 
   "block.ru3yy.red_lantern": "Red Sea Lantern :3",
   "block.ru3yy.purpur_lantern": "Purpur Sea Lantern :3",
@@ -9,10 +10,23 @@
   "block.ru3yy.orange_lantern": "Orange Sea Lantern :3",
   "block.ru3yy.gren_lantern": "Gren Sea Lantern :3",
   "block.ru3yy.lit_blue_lantern": "Lit Blue Sea Lantern :3",
+  "block.ru3yy.lit_greype_lantern": "Lit Greype Sea Lantern :3",
+  "block.ru3yy.greype_lantern": "Greype Sea Lantern :3",
+  "block.ru3yy.lim_lantern": "Lim Sea Lantern :3",
+  "block.ru3yy.poo_lantern": "Poo Sea Lantern :3",
+  "block.ru3yy.pinky_lantern": "Pinky Sea Lantern :3",
+  "block.ru3yy.magenter_lantern": "Magenter Sea Lantern :3",
+  "block.ru3yy.nyan_lantern": "Nyan Sea Lantern :3",
+  "block.ru3yy.bloock_lantern": "Bloock Sea Lantern :3",
+
+  "block.ru3yy.cherry_chest": "Cherry Chest :3",
+
+  "block.ru3yy.blue_white_wildflowers": "Blue & White Wildflowers :3",
 
   "block.ru3yy.dirt_slab": "Dirt Slab :3",
   "block.ru3yy.gravel_slab": "Gravel Slab :3",
   "block.ru3yy.sand_slab": "Sand Slab :3",
+  "block.ru3yy.grass_slab": "Grass Block Slab :3",
 
   "block.ru3yy.log_stairs": "Log Stairs :3",
 
@@ -20,10 +34,33 @@
   "block.ru3yy.flowering_oak_sapling": "Flowering Oak Sapling :3",
   "block.ru3yy.potted_flowering_oak_sapling": "Potted Flowering Oak Sapling :3",
 
+  "container.ru3yy.cherry_chest": "Cherry Chest :3",
+  "container.ru3yy.cherry_chest_double": "Large Cherry Chest :3",
+
   "item.ru3yy.disc_505": "505 :3",
   "item.ru3yy.disc_secret_door": "Secret Door :3",
   "item.ru3yy.disc_do_i_wanna_know": "Do I Wanna Know :3",
   "item.ru3yy.disc_world_caves_in": "As The World Caves In :3",
+
+  "item.ru3yy.bloock_pigment": "Bloock Pigment :3",
+  "item.ru3yy.greype_pigment": "Greype Pigment :3",
+  "item.ru3yy.lit_greype_pigment": "Lit Greype Pigment :3",
+  "item.ru3yy.wit_pigment": "Wit Pigment :3",
+  "item.ru3yy.poo_pigment": "Poo Pigment :3",
+  "item.ru3yy.red_pigment": "Red Pigment :3",
+  "item.ru3yy.orang_pigment": "Orang Pigment :3",
+  "item.ru3yy.yeller_pigment": "Yeller Pigment :3",
+  "item.ru3yy.blue_pigment": "Blue Pigment :3",
+  "item.ru3yy.lit_blue_pigment": "Lit Blue Pigment :3",
+  "item.ru3yy.nyan_pigment": "Nyan Pigment :3",
+  "item.ru3yy.purpur_pigment": "Purpur Pigment :3",
+  "item.ru3yy.magenter_pigment": "Magenter Pigment :3",
+  "item.ru3yy.pinky_pigment": "Pinky Pigment :3",
+  "item.ru3yy.gren_pigment": "Gren Pigment :3",
+  "item.ru3yy.lim_pigment": "Lim Pigment :3",
+
+  "item.ru3yy.mortar_and_pestle": "Mortar And Pestle :3",
+  "item.ru3yy.saw": "Saw :3",
 
   "jukebox_song.ru3yy.disc_505": "505 - Arctic Monkeys :3",
   "jukebox_song.ru3yy.disc_secret_door": "Secret Door - Arctic Monkeys :3",

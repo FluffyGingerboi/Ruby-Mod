@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:brown_dye"
+    },
+    [
+      {
+        "item": "ru3yy:blue_lantern"
+      },
+      {
+        "item": "ru3yy:bloock_lantern"
+      },
+      {
+        "item": "ru3yy:nyan_lantern"
+      },
+      {
+        "item": "ru3yy:greype_lantern"
+      },
+      {
+        "item": "ru3yy:gren_lantern"
+      },
+      {
+        "item": "ru3yy:lit_blue_lantern"
+      },
+      {
+        "item": "ru3yy:lit_greype_lantern"
+      },
+      {
+        "item": "ru3yy:lim_lantern"
+      },
+      {
+        "item": "ru3yy:magenter_lantern"
+      },
+      {
+        "item": "ru3yy:orange_lantern"
+      },
+      {
+        "item": "ru3yy:pinky_lantern"
+      },
+      {
+        "item": "ru3yy:purpur_lantern"
+      },
+      {
+        "item": "ru3yy:red_lantern"
+      },
+      {
+        "item": "ru3yy:yeller_lantern"
+      },
+      {
+        "item": "minecraft:sea_lantern"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "ru3yy:poo_lantern"
+  }
+}

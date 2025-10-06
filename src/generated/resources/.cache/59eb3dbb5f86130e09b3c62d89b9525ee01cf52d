@@ -1,13 +1,23 @@
-// 1.21.1	2025-09-29T20:33:52.7655009	Loot Tables
+// 1.21.1	2025-10-04T16:51:17.6561004	Loot Tables
+f8630ad29d33355e477803af28b8a162065e04cd data/ru3yy/loot_table/blocks/bloock_lantern.json
 fabe2060babefa3650316f893920259649a6daaa data/ru3yy/loot_table/blocks/blue_lantern.json
+fcd05ed480c6fb4095a0ee4a36c68b703536f7a3 data/ru3yy/loot_table/blocks/blue_white_wildflowers.json
+848fdf51985435cef3703707d17e53a058dcd6b0 data/ru3yy/loot_table/blocks/cherry_chest.json
 8a8fdad5bd67300418a69caaa61175415cec1700 data/ru3yy/loot_table/blocks/dirt_slab.json
 fe8574c7c0174e366969a6b727b74f3b2b6110b1 data/ru3yy/loot_table/blocks/flowering_oak_leaves.json
 018d5d026fb72e3ad78f7526e657e097d18b9257 data/ru3yy/loot_table/blocks/flowering_oak_sapling.json
 4536897537589c436449adfce9fab677ca64534a data/ru3yy/loot_table/blocks/gravel_slab.json
 e053f0447fd35f012fb734ab06f2a304a803b89e data/ru3yy/loot_table/blocks/gren_lantern.json
+2c217d552277a5debb085efe07ee36c8e27361d3 data/ru3yy/loot_table/blocks/greype_lantern.json
+6beb2aad0a86b2ddcbf1cfc266f804a13c3eabcd data/ru3yy/loot_table/blocks/lim_lantern.json
 9e54387991ad5aa159b2633282a9b7b971124f67 data/ru3yy/loot_table/blocks/lit_blue_lantern.json
+d1c0c32569d29acc6c1c63ad8f5e699fcaa9a9fe data/ru3yy/loot_table/blocks/lit_greype_lantern.json
 084c238d1caee43f4f4414d15e24a3ec193dfcfd data/ru3yy/loot_table/blocks/log_stairs.json
+77569f9e2fad1f691767b04d30c1b2b5ae147453 data/ru3yy/loot_table/blocks/magenter_lantern.json
+414a5b910c4ab26407a93bf60ffa833990def641 data/ru3yy/loot_table/blocks/nyan_lantern.json
 890cbef45494e88c6b9277563ac41fbfd17dc1b0 data/ru3yy/loot_table/blocks/orange_lantern.json
+e5cb35ff5a41637ec43ffcee1297f33f96415038 data/ru3yy/loot_table/blocks/pinky_lantern.json
+d38d53d19ea0816a8211a0d15768b44e762318fd data/ru3yy/loot_table/blocks/poo_lantern.json
 b95308bc2c015ecd0e1e34c32000ea395cad6689 data/ru3yy/loot_table/blocks/potted_flowering_oak_sapling.json
 86bdcdd61348d4b42a526de23e61118fb69272e4 data/ru3yy/loot_table/blocks/purpur_lantern.json
 11709a0a4a55801bc2478160bec98eaf2e736c7b data/ru3yy/loot_table/blocks/red_lantern.json

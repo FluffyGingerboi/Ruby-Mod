@@ -27,6 +27,7 @@ public class RubyMod {
         NeoForge.EVENT_BUS.register(this);
 
         RubysItems.REGISTRY.register(rubyBus);
+        RubysItems.ITEMS.register(rubyBus);
         RubysCreativeTabs.REGISTRY.register(rubyBus);
         RubysSongs.REGISTRY.register(rubyBus);
         RubysSounds.REGISTRY.register(rubyBus);
