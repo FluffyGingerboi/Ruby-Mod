@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PWP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "ru3yy:lit_greype_pigment"
+    },
+    "W": {
+      "item": "water_bucket"
+    }
+  },
+  "result": {
+    "id": "light_gray_dye",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " S ",
+    " S ",
+    "   "
+  ],
+  "key": {
+    "S": {
+      "item": "oak_slab"
+    }
+  },
+  "result": {
+    "id": "oak_planks",
+    "count": 1
+  }
+}

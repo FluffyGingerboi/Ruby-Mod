@@ -81,6 +81,7 @@ public class RubysItems {
 
 
     public static final DeferredItem<BlockItem> CHERRY_CHEST_I = registerItem("cherry", RubysBlocks.CHERRY_CHEST);
+    public static final DeferredItem<BlockItem> SPRUCE_CHEST_I = registerItem("spruce", RubysBlocks.SPRUCE_CHEST);
 
     public static void registerItems(IEventBus modBus) {
         ITEMS_CHESTS.register(modBus);

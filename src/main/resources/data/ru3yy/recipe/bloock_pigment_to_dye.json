@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PWP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "ru3yy:bloock_pigment"
+    },
+    "W": {
+      "item": "water_bucket"
+    }
+  },
+  "result": {
+    "id": "black_dye",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " S ",
+    " S ",
+    "   "
+  ],
+  "key": {
+    "S": {
+      "item": "polished_tuff_slab"
+    }
+  },
+  "result": {
+    "id": "polished_tuff",
+    "count": 1
+  }
+}

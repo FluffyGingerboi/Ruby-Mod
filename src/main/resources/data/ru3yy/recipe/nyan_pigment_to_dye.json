@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PWP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "ru3yy:nyan_pigment"
+    },
+    "W": {
+      "item": "water_bucket"
+    }
+  },
+  "result": {
+    "id": "cyan_dye",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " S ",
+    " S ",
+    "   "
+  ],
+  "key": {
+    "S": {
+      "item": "endstone_brick_slab"
+    }
+  },
+  "result": {
+    "id": "endstone_bricks",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "magenter_pigment",
+  "ingredients": [
+    {
+      "item": "ru3yy:blue_pigment"
+    },
+    {
+      "item": "ru3yy:red_pigment"
+    },
+    {
+      "item": "ru3yy:red_pigment"
+    },
+    {
+      "item": "ru3yy:wit_pigment"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "ru3yy:magenter_pigment"
+  }
+}

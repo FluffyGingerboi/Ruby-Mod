@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:white_dye"
+    },
+    [
+      {
+        "item": "ru3yy:mortar_and_pestle"
+      }
+    ]
+  ],
+  "result": {
+    "count": 8,
+    "id": "ru3yy:wit_pigment"
+  }
+}

@@ -1,4 +1,4 @@
-package ruby.fluffy.helpme.entities;
+package ruby.fluffy.helpme.entities.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " S ",
+    " S ",
+    "   "
+  ],
+  "key": {
+    "S": {
+      "item": "ru3yy:grass_slab"
+    }
+  },
+  "result": {
+    "id": "grass_block",
+    "count": 1
+  }
+}

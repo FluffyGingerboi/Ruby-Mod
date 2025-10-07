@@ -44,6 +44,7 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.FLOWERING_OAK_SAPLING.get());
                         tabData.accept(RubysItems.BLUE_WHITE_WILDFLOWERS.get());
                         tabData.accept(RubysItems.CHERRY_CHEST_I.get());
+                        tabData.accept(RubysItems.SPRUCE_CHEST_I.get());
                     })
                     .withSearchBar()
                     .build()

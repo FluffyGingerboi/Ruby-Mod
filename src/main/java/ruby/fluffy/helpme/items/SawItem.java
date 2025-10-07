@@ -47,4 +47,14 @@ public class SawItem extends Item {
         }
         return InteractionResult.sidedSuccess(level.isClientSide);
     }
+
+    @Override
+    public boolean hasCraftingRemainingItem(ItemStack itemStack) {
+        return true;
+    }
+
+    @Override
+    public ItemStack getCraftingRemainingItem(ItemStack itemStack) {
+        return itemStack.copy();
+    }
 }

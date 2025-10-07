@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SS ",
+    "SS ",
+    "   "
+  ],
+  "key": {
+    "S": {
+      "item": "string"
+    }
+  },
+  "result": {
+    "id": "white_wool",
+    "count": 1
+  }
+}

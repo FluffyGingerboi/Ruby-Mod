@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " S ",
+    " S ",
+    "   "
+  ],
+  "key": {
+    "S": {
+      "item": "waxed_exposed_cut_copper_slab"
+    }
+  },
+  "result": {
+    "id": "waxed_exposed_cut_copper",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " S ",
+    " S ",
+    "   "
+  ],
+  "key": {
+    "S": {
+      "item": "purpur_slab"
+    }
+  },
+  "result": {
+    "id": "purpur_block",
+    "count": 1
+  }
+}
