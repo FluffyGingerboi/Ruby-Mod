@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "ru3yy:block/cherry_chest"
+      "model": "ru3yy:block/chests/cherry_chest"
     }
   }
 }

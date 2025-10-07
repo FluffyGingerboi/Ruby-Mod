@@ -3,6 +3,7 @@ package ruby.fluffy.helpme.worldgen;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
@@ -17,6 +18,8 @@ import java.util.List;
 public class RubysPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> FLOWERING_OAK_PLACED_KEY = registerKey("flowering_oak_placed");
+    public static final ResourceKey<PlacedFeature> BLUE_WHITE_WILDFLOWERS_PLACED_KEY = registerKey("blue_white_wildflowers_placed");
+
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -24,6 +27,7 @@ public class RubysPlacedFeatures {
         register(context, FLOWERING_OAK_PLACED_KEY, configuredFeatures.getOrThrow(RubysConfiguredFeatures.FLOWERING_OAK_SELECTOR_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
                         RubysBlocks.FLOWERING_OAK_SAPLING.get()));
+
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

@@ -1,0 +1,7 @@
+{
+  "parent": "ru3yy:block/bases/chest_base",
+  "textures": {
+    "wood_type": "ru3yy:entity/chest/spruce",
+    "particle": "minecraft:block/spruce_planks"
+  }
+}

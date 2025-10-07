@@ -42,6 +42,48 @@ public class RubysSongs {
             214f
     );
 
+    public static final DeferredHolder<JukeboxSong, JukeboxSong> DISC_BABY_IM_YOURS = register(
+            "disc_baby_im_yours",
+            RubysSounds.DISC_BABY_IM_YOURS,
+            152f
+    );
+
+    public static final DeferredHolder<JukeboxSong, JukeboxSong> DISC_CRYING_LIGHTNING = register(
+            "disc_crying_lightning",
+            RubysSounds.DISC_CRYING_LIGHTNING,
+            224f
+    );
+
+    public static final DeferredHolder<JukeboxSong, JukeboxSong> DISC_FLUORESCENT_ADOLESCENCE = register(
+            "disc_fluorescent_adolescence",
+            RubysSounds.DISC_FLUORESCENT_ADOLESCENCE,
+            183f
+    );
+
+    public static final DeferredHolder<JukeboxSong, JukeboxSong> DISC_I_WANNA_BE_YOURS = register(
+            "disc_i_wanna_be_yours",
+            RubysSounds.DISC_I_WANNA_BE_YOURS,
+            183f
+    );
+
+    public static final DeferredHolder<JukeboxSong, JukeboxSong> DISC_MY_PROPELLER = register(
+            "disc_my_propeller",
+            RubysSounds.DISC_MY_PROPELLER,
+            205f
+    );
+
+    public static final DeferredHolder<JukeboxSong, JukeboxSong> DISC_SNAP_OUT_OF_IT = register(
+            "disc_snap_out_of_it",
+            RubysSounds.DISC_SNAP_OUT_OF_IT,
+            193f
+    );
+
+    public static final DeferredHolder<JukeboxSong, JukeboxSong> DISC_WHEN_THE_SUN_GOES_DOWN = register(
+            "disc_when_the_sun_goes_down",
+            RubysSounds.DISC_WHEN_THE_SUN_GOES_DOWN,
+            202f
+    );
+
     private static DeferredHolder<JukeboxSong, JukeboxSong> register(
             String id,
             Holder<SoundEvent> event,

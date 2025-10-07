@@ -35,6 +35,7 @@ public class RubysLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(RubysBlocks.POO_LANTERN.get());
 
         this.dropSelf(RubysBlocks.CHERRY_CHEST.get());
+        this.dropSelf(RubysBlocks.SPRUCE_CHEST.get());
 
         this.dropSelf(RubysBlocks.LOG_STAIRS.get());
 
@@ -44,9 +45,13 @@ public class RubysLootTableProvider extends BlockLootSubProvider {
                 block -> createSlabItemTable(RubysBlocks.GRAVEL_SLAB.get()));
         add(RubysBlocks.SAND_SLAB.get(),
                 block -> createSlabItemTable(RubysBlocks.SAND_SLAB.get()));
+        add(RubysBlocks.GRASS_SLAB.get(),
+                block -> createSlabItemTable(RubysBlocks.GRASS_SLAB.get()));
 
         add(RubysBlocks.BLUE_WHITE_WILDFLOWERS.get(),
                 block -> createPetalsDrops(RubysBlocks.BLUE_WHITE_WILDFLOWERS.get()));
+        add(RubysBlocks.PURPLE_WHITE_WILDFLOWERS.get(),
+                block -> createPetalsDrops(RubysBlocks.PURPLE_WHITE_WILDFLOWERS.get()));
 
         this.dropSelf(RubysBlocks.FLOWERING_OAK_SAPLING.get());
         add(RubysBlocks.POTTED_FLOWERING_OAK_SAPLING.get(),

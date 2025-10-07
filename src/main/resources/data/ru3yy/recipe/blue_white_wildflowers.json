@@ -7,14 +7,14 @@
   ],
   "key": {
     "P": {
-      "item": "minecraft:pink_petals"
+      "item": "minecraft:azure_bluet"
     },
     "S": {
-      "item": "minecraft:wheat_seeds"
+      "item": "minecraft:cornflower"
     }
   },
   "result": {
     "id": "ru3yy:blue_white_wildflowers",
-    "count": 1
+    "count": 8
   }
 }

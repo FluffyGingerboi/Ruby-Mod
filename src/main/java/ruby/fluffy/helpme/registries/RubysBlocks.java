@@ -55,6 +55,7 @@ public class RubysBlocks {
     public static final DeferredBlock<Block> FLOWERING_OAK_SAPLING = BLOCKS.register("flowering_oak_sapling", FloweringOakSaplingBlock::new);
 
     public static final DeferredBlock<Block> BLUE_WHITE_WILDFLOWERS = BLOCKS.register("blue_white_wildflowers", RubysBaseWildflowerBlock::new);
+    public static final DeferredBlock<Block> PURPLE_WHITE_WILDFLOWERS = BLOCKS.register("purple_white_wildflowers", RubysBaseWildflowerBlock::new);
 
     public static final DeferredBlock<Block> DIRT_SLAB = BLOCKS.register("dirt_slab", DirtSlabBlock::new);
     public static final DeferredBlock<Block> GRAVEL_SLAB = BLOCKS.register("gravel_slab", GravelSlabBlock::new);

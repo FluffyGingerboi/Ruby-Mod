@@ -15,10 +15,7 @@ import ruby.fluffy.helpme.RubyMod;
 import ruby.fluffy.helpme.items.RubysBaseItem;
 import ruby.fluffy.helpme.items.RubysBasePersistentItem;
 import ruby.fluffy.helpme.items.SawItem;
-import ruby.fluffy.helpme.items.discs.DoIWannaKnowDisc;
-import ruby.fluffy.helpme.items.discs.FiveOFiveDisc;
-import ruby.fluffy.helpme.items.discs.SecretDoorDisc;
-import ruby.fluffy.helpme.items.discs.WorldCavesInDisc;
+import ruby.fluffy.helpme.items.discs.*;
 
 public class RubysItems {
     public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(Registries.ITEM, RubyMod.MOD_ID);
@@ -46,6 +43,7 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> FLOWERING_OAK_SAPLING = block(RubysBlocks.FLOWERING_OAK_SAPLING);
 
     public static final DeferredItem<BlockItem> BLUE_WHITE_WILDFLOWERS = ITEMS.registerSimpleBlockItem(RubysBlocks.BLUE_WHITE_WILDFLOWERS);
+    public static final DeferredItem<BlockItem> PURPLE_WHITE_WILDFLOWERS = ITEMS.registerSimpleBlockItem(RubysBlocks.PURPLE_WHITE_WILDFLOWERS);
 
     public static final DeferredHolder<Item,Item> DIRT_SLAB = block(RubysBlocks.DIRT_SLAB);
     public static final DeferredHolder<Item,Item> GRASS_SLAB = block(RubysBlocks.GRASS_SLAB);
@@ -58,6 +56,13 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> DISC_SECRET_DOOR = REGISTRY.register("disc_secret_door", SecretDoorDisc::new);
     public static final DeferredHolder<Item,Item> DISC_DO_I_WANNA_KNOW = REGISTRY.register("disc_do_i_wanna_know", DoIWannaKnowDisc::new);
     public static final DeferredHolder<Item,Item> DISC_WORLD_CAVES_IN = REGISTRY.register("disc_world_caves_in", WorldCavesInDisc::new);
+    public static final DeferredHolder<Item,Item> DISC_BABY_IM_YOURS= REGISTRY.register("disc_baby_im_yours", BabyImYoursDisc::new);
+    public static final DeferredHolder<Item,Item> DISC_CRYING_LIGHTNING = REGISTRY.register("disc_crying_lightning", CryingLightningDisc::new);
+    public static final DeferredHolder<Item,Item> DISC_FLUORESCENT_ADOLESCENCE = REGISTRY.register("disc_fluorescent_adolescence", FluorescentAdolescenceDisc::new);
+    public static final DeferredHolder<Item,Item> DISC_I_WANNA_BE_YOURS = REGISTRY.register("disc_i_wanna_be_yours", IWannaBeYoursDisc::new);
+    public static final DeferredHolder<Item,Item> DISC_MY_PROPELLER = REGISTRY.register("disc_my_propeller", MyPropellerDisc::new);
+    public static final DeferredHolder<Item,Item> DISC_SNAP_OUT_OF_IT = REGISTRY.register("disc_snap_out_of_it", SnapOutOfItDisc::new);
+    public static final DeferredHolder<Item,Item> DISC_WHEN_THE_SUN_GOES_DOWN = REGISTRY.register("disc_when_the_sun_goes_down", WhenTheSunGoesDownDisc::new);
 
     public static final DeferredHolder<Item,Item> BLOOCK_PIGMENT = REGISTRY.register("bloock_pigment", RubysBaseItem::new);
     public static final DeferredHolder<Item,Item> GREYPE_PIGMENT = REGISTRY.register("greype_pigment", RubysBaseItem::new);

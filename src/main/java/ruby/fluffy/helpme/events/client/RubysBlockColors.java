@@ -36,6 +36,18 @@ public class RubysBlockColors {
                 RubysBlocks.BLUE_WHITE_WILDFLOWERS.get()
         );
 
+        colors.register(
+                (state, world, pos, tintIndex) -> {
+                    if (tintIndex == 1) {
+                        return world != null && pos != null
+                                ? BiomeColors.getAverageGrassColor(world, pos)
+                                : 0x00FF00;
+                    }
+                    return 0xFFFFFFFF;
+                },
+                RubysBlocks.PURPLE_WHITE_WILDFLOWERS.get()
+        );
+
 
         colors.register(
                 (state, world, pos, tintIndex) -> {

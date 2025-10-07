@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "PS ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:azure_bluet"
+    },
+    "S": {
+      "item": "minecraft:allium"
+    }
+  },
+  "result": {
+    "id": "ru3yy:purple_white_wildflowers",
+    "count": 8
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "ru3yy:block/chest_base",
+  "parent": "ru3yy:block/bases/chest_base",
   "textures": {
     "wood_type": "ru3yy:entity/chest/cherry",
     "particle": "minecraft:block/cherry_planks"

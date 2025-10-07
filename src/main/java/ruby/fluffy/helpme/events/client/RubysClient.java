@@ -19,6 +19,7 @@ public class RubysClient {
         ItemBlockRenderTypes.setRenderLayer(RubysBlocks.FLOWERING_OAK_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(RubysBlocks.POTTED_FLOWERING_OAK_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(RubysBlocks.BLUE_WHITE_WILDFLOWERS.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(RubysBlocks.PURPLE_WHITE_WILDFLOWERS.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(RubysBlocks.GRASS_SLAB.get(), RenderType.cutoutMipped());
     }
 
