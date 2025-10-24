@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ru3yy:blue_white_wildflowers"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "light_blue_dye"
+  }
+}

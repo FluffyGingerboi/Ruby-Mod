@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-07T17:53:41.897406	Loot Tables
+// 1.21.1	2025-10-08T16:52:11.5806402	Loot Tables
 f8630ad29d33355e477803af28b8a162065e04cd data/ru3yy/loot_table/blocks/bloock_lantern.json
 fabe2060babefa3650316f893920259649a6daaa data/ru3yy/loot_table/blocks/blue_lantern.json
 fcd05ed480c6fb4095a0ee4a36c68b703536f7a3 data/ru3yy/loot_table/blocks/blue_white_wildflowers.json
@@ -6,7 +6,7 @@ fcd05ed480c6fb4095a0ee4a36c68b703536f7a3 data/ru3yy/loot_table/blocks/blue_white
 8a8fdad5bd67300418a69caaa61175415cec1700 data/ru3yy/loot_table/blocks/dirt_slab.json
 fe8574c7c0174e366969a6b727b74f3b2b6110b1 data/ru3yy/loot_table/blocks/flowering_oak_leaves.json
 018d5d026fb72e3ad78f7526e657e097d18b9257 data/ru3yy/loot_table/blocks/flowering_oak_sapling.json
-a3fe0c5884465bd8c69fa489976899c5bc6bcaa7 data/ru3yy/loot_table/blocks/grass_slab.json
+e617d5535bb451f5c1ffaebad041b8ba78027575 data/ru3yy/loot_table/blocks/grass_slab.json
 4536897537589c436449adfce9fab677ca64534a data/ru3yy/loot_table/blocks/gravel_slab.json
 e053f0447fd35f012fb734ab06f2a304a803b89e data/ru3yy/loot_table/blocks/gren_lantern.json
 2c217d552277a5debb085efe07ee36c8e27361d3 data/ru3yy/loot_table/blocks/greype_lantern.json

@@ -12,15 +12,18 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ruby.fluffy.helpme.RubyMod;
+import ruby.fluffy.helpme.items.DisplayItem;
 import ruby.fluffy.helpme.items.RubysBaseItem;
 import ruby.fluffy.helpme.items.RubysBasePersistentItem;
 import ruby.fluffy.helpme.items.SawItem;
 import ruby.fluffy.helpme.items.discs.*;
+import net.minecraft.world.item.Item.Properties;
 
 public class RubysItems {
     public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(Registries.ITEM, RubyMod.MOD_ID);
     public static final DeferredRegister.Items ITEMS_CHESTS = DeferredRegister.createItems(RubyMod.MOD_ID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(RubyMod.MOD_ID);
+
 
     public static final DeferredHolder<Item,Item> RED_LANTERN = block(RubysBlocks.RED_LANTERN);
     public static final DeferredHolder<Item,Item> PURPUR_LANTERN = block(RubysBlocks.PURPUR_LANTERN);
@@ -84,6 +87,7 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> MORTAR_AND_PESTLE = REGISTRY.register("mortar_and_pestle", RubysBasePersistentItem::new);
     public static final DeferredHolder<Item,Item> SAW = REGISTRY.register("saw", SawItem::new);
 
+    public static final DeferredHolder<Item, Item> DISPLAY = REGISTRY.register("item_display", () -> new DisplayItem(createBaseProps("item_display")));
 
     public static final DeferredItem<BlockItem> CHERRY_CHEST_I = registerItem("cherry", RubysBlocks.CHERRY_CHEST);
     public static final DeferredItem<BlockItem> SPRUCE_CHEST_I = registerItem("spruce", RubysBlocks.SPRUCE_CHEST);
@@ -94,6 +98,16 @@ public class RubysItems {
 
     public static DeferredItem<BlockItem> registerItem(String name, DeferredBlock<Block> block) {
         return ITEMS_CHESTS.register(name + "_chest", ()-> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    public static void setupBlockItems() {
+        for (DeferredHolder<Block, ? extends Block> block : RubysDisplayBlocks.REGISTRY.getEntries()) {
+            REGISTRY.register(block.getId().getPath(), () -> new BlockItem((Block)block.get(), createBaseProps(block.getId().getPath())));
+        }
+    }
+
+    private static Properties createBaseProps(String name) {
+        return new Properties();
     }
 
     private static DeferredHolder<Item, Item> block(DeferredHolder<Block, Block> block) {

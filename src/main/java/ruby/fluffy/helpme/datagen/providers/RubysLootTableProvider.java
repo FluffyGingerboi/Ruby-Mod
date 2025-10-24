@@ -46,7 +46,7 @@ public class RubysLootTableProvider extends BlockLootSubProvider {
         add(RubysBlocks.SAND_SLAB.get(),
                 block -> createSlabItemTable(RubysBlocks.SAND_SLAB.get()));
         add(RubysBlocks.GRASS_SLAB.get(),
-                block -> createSlabItemTable(RubysBlocks.GRASS_SLAB.get()));
+                block -> createSlabItemTable(RubysBlocks.DIRT_SLAB.get()));
 
         add(RubysBlocks.BLUE_WHITE_WILDFLOWERS.get(),
                 block -> createPetalsDrops(RubysBlocks.BLUE_WHITE_WILDFLOWERS.get()));
