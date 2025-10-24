@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-07T17:53:41.897406	Loot Tables
+// 1.21.1	2025-10-23T10:40:22.3804486	Loot Tables
 f8630ad29d33355e477803af28b8a162065e04cd data/ru3yy/loot_table/blocks/bloock_lantern.json
 fabe2060babefa3650316f893920259649a6daaa data/ru3yy/loot_table/blocks/blue_lantern.json
 fcd05ed480c6fb4095a0ee4a36c68b703536f7a3 data/ru3yy/loot_table/blocks/blue_white_wildflowers.json
@@ -17,12 +17,12 @@ d1c0c32569d29acc6c1c63ad8f5e699fcaa9a9fe data/ru3yy/loot_table/blocks/lit_greype
 77569f9e2fad1f691767b04d30c1b2b5ae147453 data/ru3yy/loot_table/blocks/magenter_lantern.json
 414a5b910c4ab26407a93bf60ffa833990def641 data/ru3yy/loot_table/blocks/nyan_lantern.json
 890cbef45494e88c6b9277563ac41fbfd17dc1b0 data/ru3yy/loot_table/blocks/orange_lantern.json
+51dd3eece74903c7867035ce8ce823278c7ace43 data/ru3yy/loot_table/blocks/period_lantern.json
 e5cb35ff5a41637ec43ffcee1297f33f96415038 data/ru3yy/loot_table/blocks/pinky_lantern.json
 d38d53d19ea0816a8211a0d15768b44e762318fd data/ru3yy/loot_table/blocks/poo_lantern.json
 b95308bc2c015ecd0e1e34c32000ea395cad6689 data/ru3yy/loot_table/blocks/potted_flowering_oak_sapling.json
 e3b3b48c72bdd91d126dcf8b8fec346d2c85d828 data/ru3yy/loot_table/blocks/purple_white_wildflowers.json
 86bdcdd61348d4b42a526de23e61118fb69272e4 data/ru3yy/loot_table/blocks/purpur_lantern.json
-11709a0a4a55801bc2478160bec98eaf2e736c7b data/ru3yy/loot_table/blocks/red_lantern.json
 85b65b31e46609538de4a917b60c43e4a29571cd data/ru3yy/loot_table/blocks/sand_slab.json
 aa5d936e7669aae264d2cbef07cc13551d9d240a data/ru3yy/loot_table/blocks/spruce_chest.json
 127156d8cb4854ecbc1d6cbb38ad7812289edd4b data/ru3yy/loot_table/blocks/yeller_lantern.json

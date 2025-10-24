@@ -19,7 +19,7 @@ public class RubysLootTableProvider extends BlockLootSubProvider {
 
         this.dropSelf(RubysBlocks.YELLER_LANTERN.get());
         this.dropSelf(RubysBlocks.LIT_BLUE_LANTERN.get());
-        this.dropSelf(RubysBlocks.RED_LANTERN.get());
+        this.dropSelf(RubysBlocks.PERIOD_LANTERN.get());
         this.dropSelf(RubysBlocks.GREN_LANTERN.get());
         this.dropSelf(RubysBlocks.PURPUR_LANTERN.get());
         this.dropSelf(RubysBlocks.YELLER_LANTERN.get());

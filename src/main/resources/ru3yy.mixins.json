@@ -5,7 +5,9 @@
   "mixins": [
   ],
   "client": [
-    "ChestRendererMixin"
+    "ChestRendererMixin",
+    "LanguageManagerMixin",
+    "LanguageProviderAccessorMixin"
   ],
   "injectors": {
     "defaultRequire": 1

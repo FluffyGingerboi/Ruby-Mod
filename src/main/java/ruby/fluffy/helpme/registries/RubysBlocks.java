@@ -1,10 +1,7 @@
 package ruby.fluffy.helpme.registries;
 
-import com.sun.jna.platform.win32.WinNT;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.PinkPetalsBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.material.MapColor;
@@ -15,7 +12,6 @@ import ruby.fluffy.helpme.RubyMod;
 import ruby.fluffy.helpme.blocks.*;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseChestBlock;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseLanternBlock;
-import ruby.fluffy.helpme.blocks.bases.RubysBaseLeafpileBlock;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseWildflowerBlock;
 import ruby.fluffy.helpme.blocks.slabs.DirtSlabBlock;
 import ruby.fluffy.helpme.blocks.slabs.GrassSlabBlock;
@@ -27,14 +23,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
 
-import static net.minecraft.world.level.block.state.BlockBehaviour.Properties.ofFullCopy;
-
 public class RubysBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(RubyMod.MOD_ID);
     private static final DeferredRegister<BlockEntityType<?>> BLOCKS_ENTITIES = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, RubyMod.MOD_ID);
 
 
-    public static final DeferredBlock<Block> RED_LANTERN = BLOCKS.register("red_lantern", RubysBaseLanternBlock::new);
+    public static final DeferredBlock<Block> PERIOD_LANTERN = BLOCKS.register("period_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> PURPUR_LANTERN = BLOCKS.register("purpur_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> YELLER_LANTERN = BLOCKS.register("yeller_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> BLUE_LANTERN = BLOCKS.register("blue_lantern", RubysBaseLanternBlock::new);

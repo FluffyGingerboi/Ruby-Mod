@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "ru3yy:red_lantern"
+          "name": "ru3yy:period_lantern"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "ru3yy:blocks/red_lantern"
+  "random_sequence": "ru3yy:blocks/period_lantern"
 }

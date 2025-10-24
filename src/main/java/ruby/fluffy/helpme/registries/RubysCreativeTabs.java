@@ -18,9 +18,9 @@ public class RubysCreativeTabs {
             "blocks",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemgroup.ru3yy.blocks"))
-                    .icon(() -> new ItemStack(RubysItems.RED_LANTERN.get()))
+                    .icon(() -> new ItemStack(RubysItems.PERIOD_LANTERN.get()))
                     .displayItems((parameters, tabData) -> {
-                        tabData.accept(RubysItems.RED_LANTERN.get());
+                        tabData.accept(RubysItems.PERIOD_LANTERN.get());
                         tabData.accept(RubysItems.PURPUR_LANTERN.get());
                         tabData.accept(RubysItems.YELLER_LANTERN.get());
                         tabData.accept(RubysItems.BLUE_LANTERN.get());
