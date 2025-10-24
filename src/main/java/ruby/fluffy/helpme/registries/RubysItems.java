@@ -4,7 +4,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -25,7 +24,7 @@ public class RubysItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(RubyMod.MOD_ID);
 
 
-    public static final DeferredHolder<Item,Item> RED_LANTERN = block(RubysBlocks.RED_LANTERN);
+    public static final DeferredHolder<Item,Item> PERIOD_LANTERN = block(RubysBlocks.PERIOD_LANTERN);
     public static final DeferredHolder<Item,Item> PURPUR_LANTERN = block(RubysBlocks.PURPUR_LANTERN);
     public static final DeferredHolder<Item,Item> YELLER_LANTERN = block(RubysBlocks.YELLER_LANTERN);
     public static final DeferredHolder<Item,Item> BLUE_LANTERN = block(RubysBlocks.BLUE_LANTERN);
