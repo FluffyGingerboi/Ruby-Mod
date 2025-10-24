@@ -19,7 +19,8 @@ public class RubysDatapackProvider extends DatapackBuiltinEntriesProvider {
 
             .add(Registries.CONFIGURED_FEATURE, RubysConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, RubysPlacedFeatures::bootstrap)
-            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, RubysBiomeModifiers::bootstrap);
+            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, RubysBiomeModifiers::bootstrap)
+            .add(Registries.ENCHANTMENT, RubysEnchantsProvider::bootstrap);
 
     public RubysDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(RubyMod.MOD_ID));

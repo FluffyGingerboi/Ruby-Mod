@@ -34,6 +34,13 @@ public class RubyMod {
         RubysBlocks.registerBlocks(rubyBus);
         RubysItems.registerItems(rubyBus);
         rubyBus.addListener(this::commonSetup);
+
+        RubysEntities.REGISTRY.register(rubyBus);
+        RubysDisplayBlocks.REGISTRY.register(rubyBus);
+        RubysDisplayBlocks.setupBlocks();
+        RubysItems.setupBlockItems();
+
+        RubysDataComponents.register(rubyBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "ru3yy:cherry_chest"
+    "ru3yy:cherry_chest",
+    "ru3yy:spruce_chest",
+    "ru3yy:log_stairs"
   ]
 }

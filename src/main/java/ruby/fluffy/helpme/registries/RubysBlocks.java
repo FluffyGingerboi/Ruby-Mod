@@ -1,11 +1,18 @@
 package ruby.fluffy.helpme.registries;
 
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.Music;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ruby.fluffy.helpme.RubyMod;
@@ -13,11 +20,13 @@ import ruby.fluffy.helpme.blocks.*;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseChestBlock;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseLanternBlock;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseWildflowerBlock;
+import ruby.fluffy.helpme.blocks.items_displayed.MusicBlock;
 import ruby.fluffy.helpme.blocks.slabs.DirtSlabBlock;
 import ruby.fluffy.helpme.blocks.slabs.GrassSlabBlock;
 import ruby.fluffy.helpme.blocks.slabs.GravelSlabBlock;
 import ruby.fluffy.helpme.blocks.slabs.SandSlabBlock;
 import ruby.fluffy.helpme.entities.block.RubysChestBlockEntity;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +35,7 @@ import java.util.function.Supplier;
 public class RubysBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(RubyMod.MOD_ID);
     private static final DeferredRegister<BlockEntityType<?>> BLOCKS_ENTITIES = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, RubyMod.MOD_ID);
-
+    public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(Registries.BLOCK, RubyMod.MOD_ID);
 
     public static final DeferredBlock<Block> PERIOD_LANTERN = BLOCKS.register("period_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> PURPUR_LANTERN = BLOCKS.register("purpur_lantern", RubysBaseLanternBlock::new);
@@ -65,6 +74,7 @@ public class RubysBlocks {
             BLOCKS.register("potted_flowering_oak_sapling",
                     () -> new PottedFloweringOakSaplingBlock(FLOWERING_OAK_SAPLING));
 
+
     public static Supplier<BlockEntityType<RubysChestBlockEntity>> MORE_CHEST_BLOCK_ENTITY;
     public static final List<DeferredBlock<Block>> more_chest = new ArrayList<>();
 
@@ -86,5 +96,4 @@ public class RubysBlocks {
     private static void addToArray(DeferredBlock<Block> chest) {
         more_chest.add(chest);
     }
-
 }
