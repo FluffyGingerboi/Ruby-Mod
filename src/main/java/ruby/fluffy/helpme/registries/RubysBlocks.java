@@ -2,31 +2,24 @@ package ruby.fluffy.helpme.registries;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.Music;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ruby.fluffy.helpme.RubyMod;
 import ruby.fluffy.helpme.blocks.*;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseChestBlock;
+import ruby.fluffy.helpme.blocks.bases.RubysBasePoppyBlock;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseLanternBlock;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseWildflowerBlock;
-import ruby.fluffy.helpme.blocks.items_displayed.MusicBlock;
 import ruby.fluffy.helpme.blocks.slabs.DirtSlabBlock;
 import ruby.fluffy.helpme.blocks.slabs.GrassSlabBlock;
 import ruby.fluffy.helpme.blocks.slabs.GravelSlabBlock;
 import ruby.fluffy.helpme.blocks.slabs.SandSlabBlock;
 import ruby.fluffy.helpme.entities.block.RubysChestBlockEntity;
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +34,7 @@ public class RubysBlocks {
     public static final DeferredBlock<Block> PURPUR_LANTERN = BLOCKS.register("purpur_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> YELLER_LANTERN = BLOCKS.register("yeller_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> BLUE_LANTERN = BLOCKS.register("blue_lantern", RubysBaseLanternBlock::new);
-    public static final DeferredBlock<Block> ORANGE_LANTERN = BLOCKS.register("orange_lantern", RubysBaseLanternBlock::new);
+    public static final DeferredBlock<Block> ORANG_LANTERN = BLOCKS.register("orang_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> GREN_LANTERN = BLOCKS.register("gren_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> LIT_BLUE_LANTERN = BLOCKS.register("lit_blue_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> LIT_GREYPE_LANTERN = BLOCKS.register("lit_greype_lantern", RubysBaseLanternBlock::new);
@@ -52,6 +45,18 @@ public class RubysBlocks {
     public static final DeferredBlock<Block> MAGENTER_LANTERN = BLOCKS.register("magenter_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> POO_LANTERN = BLOCKS.register("poo_lantern", RubysBaseLanternBlock::new);
     public static final DeferredBlock<Block> PINKY_LANTERN = BLOCKS.register("pinky_lantern", RubysBaseLanternBlock::new);
+
+    public static final DeferredBlock<Block> POPPY_BLOCK = BLOCKS.register("poppy_block", RubysBasePoppyBlock::new);
+    public static final DeferredBlock<Block> COMPACTED_POPPY_BLOCK = BLOCKS.register("compacted_poppy_block", RubysBasePoppyBlock::new);
+    public static final DeferredBlock<Block> DOUBLE_COMPACTED_POPPY_BLOCK = BLOCKS.register("double_compacted_poppy_block", RubysBasePoppyBlock::new);
+    public static final DeferredBlock<Block> TRIPLE_COMPACTED_POPPY_BLOCK = BLOCKS.register("triple_compacted_poppy_block", RubysBasePoppyBlock::new);
+    public static final DeferredBlock<Block> QUADRUPLE_COMPACTED_POPPY_BLOCK = BLOCKS.register("quadruple_compacted_poppy_block", RubysBasePoppyBlock::new);
+    public static final DeferredBlock<Block> QUINTUPLE_COMPACTED_POPPY_BLOCK = BLOCKS.register("quintuple_compacted_poppy_block", RubysBasePoppyBlock::new);
+    public static final DeferredBlock<Block> SEXTUPLE_COMPACTED_POPPY_BLOCK = BLOCKS.register("sextuple_compacted_poppy_block", RubysBasePoppyBlock::new);
+    public static final DeferredBlock<Block> SEPTUPLE_COMPACTED_POPPY_BLOCK = BLOCKS.register("septuple_compacted_poppy_block", RubysBasePoppyBlock::new);
+    public static final DeferredBlock<Block> OCTUPLE_COMPACTED_POPPY_BLOCK = BLOCKS.register("octuple_compacted_poppy_block", RubysBasePoppyBlock::new);
+    public static final DeferredBlock<Block> NONUPLE_COMPACTED_POPPY_BLOCK = BLOCKS.register("nonuple_compacted_poppy_block", RubysBasePoppyBlock::new);
+    public static final DeferredBlock<Block> DECUPLE_COMPACTED_POPPY_BLOCK = BLOCKS.register("decuple_compacted_poppy_block", RubysBasePoppyBlock::new);
 
     public static final DeferredBlock<Block> FLOWERING_OAK_LEAVES = BLOCKS.register("flowering_oak_leaves", FloweringOakLeavesBlock::new);
 

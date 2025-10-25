@@ -25,7 +25,7 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.YELLER_LANTERN.get());
                         tabData.accept(RubysItems.BLUE_LANTERN.get());
                         tabData.accept(RubysItems.LIT_BLUE_LANTERN.get());
-                        tabData.accept(RubysItems.ORANGE_LANTERN.get());
+                        tabData.accept(RubysItems.ORANG_LANTERN.get());
                         tabData.accept(RubysItems.LIT_GREYPE_LANTERN.get());
                         tabData.accept(RubysItems.GREYPE_LANTERN.get());
                         tabData.accept(RubysItems.NYAN_LANTERN.get());
@@ -35,6 +35,17 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.BLOOCK_LANTERN.get());
                         tabData.accept(RubysItems.POO_LANTERN.get());
                         tabData.accept(RubysItems.GREN_LANTERN.get());
+                        tabData.accept(RubysItems.POPPY_BLOCK.get());
+                        tabData.accept(RubysItems.COMPACTED_POPPY_BLOCK.get());
+                        tabData.accept(RubysItems.DOUBLE_COMPACTED_POPPY_BLOCK.get());
+                        tabData.accept(RubysItems.TRIPLE_COMPACTED_POPPY_BLOCK.get());
+                        tabData.accept(RubysItems.QUADRUPLE_COMPACTED_POPPY_BLOCK.get());
+                        tabData.accept(RubysItems.QUINTUPLE_COMPACTED_POPPY_BLOCK.get());
+                        tabData.accept(RubysItems.SEXTUPLE_COMPACTED_POPPY_BLOCK.get());
+                        tabData.accept(RubysItems.SEPTUPLE_COMPACTED_POPPY_BLOCK.get());
+                        tabData.accept(RubysItems.OCTUPLE_COMPACTED_POPPY_BLOCK.get());
+                        tabData.accept(RubysItems.NONUPLE_COMPACTED_POPPY_BLOCK.get());
+                        tabData.accept(RubysItems.DECUPLE_COMPACTED_POPPY_BLOCK.get());
                         tabData.accept(RubysItems.DIRT_SLAB.get());
                         tabData.accept(RubysItems.GRAVEL_SLAB.get());
                         tabData.accept(RubysItems.SAND_SLAB.get());

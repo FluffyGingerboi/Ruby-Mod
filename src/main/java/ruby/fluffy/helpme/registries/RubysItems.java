@@ -28,7 +28,7 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> PURPUR_LANTERN = block(RubysBlocks.PURPUR_LANTERN);
     public static final DeferredHolder<Item,Item> YELLER_LANTERN = block(RubysBlocks.YELLER_LANTERN);
     public static final DeferredHolder<Item,Item> BLUE_LANTERN = block(RubysBlocks.BLUE_LANTERN);
-    public static final DeferredHolder<Item,Item> ORANGE_LANTERN = block(RubysBlocks.ORANGE_LANTERN);
+    public static final DeferredHolder<Item,Item> ORANG_LANTERN = block(RubysBlocks.ORANG_LANTERN);
     public static final DeferredHolder<Item,Item> GREN_LANTERN = block(RubysBlocks.GREN_LANTERN);
     public static final DeferredHolder<Item,Item> LIT_BLUE_LANTERN = block(RubysBlocks.LIT_BLUE_LANTERN);
     public static final DeferredHolder<Item,Item> LIT_GREYPE_LANTERN = block(RubysBlocks.LIT_GREYPE_LANTERN);
@@ -39,6 +39,18 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> MAGENTER_LANTERN = block(RubysBlocks.MAGENTER_LANTERN);
     public static final DeferredHolder<Item,Item> POO_LANTERN = block(RubysBlocks.POO_LANTERN);
     public static final DeferredHolder<Item,Item> PINKY_LANTERN = block(RubysBlocks.PINKY_LANTERN);
+
+    public static final DeferredHolder<Item,Item> POPPY_BLOCK = block(RubysBlocks.POPPY_BLOCK);
+    public static final DeferredHolder<Item,Item> COMPACTED_POPPY_BLOCK = block(RubysBlocks.COMPACTED_POPPY_BLOCK);
+    public static final DeferredHolder<Item,Item> DOUBLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.DOUBLE_COMPACTED_POPPY_BLOCK);
+    public static final DeferredHolder<Item,Item> TRIPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.TRIPLE_COMPACTED_POPPY_BLOCK);
+    public static final DeferredHolder<Item,Item> QUADRUPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.QUADRUPLE_COMPACTED_POPPY_BLOCK);
+    public static final DeferredHolder<Item,Item> QUINTUPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.QUINTUPLE_COMPACTED_POPPY_BLOCK);
+    public static final DeferredHolder<Item,Item> SEXTUPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.SEXTUPLE_COMPACTED_POPPY_BLOCK);
+    public static final DeferredHolder<Item,Item> SEPTUPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.SEPTUPLE_COMPACTED_POPPY_BLOCK);
+    public static final DeferredHolder<Item,Item> OCTUPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.OCTUPLE_COMPACTED_POPPY_BLOCK);
+    public static final DeferredHolder<Item,Item> NONUPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.NONUPLE_COMPACTED_POPPY_BLOCK);
+    public static final DeferredHolder<Item,Item> DECUPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.DECUPLE_COMPACTED_POPPY_BLOCK);
 
     public static final DeferredHolder<Item,Item> FLOWERING_OAK_LEAVES = block(RubysBlocks.FLOWERING_OAK_LEAVES);
 

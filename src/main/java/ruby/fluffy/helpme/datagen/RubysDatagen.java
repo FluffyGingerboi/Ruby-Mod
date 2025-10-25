@@ -9,11 +9,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import ruby.fluffy.helpme.datagen.providers.ColonThreeLanguageProvider;
-import ruby.fluffy.helpme.datagen.providers.RubysDatapackProvider;
-import ruby.fluffy.helpme.datagen.providers.RubysDiscProvider;
-import ruby.fluffy.helpme.datagen.providers.RubysEnchantsProvider;
-import ruby.fluffy.helpme.datagen.providers.RubysLootTableProvider;
+import ruby.fluffy.helpme.datagen.providers.*;
 
 import java.util.Collections;
 import java.util.List;
@@ -33,5 +29,6 @@ public class RubysDatagen {
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
                 List.of(new LootTableProvider.SubProviderEntry(RubysLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
         generator.addProvider(event.includeServer(), new ColonThreeLanguageProvider(packOutput));
+        generator.addProvider(event.includeServer(), new RubysBlockStatesProvider(packOutput, event.getExistingFileHelper()));
     }
 }

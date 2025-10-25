@@ -24,7 +24,7 @@ public class RubysLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(RubysBlocks.PURPUR_LANTERN.get());
         this.dropSelf(RubysBlocks.YELLER_LANTERN.get());
         this.dropSelf(RubysBlocks.BLUE_LANTERN.get());
-        this.dropSelf(RubysBlocks.ORANGE_LANTERN.get());
+        this.dropSelf(RubysBlocks.ORANG_LANTERN.get());
         this.dropSelf(RubysBlocks.NYAN_LANTERN.get());
         this.dropSelf(RubysBlocks.LIT_GREYPE_LANTERN.get());
         this.dropSelf(RubysBlocks.GREYPE_LANTERN.get());
@@ -33,6 +33,18 @@ public class RubysLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(RubysBlocks.MAGENTER_LANTERN.get());
         this.dropSelf(RubysBlocks.PINKY_LANTERN.get());
         this.dropSelf(RubysBlocks.POO_LANTERN.get());
+
+        this.dropSelf(RubysBlocks.POPPY_BLOCK.get());
+        this.dropSelf(RubysBlocks.COMPACTED_POPPY_BLOCK.get());
+        this.dropSelf(RubysBlocks.DOUBLE_COMPACTED_POPPY_BLOCK.get());
+        this.dropSelf(RubysBlocks.TRIPLE_COMPACTED_POPPY_BLOCK.get());
+        this.dropSelf(RubysBlocks.QUADRUPLE_COMPACTED_POPPY_BLOCK.get());
+        this.dropSelf(RubysBlocks.QUINTUPLE_COMPACTED_POPPY_BLOCK.get());
+        this.dropSelf(RubysBlocks.SEXTUPLE_COMPACTED_POPPY_BLOCK.get());
+        this.dropSelf(RubysBlocks.SEPTUPLE_COMPACTED_POPPY_BLOCK.get());
+        this.dropSelf(RubysBlocks.OCTUPLE_COMPACTED_POPPY_BLOCK.get());
+        this.dropSelf(RubysBlocks.NONUPLE_COMPACTED_POPPY_BLOCK.get());
+        this.dropSelf(RubysBlocks.DECUPLE_COMPACTED_POPPY_BLOCK.get());
 
         this.dropSelf(RubysBlocks.CHERRY_CHEST.get());
         this.dropSelf(RubysBlocks.SPRUCE_CHEST.get());

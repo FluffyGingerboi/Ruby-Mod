@@ -22,7 +22,7 @@ public class RubysEnchantsProvider {
                         items.getOrThrow(ItemTags.ARMOR_ENCHANTABLE),
                         items.getOrThrow(ItemTags.LEG_ARMOR_ENCHANTABLE),
                         5,
-                        2,
+                        1,
                         Enchantment.dynamicCost(5, 7),
                         Enchantment.dynamicCost(25, 7),
                         2,
