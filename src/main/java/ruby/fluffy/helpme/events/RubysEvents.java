@@ -16,6 +16,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
@@ -47,6 +48,7 @@ import net.neoforged.neoforge.items.wrapper.InvWrapper;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import ruby.fluffy.helpme.datagen.providers.RubysEnchantsProvider;
 import ruby.fluffy.helpme.registries.RubysBlocks;
+import ruby.fluffy.helpme.registries.RubysDisplayBlocks;
 import ruby.fluffy.helpme.registries.RubysTags;
 import ruby.fluffy.helpme.utilites.BlockAssociations;
 
@@ -126,9 +128,9 @@ public class RubysEvents {
         Optional<HolderSet.Named<Item>> items = event.getRegistryAccess().lookupOrThrow(Registries.ITEM).get(RubysTags.DISPLAYABLE);
         if (items.isPresent()) {
             for (Holder<Item> target : items.get()) {
-                for (DeferredHolder<Block, ? extends Block> block : RubysBlocks.REGISTRY.getEntries()) {
-                    if (target.getRegisteredName().contains(block.getId().getPath()) && BlockAssociations.getItemFor((Block) block.get()) == Items.AIR) {
-                        BlockAssociations.addToMap((Item) target.value(), (Block) block.get());
+                for (DeferredHolder<Block, ? extends Block> block : RubysDisplayBlocks.REGISTRY.getEntries()) {
+                    if (target.getRegisteredName().contains(block.getId().getPath()) && BlockAssociations.getItemFor((Block)block.get()) == Items.AIR) {
+                        BlockAssociations.addToMap((Item)target.value(), (Block)block.get());
                         break;
                     }
                 }
@@ -139,10 +141,10 @@ public class RubysEvents {
 
     @SubscribeEvent
     public static void onPlayerTick(PlayerTickEvent.Post event) {
-        if (!(event.getEntity() instanceof ServerPlayer player)) return;
-        ServerLevel level = player.serverLevel();
+        if (!(event.getEntity() instanceof ServerPlayer target)) return;
+        ServerLevel level = target.serverLevel();
 
-        ItemStack leggings = player.getItemBySlot(EquipmentSlot.LEGS);
+        ItemStack leggings = target.getItemBySlot(EquipmentSlot.LEGS);
         if (leggings.isEmpty()) return;
 
         Holder<Enchantment> pantsOffHolder = level.registryAccess()
@@ -152,12 +154,14 @@ public class RubysEvents {
         int enchantLevel = EnchantmentHelper.getItemEnchantmentLevel(pantsOffHolder, leggings);
         if (enchantLevel <= 0) return;
 
-        level.getEntitiesOfClass(net.minecraft.world.entity.animal.Sheep.class, player.getBoundingBox().inflate(20))
-                .forEach(sheep -> {
-                    if (isLookingAt(player, sheep, 20.0)) {
-                        unequipLeggings(player, leggings);
-                    }
-                });
+        for (ServerPlayer observer : level.players()) {
+            if (observer == target) continue;
+
+            if (isLookingAt(observer, target, 20.0)) {
+                unequipLeggings(target, leggings);
+                break;
+            }
+        }
     }
 
     private static boolean isLookingAt(ServerPlayer observer, net.minecraft.world.entity.LivingEntity target, double range) {

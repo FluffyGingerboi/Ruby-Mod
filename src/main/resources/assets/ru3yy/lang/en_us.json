@@ -1,6 +1,5 @@
 {
   "itemgroup.ru3yy.blocks": "Blocks",
-  "itemgroup.ru3yy.discs": "Music Discs",
   "itemgroup.ru3yy.items": "Items",
 
   "block.ru3yy.red_lantern": "Red Sea Lantern",
@@ -18,6 +17,18 @@
   "block.ru3yy.magenter_lantern": "Magenter Sea Lantern",
   "block.ru3yy.nyan_lantern": "Nyan Sea Lantern",
   "block.ru3yy.bloock_lantern": "Bloock Sea Lantern",
+
+  "block.ru3yy.poppy_block": "Poppy Block",
+  "block.ru3yy.compacted_poppy_block": "Compacted Poppy Block",
+  "block.ru3yy.double_compacted_poppy_block": "Double Compacted Poppy Block",
+  "block.ru3yy.triple_compacted_poppy_block": "Triple Compacted Poppy Block",
+  "block.ru3yy.quadruple_compacted_poppy_block": "Quadruple Compacted Poppy Block",
+  "block.ru3yy.quintuple_compacted_poppy_block": "Quintuple Compacted Poppy Block",
+  "block.ru3yy.sextuple_compacted_poppy_block": "Sextuple Compacted Poppy Block",
+  "block.ru3yy.septuple_compacted_poppy_block": "Septuple Compacted Poppy Block",
+  "block.ru3yy.octuple_compacted_poppy_block": "Octuple Compacted Poppy Block",
+  "block.ru3yy.nonuple_compacted_poppy_block": "Nonuple Compacted Poppy Block",
+  "block.ru3yy.decuple_compacted_poppy_block": "Decuple Compacted Poppy Block",
 
   "block.ru3yy.cherry_chest": "Cherry Chest",
   "block.ru3yy.spruce_chest": "Spruce Chest",
@@ -41,18 +52,6 @@
   "container.ru3yy.spruce_chest": "Spruce Chest",
   "container.ru3yy.spruce_chest_double": "Large Spruce Chest",
 
-  "item.ru3yy.disc_505": "505",
-  "item.ru3yy.disc_secret_door": "Secret Door",
-  "item.ru3yy.disc_do_i_wanna_know": "Do I Wanna Know",
-  "item.ru3yy.disc_world_caves_in": "As The World Caves In",
-  "item.ru3yy.disc_baby_im_yours": "Baby I'm Yours",
-  "item.ru3yy.disc_crying_lightning": "Crying Lightning",
-  "item.ru3yy.disc_fluorescent_adolescence": "Fluorescent Adolescence",
-  "item.ru3yy.disc_i_wanna_be_yours": "I Wanna Be Yours",
-  "item.ru3yy.disc_my_propeller": "My Propeller",
-  "item.ru3yy.disc_snap_out_of_it": "Snap Out Of It",
-  "item.ru3yy.disc_when_the_sun_goes_down": "When The Sun Goes Down",
-
   "item.ru3yy.bloock_pigment": "Bloock Pigment",
   "item.ru3yy.greype_pigment": "Greype Pigment",
   "item.ru3yy.lit_greype_pigment": "Lit Greype Pigment",
@@ -71,17 +70,5 @@
   "item.ru3yy.lim_pigment": "Lim Pigment",
 
   "item.ru3yy.mortar_and_pestle": "Mortar And Pestle",
-  "item.ru3yy.saw": "Saw",
-
-  "jukebox_song.ru3yy.disc_505": "505 - Arctic Monkeys",
-  "jukebox_song.ru3yy.disc_secret_door": "Secret Door - Arctic Monkeys",
-  "jukebox_song.ru3yy.disc_do_i_wanna_know": "Do I Wanna Know - Arctic Monkeys",
-  "jukebox_song.ru3yy.disc_world_caves_in": "As The World Caves In - Matt Maltese",
-  "jukebox_song.ru3yy.disc_baby_im_yours": "Baby I'm Yours - Arctic Monkeys",
-  "jukebox_song.ru3yy.disc_crying_lightning": "Crying Lightning - Arctic Monkeys",
-  "jukebox_song.ru3yy.disc_fluorescent_adolescence": "Fluorescent Adolescence - Arctic Monkeys",
-  "jukebox_song.ru3yy.disc_i_wanna_be_yours": "I Wanna Be Yours - Arctic Monkeys",
-  "jukebox_song.ru3yy.disc_my_propeller": "My Propeller - Arctic Monkeys",
-  "jukebox_song.ru3yy.disc_snap_out_of_it": "Snap Out Of It - Arctic Monkeys",
-  "jukebox_song.ru3yy.disc_when_the_sun_goes_down": "When The Sun Goes Down - Arctic Monkeys"
+  "item.ru3yy.saw": "Saw"
 }

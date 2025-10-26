@@ -30,7 +30,7 @@ public class DisplayItem extends AbstractEntityItem {
 
     @Override
     public EntityType<? extends LivingEntity> getType() {
-        return (EntityType<? extends LivingEntity>) RubysEntities.DISPLAY.get();
+        return RubysEntities.DISPLAY.get();
     }
 }
 

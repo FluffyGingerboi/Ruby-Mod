@@ -23,4 +23,3 @@ public class MusicBlock extends AbstractItemBlock implements IDisplayBlock, IPil
         return box(2.0, 0.0, 2.0, 14.0, 1.0, 14.0);
     }
 }
-

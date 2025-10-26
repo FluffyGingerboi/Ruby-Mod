@@ -21,10 +21,8 @@ public class RubysDatagen {
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
-        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(event.includeServer(), new RubysDiscProvider(packOutput, event.getLookupProvider()));
         generator.addProvider(event.includeServer(), new RubysDatapackProvider(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
                 List.of(new LootTableProvider.SubProviderEntry(RubysLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));

@@ -10,12 +10,14 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import ruby.fluffy.helpme.RubyMod;
 import ruby.fluffy.helpme.entity.ItemDisplay;
 import ruby.fluffy.helpme.events.RubysManager;
 
 @EventBusSubscriber
 public class RubysEntities {
-    public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, "items_displayed");
+    public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, RubyMod.MOD_ID);
+
     public static final DeferredHolder<EntityType<?>, EntityType<ItemDisplay>> DISPLAY = register(
             "item_display", Builder.of(ItemDisplay::new, MobCategory.MISC).sized(0.45F, 0.75F)
     );
@@ -26,7 +28,7 @@ public class RubysEntities {
 
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
-        event.put((EntityType)DISPLAY.get(), RubysManager.createAttributes().build());
+        event.put(DISPLAY.get(), RubysManager.createAttributes().build());
     }
 }
 

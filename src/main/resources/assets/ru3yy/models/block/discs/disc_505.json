@@ -1,0 +1,7 @@
+{
+	"parent": "ru3yy:block/bases/music_disc_base",
+	"textures": {
+		"0": "ru3yy:block/discs/disc_505",
+		"particle": "ru3yy:block/discs/disc_505"
+	}
+}

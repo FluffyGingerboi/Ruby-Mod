@@ -19,6 +19,7 @@ import ruby.fluffy.helpme.registries.RubysTags;
 import ruby.fluffy.helpme.utilites.BlockAssociations;
 
 public class RubysManager {
+
     public static Builder createAttributes() {
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 1.0)
@@ -34,7 +35,6 @@ public class RubysManager {
         ItemStack stack = player.getItemInHand(handy);
         if (world instanceof ServerLevel lvl && stack.is(RubysTags.DISPLAYABLE)) {
             BlockPos pos = rez.getBlockPos();
-            BlockState state = world.getBlockState(pos);
                 Block targetx = BlockAssociations.getBlockFor(stack.getItem());
                 if (targetx.asItem().useOn(new UseOnContext(player, handy, rez)) != InteractionResult.FAIL) {
                     lvl.playSound(

@@ -15,19 +15,19 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition.Builder;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.HitResult;
 import ruby.fluffy.helpme.utilites.BlockAssociations;
 
 public abstract class AbstractItemBlock extends HorizontalDirectionalBlock implements SimpleWaterloggedBlock {
+
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     public AbstractItemBlock(Properties props) {
         super(props);
         this.registerDefaultState(
-                (BlockState)((BlockState)((BlockState)this.stateDefinition.any()).setValue(FACING, Direction.NORTH)).setValue(WATERLOGGED, false)
+                this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false)
         );
     }
 
@@ -63,7 +63,7 @@ public abstract class AbstractItemBlock extends HorizontalDirectionalBlock imple
     }
 
     public BlockState updateShape(BlockState state, Direction face, BlockState faceState, LevelAccessor world, BlockPos pos, BlockPos poz) {
-        if ((Boolean)state.getValue(WATERLOGGED)) {
+        if (state.getValue(WATERLOGGED)) {
             world.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
         }
 
@@ -72,15 +72,14 @@ public abstract class AbstractItemBlock extends HorizontalDirectionalBlock imple
 
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
-        return (BlockState)((BlockState)this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite())).setValue(WATERLOGGED, flag);
+        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, flag);
     }
 
     protected void createBlockStateDefinition(Builder<Block, BlockState> builder) {
-        builder.add(new Property[]{FACING, WATERLOGGED});
+        builder.add(FACING, WATERLOGGED);
     }
 
     public ItemStack getStackFor() {
         return new ItemStack(BlockAssociations.getItemFor(this));
     }
 }
-

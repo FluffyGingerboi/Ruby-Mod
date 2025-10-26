@@ -29,8 +29,6 @@ public class RubyMod {
         RubysItems.REGISTRY.register(rubyBus);
         RubysItems.ITEMS.register(rubyBus);
         RubysCreativeTabs.REGISTRY.register(rubyBus);
-        RubysSongs.REGISTRY.register(rubyBus);
-        RubysSounds.REGISTRY.register(rubyBus);
         RubysBlocks.registerBlocks(rubyBus);
         RubysItems.registerItems(rubyBus);
         rubyBus.addListener(this::commonSetup);

@@ -30,6 +30,17 @@ public class RubysBlockStatesProvider extends BlockStateProvider {
         blockWithItem(RubysBlocks.PINKY_LANTERN, "lanterns");
         blockWithItem(RubysBlocks.POO_LANTERN, "lanterns");
 
+        blockWithItem(RubysBlocks.POPPY_BLOCK, "poppies");
+        blockWithItem(RubysBlocks.COMPACTED_POPPY_BLOCK, "poppies");
+        blockWithItem(RubysBlocks.DOUBLE_COMPACTED_POPPY_BLOCK, "poppies");
+        blockWithItem(RubysBlocks.TRIPLE_COMPACTED_POPPY_BLOCK, "poppies");
+        blockWithItem(RubysBlocks.QUADRUPLE_COMPACTED_POPPY_BLOCK, "poppies");
+        blockWithItem(RubysBlocks.QUINTUPLE_COMPACTED_POPPY_BLOCK, "poppies");
+        blockWithItem(RubysBlocks.SEXTUPLE_COMPACTED_POPPY_BLOCK, "poppies");
+        blockWithItem(RubysBlocks.SEPTUPLE_COMPACTED_POPPY_BLOCK, "poppies");
+        blockWithItem(RubysBlocks.OCTUPLE_COMPACTED_POPPY_BLOCK, "poppies");
+        blockWithItem(RubysBlocks.NONUPLE_COMPACTED_POPPY_BLOCK, "poppies");
+        blockWithItem(RubysBlocks.DECUPLE_COMPACTED_POPPY_BLOCK , "poppies");
     }
 
     private void blockWithItem(DeferredBlock<?> block, String textureFolder) {

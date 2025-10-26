@@ -62,28 +62,6 @@ public class RubysCreativeTabs {
                     .build()
     );
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RUBYS_DISCS = REGISTRY.register(
-            "discs",
-            () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemgroup.ru3yy.discs"))
-                    .icon(() -> new ItemStack(RubysItems.DISC_505.get()))
-                    .displayItems((parameters, tabData) -> {
-                        tabData.accept(RubysItems.DISC_505.get());
-                        tabData.accept(RubysItems.DISC_SECRET_DOOR.get());
-                        tabData.accept(RubysItems.DISC_DO_I_WANNA_KNOW.get());
-                        tabData.accept(RubysItems.DISC_WORLD_CAVES_IN.get());
-                        tabData.accept(RubysItems.DISC_BABY_IM_YOURS.get());
-                        tabData.accept(RubysItems.DISC_CRYING_LIGHTNING.get());
-                        tabData.accept(RubysItems.DISC_FLUORESCENT_ADOLESCENCE.get());
-                        tabData.accept(RubysItems.DISC_I_WANNA_BE_YOURS.get());
-                        tabData.accept(RubysItems.DISC_MY_PROPELLER.get());
-                        tabData.accept(RubysItems.DISC_SNAP_OUT_OF_IT.get());
-                        tabData.accept(RubysItems.DISC_WHEN_THE_SUN_GOES_DOWN.get());
-                    })
-                    .withSearchBar()
-                    .build()
-    );
-
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RUBYS_ITEMS = REGISTRY.register(
             "items",
             () -> CreativeModeTab.builder()

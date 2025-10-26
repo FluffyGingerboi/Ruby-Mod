@@ -15,7 +15,6 @@ import ruby.fluffy.helpme.items.DisplayItem;
 import ruby.fluffy.helpme.items.RubysBaseItem;
 import ruby.fluffy.helpme.items.RubysBasePersistentItem;
 import ruby.fluffy.helpme.items.SawItem;
-import ruby.fluffy.helpme.items.discs.*;
 import net.minecraft.world.item.Item.Properties;
 
 public class RubysItems {
@@ -66,18 +65,6 @@ public class RubysItems {
 
     public static final DeferredHolder<Item,Item> LOG_STAIRS = block(RubysBlocks.LOG_STAIRS);
 
-    public static final DeferredHolder<Item,Item> DISC_505 = REGISTRY.register("disc_505", FiveOFiveDisc::new);
-    public static final DeferredHolder<Item,Item> DISC_SECRET_DOOR = REGISTRY.register("disc_secret_door", SecretDoorDisc::new);
-    public static final DeferredHolder<Item,Item> DISC_DO_I_WANNA_KNOW = REGISTRY.register("disc_do_i_wanna_know", DoIWannaKnowDisc::new);
-    public static final DeferredHolder<Item,Item> DISC_WORLD_CAVES_IN = REGISTRY.register("disc_world_caves_in", WorldCavesInDisc::new);
-    public static final DeferredHolder<Item,Item> DISC_BABY_IM_YOURS= REGISTRY.register("disc_baby_im_yours", BabyImYoursDisc::new);
-    public static final DeferredHolder<Item,Item> DISC_CRYING_LIGHTNING = REGISTRY.register("disc_crying_lightning", CryingLightningDisc::new);
-    public static final DeferredHolder<Item,Item> DISC_FLUORESCENT_ADOLESCENCE = REGISTRY.register("disc_fluorescent_adolescence", FluorescentAdolescenceDisc::new);
-    public static final DeferredHolder<Item,Item> DISC_I_WANNA_BE_YOURS = REGISTRY.register("disc_i_wanna_be_yours", IWannaBeYoursDisc::new);
-    public static final DeferredHolder<Item,Item> DISC_MY_PROPELLER = REGISTRY.register("disc_my_propeller", MyPropellerDisc::new);
-    public static final DeferredHolder<Item,Item> DISC_SNAP_OUT_OF_IT = REGISTRY.register("disc_snap_out_of_it", SnapOutOfItDisc::new);
-    public static final DeferredHolder<Item,Item> DISC_WHEN_THE_SUN_GOES_DOWN = REGISTRY.register("disc_when_the_sun_goes_down", WhenTheSunGoesDownDisc::new);
-
     public static final DeferredHolder<Item,Item> BLOOCK_PIGMENT = REGISTRY.register("bloock_pigment", RubysBaseItem::new);
     public static final DeferredHolder<Item,Item> GREYPE_PIGMENT = REGISTRY.register("greype_pigment", RubysBaseItem::new);
     public static final DeferredHolder<Item,Item> LIT_GREYPE_PIGMENT = REGISTRY.register("lit_greype_pigment", RubysBaseItem::new);
@@ -113,7 +100,7 @@ public class RubysItems {
 
     public static void setupBlockItems() {
         for (DeferredHolder<Block, ? extends Block> block : RubysDisplayBlocks.REGISTRY.getEntries()) {
-            REGISTRY.register(block.getId().getPath(), () -> new BlockItem((Block)block.get(), createBaseProps(block.getId().getPath())));
+            REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), createBaseProps(block.getId().getPath())));
         }
     }
 

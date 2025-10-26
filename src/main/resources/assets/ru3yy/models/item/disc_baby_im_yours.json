@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "ru3yy:item/discs/leave_before_the_lights_come_on"
-  }
-}
