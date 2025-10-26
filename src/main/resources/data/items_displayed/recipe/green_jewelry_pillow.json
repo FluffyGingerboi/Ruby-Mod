@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "display_pillows",
+  "pattern": [
+    " g ",
+    "sws"
+  ],
+  "key": {
+    "g": {
+      "item": "minecraft:gold_nugget"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "w": {
+      "item": "minecraft:green_wool"
+    }
+  },
+  "result": {
+    "id": "items_displayed:green_jewelry_pillow"
+  }
+}

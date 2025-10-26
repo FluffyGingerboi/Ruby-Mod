@@ -5,7 +5,6 @@ import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.GrassColor;
-import net.minecraft.world.level.biome.Biome;
 import ruby.fluffy.helpme.registries.RubysBlocks;
 
 public class RubysBlockColors {

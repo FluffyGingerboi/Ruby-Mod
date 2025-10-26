@@ -1,0 +1,223 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "ru3yydiscs:disc_505",
+      "required": false
+    },
+
+
+
+
+    "minecraft:iron_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:netherite_ingot",
+    "minecraft:brick",
+    "minecraft:nether_brick",
+    {
+      "id": "minecraft:resin_brick",
+      "required": false
+    },
+    "minecraft:coal",
+    "minecraft:charcoal",
+    "minecraft:amethyst_shard",
+    "minecraft:diamond",
+    "minecraft:emerald",
+    "minecraft:lapis_lazuli",
+    "minecraft:echo_shard",
+    "minecraft:music_disc_11",
+    "minecraft:music_disc_13",
+    "minecraft:music_disc_cat",
+    "minecraft:music_disc_blocks",
+    "minecraft:music_disc_chirp",
+    "minecraft:music_disc_creator",
+    "minecraft:music_disc_creator_music_box",
+    "minecraft:music_disc_far",
+    "minecraft:music_disc_mall",
+    "minecraft:music_disc_mellohi",
+    "minecraft:music_disc_stal",
+    "minecraft:music_disc_strad",
+    "minecraft:music_disc_ward",
+    "minecraft:music_disc_wait",
+    "minecraft:music_disc_pigstep",
+    "minecraft:music_disc_precipice",
+    "minecraft:music_disc_otherside",
+    "minecraft:music_disc_5",
+    "minecraft:music_disc_relic",
+    {
+      "id": "minecraft:music_disc_tears",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_lava_chicken",
+      "required": false
+    },
+    "minecraft:angler_pottery_sherd",
+    "minecraft:archer_pottery_sherd",
+    "minecraft:arms_up_pottery_sherd",
+    "minecraft:blade_pottery_sherd",
+    "minecraft:brewer_pottery_sherd",
+    "minecraft:burn_pottery_sherd",
+    "minecraft:danger_pottery_sherd",
+    "minecraft:explorer_pottery_sherd",
+    "minecraft:flow_pottery_sherd",
+    "minecraft:friend_pottery_sherd",
+    "minecraft:guster_pottery_sherd",
+    "minecraft:heart_pottery_sherd",
+    "minecraft:heartbreak_pottery_sherd",
+    "minecraft:howl_pottery_sherd",
+    "minecraft:miner_pottery_sherd",
+    "minecraft:mourner_pottery_sherd",
+    "minecraft:plenty_pottery_sherd",
+    "minecraft:prize_pottery_sherd",
+    "minecraft:scrape_pottery_sherd",
+    "minecraft:sheaf_pottery_sherd",
+    "minecraft:shelter_pottery_sherd",
+    "minecraft:skull_pottery_sherd",
+    "minecraft:snort_pottery_sherd",
+    "minecraft:netherite_upgrade_smithing_template",
+    "minecraft:bolt_armor_trim_smithing_template",
+    "minecraft:coast_armor_trim_smithing_template",
+    "minecraft:dune_armor_trim_smithing_template",
+    "minecraft:eye_armor_trim_smithing_template",
+    "minecraft:flow_armor_trim_smithing_template",
+    "minecraft:host_armor_trim_smithing_template",
+    "minecraft:raiser_armor_trim_smithing_template",
+    "minecraft:rib_armor_trim_smithing_template",
+    "minecraft:sentry_armor_trim_smithing_template",
+    "minecraft:shaper_armor_trim_smithing_template",
+    "minecraft:silence_armor_trim_smithing_template",
+    "minecraft:snout_armor_trim_smithing_template",
+    "minecraft:spire_armor_trim_smithing_template",
+    "minecraft:tide_armor_trim_smithing_template",
+    "minecraft:vex_armor_trim_smithing_template",
+    "minecraft:ward_armor_trim_smithing_template",
+    "minecraft:wayfinder_armor_trim_smithing_template",
+    "minecraft:wild_armor_trim_smithing_template",
+    {
+      "id": "alexscaves:polarity_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "alexscaves:dinosaur_pottery_sherd",
+      "required": false
+    },
+    {
+      "id": "alexscaves:footprint_pottery_sherd",
+      "required": false
+    },
+    {
+      "id": "alexscaves:guardian_pottery_sherd",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hero_pottery_sherd",
+      "required": false
+    },
+    {
+      "id": "alexscaves:azure_neodymium_ingot",
+      "required": false
+    },
+    {
+      "id": "alexscaves:scarlet_neodymium_ingot",
+      "required": false
+    },
+    {
+      "id": "alexscaves:music_disc_fusion",
+      "required": false
+    },
+    {
+      "id": "alexscaves:music_disc_tasty",
+      "required": false
+    },
+    {
+      "id": "cloudstorage:music_disc_drift",
+      "required": false
+    },
+    {
+      "id": "create:zinc_ingot",
+      "required": false
+    },
+    {
+      "id": "create:brass_ingot",
+      "required": false
+    },
+    {
+      "id": "ecologics:music_disc_coconut",
+      "required": false
+    },
+    {
+      "id": "environmental:music_disc_leaving_home",
+      "required": false
+    },
+    {
+      "id": "environmental:music_disc_slabrave",
+      "required": false
+    },
+    {
+      "id": "friendsandfoes:music_disc_around_the_corner",
+      "required": false
+    },
+    {
+      "id": "galosphere:preserved_template",
+      "required": false
+    },
+    {
+      "id": "galosphere:allurite_shard",
+      "required": false
+    },
+    {
+      "id": "galosphere:lumiere_shard",
+      "required": false
+    },
+    {
+      "id": "kobolds:kobold_template",
+      "required": false
+    },
+    {
+      "id": "kobolds:music_disc_kobblestone",
+      "required": false
+    },
+    {
+      "id": "revotedwildfire:fireproof_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "spawn:crown_pottery_sherd",
+      "required": false
+    },
+    {
+      "id": "spawn:spade_pottery_sherd",
+      "required": false
+    },
+    {
+      "id": "spawn:music_disc_rot",
+      "required": false
+    },
+    {
+      "id": "supplementaries:ash_brick",
+      "required": false
+    },
+    {
+      "id": "supplementaries:music_disc_heave_ho",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:music_disc_atlantis",
+      "required": false
+    },
+    {
+      "id": "vanillabackport:music_disc_tears",
+      "required": false
+    },
+    {
+      "id": "vanillabackport:music_disc_lava_chicken",
+      "required": false
+    },
+    {
+      "id": "vanillabackport:resin_brick",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "items_displayed:block/abstract/abstract_ingot_1",
+	"textures": {
+		"0": "items_displayed:block/ingot/azure_ingot",
+		"particle": "items_displayed:block/ingot/azure_ingot"
+	}
+}

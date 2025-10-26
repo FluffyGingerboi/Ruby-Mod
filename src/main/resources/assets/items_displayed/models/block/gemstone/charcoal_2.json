@@ -1,0 +1,7 @@
+{
+	"parent": "items_displayed:block/abstract/abstract_gemstone_2",
+	"textures": {
+		"0": "items_displayed:block/gemstone/charcoal",
+		"particle": "items_displayed:block/gemstone/charcoal"
+	}
+}

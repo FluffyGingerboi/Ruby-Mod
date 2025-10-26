@@ -1,0 +1,7 @@
+{
+	"parent": "items_displayed:block/abstract/abstract_ingot_4",
+	"textures": {
+		"0": "items_displayed:block/ingot/ash_brick",
+		"particle": "items_displayed:block/ingot/ash_brick"
+	}
+}

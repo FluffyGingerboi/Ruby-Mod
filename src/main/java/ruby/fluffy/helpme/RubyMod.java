@@ -8,12 +8,16 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
-import ruby.fluffy.helpme.registries.*;
+import ruby.fluffy.helpme.items_displayed.init.*;
+import ruby.fluffy.helpme.registries.RubysBlocks;
+import ruby.fluffy.helpme.registries.RubysCreativeTabs;
+import ruby.fluffy.helpme.registries.RubysDataComponents;
+import ruby.fluffy.helpme.registries.RubysItems;
 
 @Mod(RubyMod.MOD_ID)
 public class RubyMod {
@@ -23,7 +27,7 @@ public class RubyMod {
     }
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public RubyMod(IEventBus rubyBus, ModContainer modContainer) {
+    public RubyMod(IEventBus rubyBus, ModContainer rubyContainer) {
         NeoForge.EVENT_BUS.register(this);
 
         RubysItems.REGISTRY.register(rubyBus);
@@ -33,10 +37,16 @@ public class RubyMod {
         RubysItems.registerItems(rubyBus);
         rubyBus.addListener(this::commonSetup);
 
-        RubysEntities.REGISTRY.register(rubyBus);
-        RubysDisplayBlocks.REGISTRY.register(rubyBus);
-        RubysDisplayBlocks.setupBlocks();
-        RubysItems.setupBlockItems();
+        /**
+         * NOT MY CODE, courtesy of Items Displayed {@link https://modrinth.com/mod/items-displayed-forge/versions}
+         **/
+
+        DisplayMobs.REGISTRY.register(rubyBus);
+        DisplayBlocks.REGISTRY.register(rubyBus);
+        DisplayItems.REGISTRY.register(rubyBus);
+        DisplayTabs.REGISTRY.register(rubyBus);
+        DisplayBlocks.setupBlocks();
+        DisplayItems.setupBlockItems();
 
         RubysDataComponents.register(rubyBus);
     }

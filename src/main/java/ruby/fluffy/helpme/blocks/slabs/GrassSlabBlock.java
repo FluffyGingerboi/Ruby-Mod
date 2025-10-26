@@ -1,19 +1,14 @@
 package ruby.fluffy.helpme.blocks.slabs;
 
-import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.tags.FluidTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.SlabType;
-import net.minecraft.world.level.lighting.LightEngine;
 import ruby.fluffy.helpme.registries.RubysBlocks;
-
-import static net.minecraft.world.level.block.state.properties.BlockStateProperties.SNOWY;
 
 public class GrassSlabBlock extends SlabBlock {
     public GrassSlabBlock() {

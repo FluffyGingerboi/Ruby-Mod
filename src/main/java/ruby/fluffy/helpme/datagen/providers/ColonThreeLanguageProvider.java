@@ -6,17 +6,12 @@ import net.minecraft.data.PackOutput;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import net.neoforged.neoforgespi.language.IModInfo;
-import ruby.fluffy.helpme.RubyMod;
-import ruby.fluffy.helpme.registries.RubysBlocks;
 
 import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 public class ColonThreeLanguageProvider extends LanguageProvider {

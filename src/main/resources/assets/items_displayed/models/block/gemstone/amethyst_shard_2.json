@@ -1,0 +1,7 @@
+{
+	"parent": "items_displayed:block/abstract/abstract_crystal_2",
+	"textures": {
+		"0": "items_displayed:block/gemstone/amethyst_shard",
+		"particle": "items_displayed:block/gemstone/amethyst_shard"
+	}
+}
