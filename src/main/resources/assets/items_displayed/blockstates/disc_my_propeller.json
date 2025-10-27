@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "items_displayed:block/discs/humbug"
+      "model": "items_displayed:block/discs/disc_my_propeller"
     },
     "facing=south": {
-      "model": "items_displayed:block/discs/humbug",
+      "model": "items_displayed:block/discs/disc_my_propeller",
       "y": 180
     },
     "facing=west": {
-      "model": "items_displayed:block/discs/humbug",
+      "model": "items_displayed:block/discs/disc_my_propeller",
       "y": 270
     },
     "facing=east": {
-      "model": "items_displayed:block/discs/humbug",
+      "model": "items_displayed:block/discs/disc_my_propeller",
       "y": 90
     }
   }

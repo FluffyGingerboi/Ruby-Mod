@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "items_displayed:block/discs/favourite_worst_nightmare"
+      "model": "items_displayed:block/discs/disc_505"
     },
     "facing=south": {
-      "model": "items_displayed:block/discs/favourite_worst_nightmare",
+      "model": "items_displayed:block/discs/disc_505",
       "y": 180
     },
     "facing=west": {
-      "model": "items_displayed:block/discs/favourite_worst_nightmare",
+      "model": "items_displayed:block/discs/disc_505",
       "y": 270
     },
     "facing=east": {
-      "model": "items_displayed:block/discs/favourite_worst_nightmare",
+      "model": "items_displayed:block/discs/disc_505",
       "y": 90
     }
   }

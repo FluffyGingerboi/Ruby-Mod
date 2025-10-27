@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "items_displayed:block/discs/disc_snap_out_of_it"
+    },
+    "facing=south": {
+      "model": "items_displayed:block/discs/disc_snap_out_of_it",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "items_displayed:block/discs/disc_snap_out_of_it",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "items_displayed:block/discs/disc_snap_out_of_it",
+      "y": 90
+    }
+  }
+}

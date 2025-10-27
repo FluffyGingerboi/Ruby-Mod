@@ -68,7 +68,7 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> GREYPE_PIGMENT = REGISTRY.register("greype_pigment", RubysBaseItem::new);
     public static final DeferredHolder<Item,Item> LIT_GREYPE_PIGMENT = REGISTRY.register("lit_greype_pigment", RubysBaseItem::new);
     public static final DeferredHolder<Item,Item> WIT_PIGMENT = REGISTRY.register("wit_pigment", RubysBaseItem::new);
-    public static final DeferredHolder<Item,Item> RED_PIGMENT = REGISTRY.register("red_pigment", RubysBaseItem::new);
+    public static final DeferredHolder<Item,Item> RED_PIGMENT = REGISTRY.register("period_pigment", RubysBaseItem::new);
     public static final DeferredHolder<Item,Item> ORANG_PIGMENT = REGISTRY.register("orang_pigment", RubysBaseItem::new);
     public static final DeferredHolder<Item,Item> YELLER_PIGMENT = REGISTRY.register("yeller_pigment", RubysBaseItem::new);
     public static final DeferredHolder<Item,Item> GREN_PIGMENT = REGISTRY.register("gren_pigment", RubysBaseItem::new);

@@ -1,0 +1,7 @@
+{
+	"parent": "items_displayed:block/bases/music_disc_base",
+	"textures": {
+		"0": "items_displayed:block/discs/disc_my_propeller",
+		"particle": "items_displayed:block/discs/disc_my_propeller"
+	}
+}

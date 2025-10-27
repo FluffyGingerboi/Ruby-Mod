@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "ru3yy:block/nyan_lantern"
+      "model": "ru3yy:block/lanterns/nyan_lantern"
     }
   }
 }

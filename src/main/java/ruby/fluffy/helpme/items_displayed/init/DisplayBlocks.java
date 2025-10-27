@@ -23,6 +23,12 @@ public class DisplayBlocks {
            REGISTRY.register("disc_secret_door", () -> new MusicBlock(createBlock("disc_secret_door", SoundType.DECORATED_POT)));
            REGISTRY.register("disc_crying_lightning", () -> new MusicBlock(createBlock("disc_crying_lightning", SoundType.DECORATED_POT)));
            REGISTRY.register("disc_my_propeller", () -> new MusicBlock(createBlock("disc_my_propeller", SoundType.DECORATED_POT)));
+           REGISTRY.register("disc_do_i_wanna_know", () -> new MusicBlock(createBlock("disc_do_i_wanna_know", SoundType.DECORATED_POT)));
+           REGISTRY.register("disc_i_wanna_be_yours", () -> new MusicBlock(createBlock("disc_i_wanna_be_yours", SoundType.DECORATED_POT)));
+           REGISTRY.register("disc_snap_out_of_it", () -> new MusicBlock(createBlock("disc_snap_out_of_it", SoundType.DECORATED_POT)));
+           REGISTRY.register("disc_when_the_sun_goes_down", () -> new MusicBlock(createBlock("disc_when_the_sun_goes_down", SoundType.DECORATED_POT)));
+           REGISTRY.register("disc_baby_im_yours", () -> new MusicBlock(createBlock("disc_baby_im_yours", SoundType.DECORATED_POT)));
+           REGISTRY.register("disc_world_caves_in", () -> new MusicBlock(createBlock("disc_world_caves_in", SoundType.DECORATED_POT)));
         }
     }
 

@@ -1,0 +1,7 @@
+{
+	"parent": "items_displayed:block/bases/music_disc_base",
+	"textures": {
+		"0": "items_displayed:block/discs/disc_when_the_sun_goes_down",
+		"particle": "items_displayed:block/discs/disc_when_the_sun_goes_down"
+	}
+}

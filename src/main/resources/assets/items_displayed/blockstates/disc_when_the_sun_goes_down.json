@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "items_displayed:block/discs/disc_when_the_sun_goes_down"
+    },
+    "facing=south": {
+      "model": "items_displayed:block/discs/disc_when_the_sun_goes_down",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "items_displayed:block/discs/disc_when_the_sun_goes_down",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "items_displayed:block/discs/disc_when_the_sun_goes_down",
+      "y": 90
+    }
+  }
+}

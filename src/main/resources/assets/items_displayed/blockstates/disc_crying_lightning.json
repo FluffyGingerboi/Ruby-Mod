@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "items_displayed:block/discs/humbug"
+      "model": "items_displayed:block/discs/disc_crying_lightning"
     },
     "facing=south": {
-      "model": "items_displayed:block/discs/humbug",
+      "model": "items_displayed:block/discs/disc_crying_lightning",
       "y": 180
     },
     "facing=west": {
-      "model": "items_displayed:block/discs/humbug",
+      "model": "items_displayed:block/discs/disc_crying_lightning",
       "y": 270
     },
     "facing=east": {
-      "model": "items_displayed:block/discs/humbug",
+      "model": "items_displayed:block/discs/disc_crying_lightning",
       "y": 90
     }
   }

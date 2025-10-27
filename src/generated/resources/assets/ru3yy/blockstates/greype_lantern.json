@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "ru3yy:block/greype_lantern"
+      "model": "ru3yy:block/lanterns/greype_lantern"
     }
   }
 }

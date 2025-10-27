@@ -21,6 +21,30 @@
       "id": "ru3yydiscs:disc_my_propeller",
       "required": false
     },
+    {
+      "id": "ru3yydiscs:disc_do_i_wanna_know",
+      "required": false
+    },
+    {
+      "id": "ru3yydiscs:disc_i_wanna_be_yours",
+      "required": false
+    },
+    {
+      "id": "ru3yydiscs:disc_snap_out_of_it",
+      "required": false
+    },
+    {
+      "id": "ru3yydiscs:disc_as_the_sun_goes_down",
+      "required": false
+    },
+    {
+      "id": "ru3yydiscs:disc_world_caves_in",
+      "required": false
+    },
+    {
+      "id": "ru3yydiscs:disc_baby_im_yours",
+      "required": false
+    },
 
 
 

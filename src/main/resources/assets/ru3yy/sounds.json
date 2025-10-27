@@ -1,7 +1,18 @@
 {
-  "disc_505_break_1": {
+  "disc_505_break": {
     "sounds": [
-      "ru3yy:disc_505_break_1"
+      "ru3yy:discs/disc_505/disc_505_break_1",
+      "ru3yy:discs/disc_505/disc_505_break_2",
+      "ru3yy:discs/disc_505/disc_505_break_3",
+      "ru3yy:discs/disc_505/disc_505_break_4"
+    ]
+  },
+  "disc_505_place": {
+    "sounds": [
+      "ru3yy:discs/disc_505/disc_505_place_1",
+      "ru3yy:discs/disc_505/disc_505_place_2",
+      "ru3yy:discs/disc_505/disc_505_place_3",
+      "ru3yy:discs/disc_505/disc_505_place_4"
     ]
   }
 }

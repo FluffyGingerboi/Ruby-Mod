@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "items_displayed:block/discs/disc_world_caves_in"
+    },
+    "facing=south": {
+      "model": "items_displayed:block/discs/disc_world_caves_in",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "items_displayed:block/discs/disc_world_caves_in",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "items_displayed:block/discs/disc_world_caves_in",
+      "y": 90
+    }
+  }
+}

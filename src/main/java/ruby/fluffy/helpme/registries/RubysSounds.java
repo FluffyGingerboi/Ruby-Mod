@@ -13,10 +13,18 @@ public class RubysSounds {
             RubyMod.MOD_ID
     );
 
-    public static final DeferredHolder<SoundEvent, SoundEvent> DISC_505_BREAK_1 = REGISTRY.register(
-            "disc_505_break_1",
+    public static final DeferredHolder<SoundEvent, SoundEvent> DISC_505_BREAK = REGISTRY.register(
+            "disc_505_break",
+            () -> SoundEvent.createFixedRangeEvent(
+                    RubyMod.id(
+                            "disc_505_break"),
+            1f)
+    );
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> DISC_505_PLACE = REGISTRY.register(
+            "disc_505_place",
             () -> SoundEvent.createVariableRangeEvent(
                     RubyMod.id(
-                            "disc_505_break_1"))
+                            "disc_505_place"))
     );
 }
