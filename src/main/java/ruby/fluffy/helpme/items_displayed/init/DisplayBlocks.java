@@ -9,6 +9,8 @@ import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ruby.fluffy.helpme.items_displayed.block.*;
+import ruby.fluffy.helpme.registries.RubysSoundTypes;
+import ruby.fluffy.helpme.registries.RubysSounds;
 
 public class DisplayBlocks {
 
@@ -16,7 +18,11 @@ public class DisplayBlocks {
 
     public static void rubysBlocks() {
         if (ModList.get().isLoaded("ru3yydiscs")) {
-            REGISTRY.register("disc_505", () -> new MusicBlock(createBlock("disc_505", SoundType.DECORATED_POT)));
+           REGISTRY.register("disc_505", () -> new MusicBlock(createBlock("disc_505", RubysSoundTypes.DISC_505)));
+           REGISTRY.register("disc_fluorescent_adolescence", () -> new MusicBlock(createBlock("disc_fluorescent_adolescence", SoundType.DECORATED_POT)));
+           REGISTRY.register("disc_secret_door", () -> new MusicBlock(createBlock("disc_secret_door", SoundType.DECORATED_POT)));
+           REGISTRY.register("disc_crying_lightning", () -> new MusicBlock(createBlock("disc_crying_lightning", SoundType.DECORATED_POT)));
+           REGISTRY.register("disc_my_propeller", () -> new MusicBlock(createBlock("disc_my_propeller", SoundType.DECORATED_POT)));
         }
     }
 

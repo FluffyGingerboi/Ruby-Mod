@@ -5,6 +5,22 @@
       "id": "ru3yydiscs:disc_505",
       "required": false
     },
+    {
+      "id": "ru3yydiscs:disc_fluorescent_adolescence",
+      "required": false
+    },
+    {
+      "id": "ru3yydiscs:disc_secret_door",
+      "required": false
+    },
+    {
+      "id": "ru3yydiscs:disc_crying_lightning",
+      "required": false
+    },
+    {
+      "id": "ru3yydiscs:disc_my_propeller",
+      "required": false
+    },
 
 
 

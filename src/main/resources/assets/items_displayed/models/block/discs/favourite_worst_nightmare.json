@@ -1,0 +1,7 @@
+{
+	"parent": "items_displayed:block/bases/music_disc_base",
+	"textures": {
+		"0": "items_displayed:block/discs/favourite_worst_nightmare",
+		"particle": "items_displayed:block/discs/favourite_worst_nightmare"
+	}
+}

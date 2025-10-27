@@ -14,10 +14,7 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
 import ruby.fluffy.helpme.items_displayed.init.*;
-import ruby.fluffy.helpme.registries.RubysBlocks;
-import ruby.fluffy.helpme.registries.RubysCreativeTabs;
-import ruby.fluffy.helpme.registries.RubysDataComponents;
-import ruby.fluffy.helpme.registries.RubysItems;
+import ruby.fluffy.helpme.registries.*;
 
 @Mod(RubyMod.MOD_ID)
 public class RubyMod {
@@ -31,6 +28,7 @@ public class RubyMod {
         NeoForge.EVENT_BUS.register(this);
 
         RubysItems.REGISTRY.register(rubyBus);
+        RubysSounds.REGISTRY.register(rubyBus);
         RubysItems.ITEMS.register(rubyBus);
         RubysCreativeTabs.REGISTRY.register(rubyBus);
         RubysBlocks.registerBlocks(rubyBus);
