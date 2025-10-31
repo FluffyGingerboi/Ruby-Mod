@@ -5,14 +5,217 @@
       "ru3yy:discs/disc_505/disc_505_break_2",
       "ru3yy:discs/disc_505/disc_505_break_3",
       "ru3yy:discs/disc_505/disc_505_break_4"
-    ]
+    ],
+    "stream": true
   },
+
   "disc_505_place": {
     "sounds": [
       "ru3yy:discs/disc_505/disc_505_place_1",
       "ru3yy:discs/disc_505/disc_505_place_2",
       "ru3yy:discs/disc_505/disc_505_place_3",
       "ru3yy:discs/disc_505/disc_505_place_4"
-    ]
+    ],
+    "stream": true
+  },
+
+  "disc_fluorescent_adolescence_break": {
+    "sounds": [
+      "ru3yy:discs/disc_fluorescent_adolescence/disc_fluorescent_adolescence_break_1",
+      "ru3yy:discs/disc_fluorescent_adolescence/disc_fluorescent_adolescence_break_2",
+      "ru3yy:discs/disc_fluorescent_adolescence/disc_fluorescent_adolescence_break_3",
+      "ru3yy:discs/disc_fluorescent_adolescence/disc_fluorescent_adolescence_break_4"
+    ],
+    "stream": true
+  },
+
+  "disc_fluorescent_adolescence_place": {
+    "sounds": [
+      "ru3yy:discs/disc_fluorescent_adolescence/disc_fluorescent_adolescence_place_1",
+      "ru3yy:discs/disc_fluorescent_adolescence/disc_fluorescent_adolescence_place_2",
+      "ru3yy:discs/disc_fluorescent_adolescence/disc_fluorescent_adolescence_place_3",
+      "ru3yy:discs/disc_fluorescent_adolescence/disc_fluorescent_adolescence_place_4"
+    ],
+    "stream": true
+  },
+
+  "disc_secret_door_break": {
+    "sounds": [
+      "ru3yy:discs/disc_secret_door/disc_secret_door_break_1",
+      "ru3yy:discs/disc_secret_door/disc_secret_door_break_2",
+      "ru3yy:discs/disc_secret_door/disc_secret_door_break_3",
+      "ru3yy:discs/disc_secret_door/disc_secret_door_break_4"
+    ],
+    "stream": true
+  },
+
+  "disc_secret_door_place": {
+    "sounds": [
+      "ru3yy:discs/disc_secret_door/disc_secret_door_place_1",
+      "ru3yy:discs/disc_secret_door/disc_secret_door_place_2",
+      "ru3yy:discs/disc_secret_door/disc_secret_door_place_3",
+      "ru3yy:discs/disc_secret_door/disc_secret_door_place_4"
+    ],
+    "stream": true
+  },
+
+  "disc_crying_lightning_break": {
+    "sounds": [
+      "ru3yy:discs/disc_crying_lightning/disc_crying_lightning_break_1",
+      "ru3yy:discs/disc_crying_lightning/disc_crying_lightning_break_2",
+      "ru3yy:discs/disc_crying_lightning/disc_crying_lightning_break_3",
+      "ru3yy:discs/disc_crying_lightning/disc_crying_lightning_break_4"
+    ],
+    "stream": true
+  },
+
+  "disc_crying_lightning_place": {
+    "sounds": [
+      "ru3yy:discs/disc_crying_lightning/disc_crying_lightning_place_1",
+      "ru3yy:discs/disc_crying_lightning/disc_crying_lightning_place_2",
+      "ru3yy:discs/disc_crying_lightning/disc_crying_lightning_place_3",
+      "ru3yy:discs/disc_crying_lightning/disc_crying_lightning_place_4"
+    ],
+    "stream": true
+  },
+
+  "disc_my_propeller_break": {
+    "sounds": [
+      "ru3yy:discs/disc_my_propeller/disc_my_propeller_break_1",
+      "ru3yy:discs/disc_my_propeller/disc_my_propeller_break_2",
+      "ru3yy:discs/disc_my_propeller/disc_my_propeller_break_3",
+      "ru3yy:discs/disc_my_propeller/disc_my_propeller_break_4"
+    ],
+    "stream": true
+  },
+
+  "disc_my_propeller_place": {
+    "sounds": [
+      "ru3yy:discs/disc_my_propeller/disc_my_propeller_place_1",
+      "ru3yy:discs/disc_my_propeller/disc_my_propeller_place_2",
+      "ru3yy:discs/disc_my_propeller/disc_my_propeller_place_3",
+      "ru3yy:discs/disc_my_propeller/disc_my_propeller_place_4"
+    ],
+    "stream": true
+  },
+
+  "disc_do_i_wanna_know_break": {
+    "sounds": [
+      "ru3yy:discs/disc_do_i_wanna_know/disc_do_i_wanna_know_break_1",
+      "ru3yy:discs/disc_do_i_wanna_know/disc_do_i_wanna_know_break_2",
+      "ru3yy:discs/disc_do_i_wanna_know/disc_do_i_wanna_know_break_3",
+      "ru3yy:discs/disc_do_i_wanna_know/disc_do_i_wanna_know_break_4"
+    ],
+    "stream": true
+  },
+
+  "disc_do_i_wanna_know_place": {
+    "sounds": [
+      "ru3yy:discs/disc_do_i_wanna_know/disc_do_i_wanna_know_place_1",
+      "ru3yy:discs/disc_do_i_wanna_know/disc_do_i_wanna_know_place_2",
+      "ru3yy:discs/disc_do_i_wanna_know/disc_do_i_wanna_know_place_3",
+      "ru3yy:discs/disc_do_i_wanna_know/disc_do_i_wanna_know_place_4"
+    ],
+    "stream": true
+  },
+
+  "disc_i_wanna_be_yours_break": {
+    "sounds": [
+      "ru3yy:discs/disc_i_wanna_be_yours/disc_i_wanna_be_yours_break_1",
+      "ru3yy:discs/disc_i_wanna_be_yours/disc_i_wanna_be_yours_break_2",
+      "ru3yy:discs/disc_i_wanna_be_yours/disc_i_wanna_be_yours_break_3",
+      "ru3yy:discs/disc_i_wanna_be_yours/disc_i_wanna_be_yours_break_4"
+    ],
+    "stream": true
+  },
+
+  "disc_i_wanna_be_yours_place": {
+    "sounds": [
+      "ru3yy:discs/disc_i_wanna_be_yours/disc_i_wanna_be_yours_place_1",
+      "ru3yy:discs/disc_i_wanna_be_yours/disc_i_wanna_be_yours_place_2",
+      "ru3yy:discs/disc_i_wanna_be_yours/disc_i_wanna_be_yours_place_3",
+      "ru3yy:discs/disc_i_wanna_be_yours/disc_i_wanna_be_yours_place_4"
+    ],
+    "stream": true
+  },
+
+  "disc_snap_out_of_it_break": {
+    "sounds": [
+      "ru3yy:discs/disc_snap_out_of_it/disc_snap_out_of_it_break_1",
+      "ru3yy:discs/disc_snap_out_of_it/disc_snap_out_of_it_break_2",
+      "ru3yy:discs/disc_snap_out_of_it/disc_snap_out_of_it_break_3",
+      "ru3yy:discs/disc_snap_out_of_it/disc_snap_out_of_it_break_4"
+    ],
+    "stream": true
+  },
+
+  "disc_snap_out_of_it_place": {
+    "sounds": [
+      "ru3yy:discs/disc_snap_out_of_it/disc_snap_out_of_it_place_1",
+      "ru3yy:discs/disc_snap_out_of_it/disc_snap_out_of_it_place_2",
+      "ru3yy:discs/disc_snap_out_of_it/disc_snap_out_of_it_place_3",
+      "ru3yy:discs/disc_snap_out_of_it/disc_snap_out_of_it_place_4"
+    ],
+    "stream": true
+  },
+
+  "disc_when_the_sun_goes_down_break": {
+    "sounds": [
+      "ru3yy:discs/disc_when_the_sun_goes_down/disc_when_the_sun_goes_down_break_1",
+      "ru3yy:discs/disc_when_the_sun_goes_down/disc_when_the_sun_goes_down_break_2",
+      "ru3yy:discs/disc_when_the_sun_goes_down/disc_when_the_sun_goes_down_break_3",
+      "ru3yy:discs/disc_when_the_sun_goes_down/disc_when_the_sun_goes_down_break_4"
+    ],
+    "stream": true
+  },
+
+  "disc_when_the_sun_goes_down_place": {
+    "sounds": [
+      "ru3yy:discs/disc_when_the_sun_goes_down/disc_when_the_sun_goes_down_place_1",
+      "ru3yy:discs/disc_when_the_sun_goes_down/disc_when_the_sun_goes_down_place_2",
+      "ru3yy:discs/disc_when_the_sun_goes_down/disc_when_the_sun_goes_down_place_3",
+      "ru3yy:discs/disc_when_the_sun_goes_down/disc_when_the_sun_goes_down_place_4"
+    ],
+    "stream": true
+  },
+
+  "disc_baby_im_yours_break": {
+    "sounds": [
+      "ru3yy:discs/disc_baby_im_yours/disc_baby_im_yours_break_1",
+      "ru3yy:discs/disc_baby_im_yours/disc_baby_im_yours_break_2",
+      "ru3yy:discs/disc_baby_im_yours/disc_baby_im_yours_break_3",
+      "ru3yy:discs/disc_baby_im_yours/disc_baby_im_yours_break_4"
+    ],
+    "stream": true
+  },
+
+  "disc_baby_im_yours_place": {
+    "sounds": [
+      "ru3yy:discs/disc_baby_im_yours/disc_baby_im_yours_place_1",
+      "ru3yy:discs/disc_baby_im_yours/disc_baby_im_yours_place_2",
+      "ru3yy:discs/disc_baby_im_yours/disc_baby_im_yours_place_3",
+      "ru3yy:discs/disc_baby_im_yours/disc_baby_im_yours_place_4"
+    ],
+    "stream": true
+  },
+
+  "disc_as_the_world_caves_in_break": {
+    "sounds": [
+      "ru3yy:discs/disc_as_the_world_caves_in/disc_as_the_world_caves_in_break_1",
+      "ru3yy:discs/disc_as_the_world_caves_in/disc_as_the_world_caves_in_break_2",
+      "ru3yy:discs/disc_as_the_world_caves_in/disc_as_the_world_caves_in_break_3",
+      "ru3yy:discs/disc_as_the_world_caves_in/disc_as_the_world_caves_in_break_4"
+    ],
+    "stream": true
+  },
+
+  "disc_as_the_world_caves_in_place": {
+    "sounds": [
+      "ru3yy:discs/disc_as_the_world_caves_in/disc_as_the_world_caves_in_place_1",
+      "ru3yy:discs/disc_as_the_world_caves_in/disc_as_the_world_caves_in_place_2",
+      "ru3yy:discs/disc_as_the_world_caves_in/disc_as_the_world_caves_in_place_3",
+      "ru3yy:discs/disc_as_the_world_caves_in/disc_as_the_world_caves_in_place_4"
+    ],
+    "stream": true
   }
 }

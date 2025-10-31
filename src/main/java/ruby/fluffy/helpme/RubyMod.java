@@ -9,6 +9,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -45,11 +46,10 @@ public class RubyMod {
         DisplayTabs.REGISTRY.register(rubyBus);
         DisplayBlocks.setupBlocks();
         DisplayItems.setupBlockItems();
-
-        RubysDataComponents.register(rubyBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        LOGGER.info("I love you cookie, I always will :heart: :3");
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(
                     RubysBlocks.FLOWERING_OAK_SAPLING.getId(),
@@ -60,6 +60,6 @@ public class RubyMod {
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        LOGGER.info("Blame ruby chat");
+        LOGGER.info("She is sooooo cute am I right? If you don't agree I am legally obligated and allowed to murder you :3");
     }
 }
