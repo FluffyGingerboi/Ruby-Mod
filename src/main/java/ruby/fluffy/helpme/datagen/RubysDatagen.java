@@ -8,10 +8,7 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import ruby.fluffy.helpme.datagen.providers.ColonThreeLanguageProvider;
-import ruby.fluffy.helpme.datagen.providers.RubysBlockStatesProvider;
-import ruby.fluffy.helpme.datagen.providers.RubysDatapackProvider;
-import ruby.fluffy.helpme.datagen.providers.RubysLootTableProvider;
+import ruby.fluffy.helpme.datagen.providers.*;
 
 import java.util.Collections;
 import java.util.List;
@@ -30,5 +27,6 @@ public class RubysDatagen {
                 List.of(new LootTableProvider.SubProviderEntry(RubysLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
         generator.addProvider(event.includeServer(), new ColonThreeLanguageProvider(packOutput));
         generator.addProvider(event.includeServer(), new RubysBlockStatesProvider(packOutput, event.getExistingFileHelper()));
+        generator.addProvider(event.includeServer(), new RubysRecipesProvider(packOutput, lookupProvider));
     }
 }

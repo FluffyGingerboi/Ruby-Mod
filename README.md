@@ -3,4 +3,4 @@ Wood variant items (Campfires, chests, crafting tables, ect)
 Grass slabs become snowy when there's a snow layer on top
 Shearful enchant (more wool for shearing)
 Rename items for free
-Kiln recipes for glass, concrete powder, terricotta, bricks, maybe make clay items? (Sounds cool)
+Horse and squid meat
