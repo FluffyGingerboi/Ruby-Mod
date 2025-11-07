@@ -1,0 +1,22 @@
+package ruby.fluffy.helpme.displays.screens;
+
+import net.minecraft.client.gui.screens.recipebook.AbstractFurnaceRecipeBookComponent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity;
+
+import java.util.Set;
+
+public class KilnBookRecipeScreen extends AbstractFurnaceRecipeBookComponent {
+    private static final Component LABEL = Component.translatable("gui.recipebook.toggleRecipes.firable");
+
+    @Override
+    protected Set<Item> getFuelItems() {
+        return AbstractFurnaceBlockEntity.getFuel().keySet();
+    }
+
+    @Override
+    protected Component getRecipeFilterName() {
+        return LABEL;
+    }
+}

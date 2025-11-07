@@ -34,6 +34,9 @@ public class RubyMod {
         RubysCreativeTabs.REGISTRY.register(rubyBus);
         RubysBlocks.registerBlocks(rubyBus);
         RubysItems.registerItems(rubyBus);
+        RubysRecipes.SERIALIZERS.register(rubyBus);
+        RubysRecipes.TYPES.register(rubyBus);
+        RubysMenus.MENUS.register(rubyBus);
         rubyBus.addListener(this::commonSetup);
 
         /**

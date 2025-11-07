@@ -16,10 +16,6 @@ public class RubysChestBlockEntity extends ChestBlockEntity {
         super(RubysBlocks.MORE_CHEST_BLOCK_ENTITY.get(), blockPos, blockState);
     }
 
-    public RubysChestBlockEntity(BlockEntityType<?> type, BlockPos blockPos, BlockState blockState) {
-        super(type, blockPos, blockState);
-    }
-
     @Override
     protected @NotNull Component getDefaultName() {
         return Component.translatable("container.ru3yy." + getBlock().woodType + "_chest");

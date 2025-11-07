@@ -50,6 +50,8 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> NONUPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.NONUPLE_COMPACTED_POPPY_BLOCK);
     public static final DeferredHolder<Item,Item> DECUPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.DECUPLE_COMPACTED_POPPY_BLOCK);
 
+    public static final DeferredHolder<Item,Item> COBBLESTONE_KILN = block(RubysBlocks.COBBLESTONE_KILN);
+
     public static final DeferredHolder<Item,Item> FLOWERING_OAK_LEAVES = block(RubysBlocks.FLOWERING_OAK_LEAVES);
 
     public static final DeferredHolder<Item,Item> FLOWERING_OAK_SAPLING = block(RubysBlocks.FLOWERING_OAK_SAPLING);

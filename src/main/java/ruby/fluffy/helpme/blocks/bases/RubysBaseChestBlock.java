@@ -66,18 +66,8 @@ public class RubysBaseChestBlock extends ChestBlock {
 
     public final String woodType;
 
-    public RubysBaseChestBlock(MapColor colour, String chestType) {
-        super(Properties.ofFullCopy(Blocks.CHEST).mapColor(colour), () -> RubysBlocks.MORE_CHEST_BLOCK_ENTITY.get());
-        this.woodType = chestType;
-    }
-
     public RubysBaseChestBlock(MapColor colour, SoundType sound, String chestType) {
         super(Properties.ofFullCopy(Blocks.CHEST).mapColor(colour).sound(sound), () -> RubysBlocks.MORE_CHEST_BLOCK_ENTITY.get());
-        this.woodType = chestType;
-    }
-
-    public RubysBaseChestBlock(BlockBehaviour.Properties properties, Supplier<BlockEntityType<? extends ChestBlockEntity>> supplier, String chestType) {
-        super(properties, supplier);
         this.woodType = chestType;
     }
 

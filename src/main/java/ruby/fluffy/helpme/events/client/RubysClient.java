@@ -8,7 +8,10 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import ruby.fluffy.helpme.displays.screens.KilnScreen;
 import ruby.fluffy.helpme.registries.RubysBlocks;
+import ruby.fluffy.helpme.registries.RubysMenus;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class RubysClient {
@@ -26,5 +29,10 @@ public class RubysClient {
     @SubscribeEvent
     public static void doClientStuff(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(RubysBlocks.MORE_CHEST_BLOCK_ENTITY.get(), ChestRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void screenSetup(RegisterMenuScreensEvent event) {
+        event.register(RubysMenus.KILN_MENU.get(), KilnScreen::new);
     }
 }

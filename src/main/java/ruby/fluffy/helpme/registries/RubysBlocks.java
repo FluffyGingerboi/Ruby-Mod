@@ -10,10 +10,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ruby.fluffy.helpme.RubyMod;
-import ruby.fluffy.helpme.blocks.FloweringOakLeavesBlock;
-import ruby.fluffy.helpme.blocks.FloweringOakSaplingBlock;
-import ruby.fluffy.helpme.blocks.LogStairsBlock;
-import ruby.fluffy.helpme.blocks.PottedFloweringOakSaplingBlock;
+import ruby.fluffy.helpme.blocks.*;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseChestBlock;
 import ruby.fluffy.helpme.blocks.bases.RubysBaseLanternBlock;
 import ruby.fluffy.helpme.blocks.bases.RubysBasePoppyBlock;
@@ -23,6 +20,7 @@ import ruby.fluffy.helpme.blocks.slabs.GrassSlabBlock;
 import ruby.fluffy.helpme.blocks.slabs.GravelSlabBlock;
 import ruby.fluffy.helpme.blocks.slabs.SandSlabBlock;
 import ruby.fluffy.helpme.entities.block.RubysChestBlockEntity;
+import ruby.fluffy.helpme.entities.block.RubysKilnBlockEntity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,20 +76,28 @@ public class RubysBlocks {
     public static final DeferredBlock<Block> CHERRY_CHEST = registerChest("cherry", () -> new RubysBaseChestBlock(MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, "cherry"));
     public static final DeferredBlock<Block> SPRUCE_CHEST = registerChest("spruce", () -> new RubysBaseChestBlock(MapColor.TERRACOTTA_BROWN, SoundType.WOOD, "spruce"));
 
+    public static final DeferredBlock<Block> COBBLESTONE_KILN = registerKiln("", () -> new RubysKilnBlock(MapColor.TERRACOTTA_WHITE, SoundType.STONE));
+
     public static final DeferredBlock<Block> POTTED_FLOWERING_OAK_SAPLING =
             BLOCKS.register("potted_flowering_oak_sapling",
                     () -> new PottedFloweringOakSaplingBlock(FLOWERING_OAK_SAPLING));
 
-
     public static Supplier<BlockEntityType<RubysChestBlockEntity>> MORE_CHEST_BLOCK_ENTITY;
-    public static final List<DeferredBlock<Block>> more_chest = new ArrayList<>();
+    public static Supplier<BlockEntityType<RubysKilnBlockEntity>> KILN_BLOCK_ENTITY;
+    public static final List<DeferredBlock<Block>> chest = new ArrayList<>();
+    public static final List<DeferredBlock<Block>> kiln = new ArrayList<>();
 
     public static void registerBlocks(IEventBus modBus) {
-        addToArray(CHERRY_CHEST);
-        addToArray(SPRUCE_CHEST);
+        addToChestArray(CHERRY_CHEST);
+        addToChestArray(SPRUCE_CHEST);
+
+        addToKilnArray(COBBLESTONE_KILN);
 
         MORE_CHEST_BLOCK_ENTITY = BLOCKS_ENTITIES.register("chest_tile",
-                () -> BlockEntityType.Builder.of(RubysChestBlockEntity::new, more_chest.stream().map(DeferredBlock::get).toArray(Block[]::new)).build(null));
+                () -> BlockEntityType.Builder.of(RubysChestBlockEntity::new, chest.stream().map(DeferredBlock::get).toArray(Block[]::new)).build(null));
+
+        KILN_BLOCK_ENTITY = BLOCKS_ENTITIES.register("kiln_tile",
+                () -> BlockEntityType.Builder.of(RubysKilnBlockEntity::new, kiln.stream().map(DeferredBlock::get).toArray(Block[]::new)).build(null));
 
         BLOCKS.register(modBus);
         BLOCKS_ENTITIES.register(modBus);
@@ -101,7 +107,15 @@ public class RubysBlocks {
         return BLOCKS.register(name + "_chest", block);
     }
 
-    private static void addToArray(DeferredBlock<Block> chest) {
-        more_chest.add(chest);
+    private static DeferredBlock<Block> registerKiln(String name, Supplier<Block> block) {
+        return BLOCKS.register(name + "kiln", block);
+    }
+
+    private static void addToChestArray(DeferredBlock<Block> chests) {
+        chest.add(chests);
+    }
+
+    private static void addToKilnArray(DeferredBlock<Block> kilns) {
+        kiln.add(kilns);
     }
 }
