@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lime_pigment": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ru3yy:lim_pigment"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ru3yy:dye_lantern_lime"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lime_pigment"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ru3yy:dye_lantern_lime"
+    ]
+  }
+}

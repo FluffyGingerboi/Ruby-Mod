@@ -1,0 +1,13 @@
+{
+  "type": "ru3yy:undye_item",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ru3yy:enameled_chainmail_helmet"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:chainmail_helmet"
+  }
+}

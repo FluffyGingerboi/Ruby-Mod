@@ -73,7 +73,7 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.LIT_GREYPE_PIGMENT.get());
                         tabData.accept(RubysItems.WIT_PIGMENT.get());
                         tabData.accept(RubysItems.POO_PIGMENT.get());
-                        tabData.accept(RubysItems.RED_PIGMENT.get());
+                        tabData.accept(RubysItems.PERIOD_PIGMENT.get());
                         tabData.accept(RubysItems.ORANG_PIGMENT.get());
                         tabData.accept(RubysItems.YELLER_PIGMENT.get());
                         tabData.accept(RubysItems.GREN_PIGMENT.get());
@@ -86,6 +86,59 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.PINKY_PIGMENT.get());
                         tabData.accept(RubysItems.MORTAR_AND_PESTLE.get());
                         tabData.accept(RubysItems.SAW.get());
+                        tabData.accept(RubysItems.ENAMEL.get());
+                        tabData.accept(RubysItems.SCRAPER.get());
+                    })
+                    .withSearchBar()
+                    .build()
+    );
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RUBYS_ARMOR = REGISTRY.register(
+            "armor",
+            () -> CreativeModeTab.builder()
+                    .title(Component.translatable("itemgroup.ru3yy.armor"))
+                    .icon(() -> new ItemStack(RubysItems.ENAMELED_NETHERITE_CHESTPLATE.get()))
+                    .displayItems((parameters, tabData) -> {
+                        tabData.accept(RubysItems.ENAMELED_CHAIN_HELMET.get());
+                        tabData.accept(RubysItems.ENAMELED_CHAIN_CHESTPLATE.get());
+                        tabData.accept(RubysItems.ENAMELED_CHAIN_LEGGINGS.get());
+                        tabData.accept(RubysItems.ENAMELED_CHAIN_BOOTS.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_CHAIN_HELMET.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_CHAIN_CHESTPLATE.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_CHAIN_LEGGINGS.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_CHAIN_BOOTS.get());
+                        tabData.accept(RubysItems.ENAMELED_IRON_HELMET.get());
+                        tabData.accept(RubysItems.ENAMELED_IRON_CHESTPLATE.get());
+                        tabData.accept(RubysItems.ENAMELED_IRON_LEGGINGS.get());
+                        tabData.accept(RubysItems.ENAMELED_IRON_BOOTS.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_IRON_HELMET.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_IRON_CHESTPLATE.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_IRON_LEGGINGS.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_IRON_BOOTS.get());
+                        tabData.accept(RubysItems.ENAMELED_GOLD_HELMET.get());
+                        tabData.accept(RubysItems.ENAMELED_GOLD_CHESTPLATE.get());
+                        tabData.accept(RubysItems.ENAMELED_GOLD_LEGGINGS.get());
+                        tabData.accept(RubysItems.ENAMELED_GOLD_BOOTS.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_GOLD_HELMET.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_GOLD_CHESTPLATE.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_GOLD_LEGGINGS.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_GOLD_BOOTS.get());
+                        tabData.accept(RubysItems.ENAMELED_DIAMOND_HELMET.get());
+                        tabData.accept(RubysItems.ENAMELED_DIAMOND_CHESTPLATE.get());
+                        tabData.accept(RubysItems.ENAMELED_DIAMOND_LEGGINGS.get());
+                        tabData.accept(RubysItems.ENAMELED_DIAMOND_BOOTS.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_DIAMOND_HELMET.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_DIAMOND_CHESTPLATE.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_DIAMOND_LEGGINGS.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_DIAMOND_BOOTS.get());
+                        tabData.accept(RubysItems.ENAMELED_NETHERITE_HELMET.get());
+                        tabData.accept(RubysItems.ENAMELED_NETHERITE_CHESTPLATE.get());
+                        tabData.accept(RubysItems.ENAMELED_NETHERITE_LEGGINGS.get());
+                        tabData.accept(RubysItems.ENAMELED_NETHERITE_BOOTS.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_NETHERITE_HELMET.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_NETHERITE_CHESTPLATE.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_NETHERITE_LEGGINGS.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_NETHERITE_BOOTS.get());
                     })
                     .withSearchBar()
                     .build()

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_purple_pigment": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ru3yy:purpur_pigment"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ru3yy:dye_lantern_purple"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_purple_pigment"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ru3yy:dye_lantern_purple"
+    ]
+  }
+}

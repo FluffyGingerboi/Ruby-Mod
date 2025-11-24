@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_enameled_golden_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ru3yy:enameled_golden_leggings"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ru3yy:fired_enameled_golden_leggings_from_firing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_enameled_golden_leggings"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ru3yy:fired_enameled_golden_leggings_from_firing"
+    ]
+  }
+}

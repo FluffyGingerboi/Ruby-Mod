@@ -12,7 +12,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ruby.fluffy.helpme.RubyMod;
-import ruby.fluffy.helpme.items.RubysBaseFoodItem;
+import ruby.fluffy.helpme.items.RubysBaseEnameledArmorItem;
 import ruby.fluffy.helpme.items.RubysBaseItem;
 import ruby.fluffy.helpme.items.RubysBasePersistentItem;
 import ruby.fluffy.helpme.items.SawItem;
@@ -22,6 +22,165 @@ public class RubysItems {
     public static final DeferredRegister.Items ITEMS_CHESTS = DeferredRegister.createItems(RubyMod.MOD_ID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(RubyMod.MOD_ID);
 
+    public static final DeferredHolder<Item, Item> ENAMELED_CHAIN_HELMET = REGISTRY.register("enameled_chainmail_helmet",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_CHAIN, RubysBaseEnameledArmorItem.Type.HELMET,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_CHAIN_CHESTPLATE = REGISTRY.register("enameled_chainmail_chestplate",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_CHAIN, RubysBaseEnameledArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_CHAIN_LEGGINGS = REGISTRY.register("enameled_chainmail_leggings",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_CHAIN, RubysBaseEnameledArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_CHAIN_BOOTS = REGISTRY.register("enameled_chainmail_boots",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_CHAIN, RubysBaseEnameledArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_IRON_HELMET = REGISTRY.register("enameled_iron_helmet",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_IRON, RubysBaseEnameledArmorItem.Type.HELMET,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_IRON_CHESTPLATE = REGISTRY.register("enameled_iron_chestplate",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_IRON, RubysBaseEnameledArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_IRON_LEGGINGS = REGISTRY.register("enameled_iron_leggings",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_IRON, RubysBaseEnameledArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_IRON_BOOTS = REGISTRY.register("enameled_iron_boots",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_IRON, RubysBaseEnameledArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_GOLD_HELMET = REGISTRY.register("enameled_golden_helmet",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_GOLD, RubysBaseEnameledArmorItem.Type.HELMET,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_GOLD_CHESTPLATE = REGISTRY.register("enameled_golden_chestplate",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_GOLD, RubysBaseEnameledArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_GOLD_LEGGINGS = REGISTRY.register("enameled_golden_leggings",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_GOLD, RubysBaseEnameledArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_GOLD_BOOTS = REGISTRY.register("enameled_golden_boots",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_GOLD, RubysBaseEnameledArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_DIAMOND_HELMET = REGISTRY.register("enameled_diamond_helmet",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_DIAMOND, RubysBaseEnameledArmorItem.Type.HELMET,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_DIAMOND_CHESTPLATE = REGISTRY.register("enameled_diamond_chestplate",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_DIAMOND, RubysBaseEnameledArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_DIAMOND_LEGGINGS = REGISTRY.register("enameled_diamond_leggings",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_DIAMOND, RubysBaseEnameledArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_DIAMOND_BOOTS = REGISTRY.register("enameled_diamond_boots",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_DIAMOND, RubysBaseEnameledArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_NETHERITE_HELMET = REGISTRY.register("enameled_netherite_helmet",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_NETHERITE, RubysBaseEnameledArmorItem.Type.HELMET,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_NETHERITE_CHESTPLATE = REGISTRY.register("enameled_netherite_chestplate",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_NETHERITE, RubysBaseEnameledArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_NETHERITE_LEGGINGS = REGISTRY.register("enameled_netherite_leggings",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_NETHERITE, RubysBaseEnameledArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_NETHERITE_BOOTS = REGISTRY.register("enameled_netherite_boots",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.ENAMELED_NETHERITE, RubysBaseEnameledArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(5))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_CHAIN_HELMET = REGISTRY.register("fired_enameled_chainmail_helmet",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_CHAIN, RubysBaseEnameledArmorItem.Type.HELMET,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_CHAIN_CHESTPLATE = REGISTRY.register("fired_enameled_chainmail_chestplate",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_CHAIN, RubysBaseEnameledArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_CHAIN_LEGGINGS = REGISTRY.register("fired_enameled_chainmail_leggings",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_CHAIN, RubysBaseEnameledArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_CHAIN_BOOTS = REGISTRY.register("fired_enameled_chainmail_boots",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_CHAIN, RubysBaseEnameledArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_IRON_HELMET = REGISTRY.register("fired_enameled_iron_helmet",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_IRON, RubysBaseEnameledArmorItem.Type.HELMET,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_IRON_CHESTPLATE = REGISTRY.register("fired_enameled_iron_chestplate",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_IRON, RubysBaseEnameledArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_IRON_LEGGINGS = REGISTRY.register("fired_enameled_iron_leggings",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_IRON, RubysBaseEnameledArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_IRON_BOOTS = REGISTRY.register("fired_enameled_iron_boots",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_IRON, RubysBaseEnameledArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_GOLD_HELMET = REGISTRY.register("fired_enameled_golden_helmet",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_GOLD, RubysBaseEnameledArmorItem.Type.HELMET,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(7))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_GOLD_CHESTPLATE = REGISTRY.register("fired_enameled_golden_chestplate",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_GOLD, RubysBaseEnameledArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(7))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_GOLD_LEGGINGS = REGISTRY.register("fired_enameled_golden_leggings",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_GOLD, RubysBaseEnameledArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(7))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_GOLD_BOOTS = REGISTRY.register("fired_enameled_golden_boots",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_GOLD, RubysBaseEnameledArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(7))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_DIAMOND_HELMET = REGISTRY.register("fired_enameled_diamond_helmet",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_DIAMOND, RubysBaseEnameledArmorItem.Type.HELMET,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(33))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_DIAMOND_CHESTPLATE = REGISTRY.register("fired_enameled_diamond_chestplate",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_DIAMOND, RubysBaseEnameledArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(33))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_DIAMOND_LEGGINGS = REGISTRY.register("fired_enameled_diamond_leggings",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_DIAMOND, RubysBaseEnameledArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(33))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_DIAMOND_BOOTS = REGISTRY.register("fired_enameled_diamond_boots",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_DIAMOND, RubysBaseEnameledArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(33))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_NETHERITE_HELMET = REGISTRY.register("fired_enameled_netherite_helmet",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_NETHERITE, RubysBaseEnameledArmorItem.Type.HELMET,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(37))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_NETHERITE_CHESTPLATE = REGISTRY.register("fired_enameled_netherite_chestplate",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_NETHERITE, RubysBaseEnameledArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(37))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_NETHERITE_LEGGINGS = REGISTRY.register("fired_enameled_netherite_leggings",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_NETHERITE, RubysBaseEnameledArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(37))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_NETHERITE_BOOTS = REGISTRY.register("fired_enameled_netherite_boots",
+            () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_NETHERITE, RubysBaseEnameledArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(37))));
 
     public static final DeferredHolder<Item,Item> PERIOD_LANTERN = block(RubysBlocks.PERIOD_LANTERN);
     public static final DeferredHolder<Item,Item> PURPUR_LANTERN = block(RubysBlocks.PURPUR_LANTERN);
@@ -85,7 +244,9 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> POO_PIGMENT = REGISTRY.register("poo_pigment", RubysBaseItem::new);
 
     public static final DeferredHolder<Item,Item> MORTAR_AND_PESTLE = REGISTRY.register("mortar_and_pestle", RubysBasePersistentItem::new);
+    public static final DeferredHolder<Item,Item> SCRAPER = REGISTRY.register("scraper", RubysBasePersistentItem::new);
     public static final DeferredHolder<Item,Item> SAW = REGISTRY.register("saw", SawItem::new);
+    public static final DeferredHolder<Item,Item> ENAMEL = REGISTRY.register("enamel", RubysBaseItem::new);
 
     public static final DeferredItem<BlockItem> CHERRY_CHEST_I = registerItem("cherry", RubysBlocks.CHERRY_CHEST);
     public static final DeferredItem<BlockItem> SPRUCE_CHEST_I = registerItem("spruce", RubysBlocks.SPRUCE_CHEST);

@@ -1,5 +1,6 @@
 package ruby.fluffy.helpme;
 
+import com.google.common.collect.Lists;
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
@@ -8,14 +9,18 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.config.ModConfig;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
+import ruby.fluffy.helpme.configs.SlabsConfig;
+import ruby.fluffy.helpme.datagen.RubysDatagen;
+import ruby.fluffy.helpme.datagen.providers.RubysRecipesProvider;
+import ruby.fluffy.helpme.events.RubysEvents;
 import ruby.fluffy.helpme.items_displayed.init.*;
 import ruby.fluffy.helpme.registries.*;
+import ruby.fluffy.helpme.utilites.RubysConfig;
+import ruby.fluffy.helpme.utilites.RubysRecipeData;
 
 @Mod(RubyMod.MOD_ID)
 public class RubyMod {
@@ -37,6 +42,7 @@ public class RubyMod {
         RubysRecipes.SERIALIZERS.register(rubyBus);
         RubysRecipes.TYPES.register(rubyBus);
         RubysMenus.MENUS.register(rubyBus);
+        RubysArmorMaterials.ARMOR_MATERIALS.register(rubyBus);
         rubyBus.addListener(this::commonSetup);
 
         /**
@@ -49,6 +55,8 @@ public class RubyMod {
         DisplayTabs.REGISTRY.register(rubyBus);
         DisplayBlocks.setupBlocks();
         DisplayItems.setupBlockItems();
+
+        RubysEvents.init();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

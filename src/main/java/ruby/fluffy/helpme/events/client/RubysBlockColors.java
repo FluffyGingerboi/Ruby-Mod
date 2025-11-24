@@ -3,11 +3,14 @@ package ruby.fluffy.helpme.events.client;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.GrassColor;
 import ruby.fluffy.helpme.registries.RubysBlocks;
+import ruby.fluffy.helpme.registries.RubysItems;
 
 public class RubysBlockColors {
+
     public static void registerBlockColors() {
         BlockColors colors = Minecraft.getInstance().getBlockColors();
 

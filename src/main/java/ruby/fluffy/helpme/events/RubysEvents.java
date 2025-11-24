@@ -1,14 +1,18 @@
 package ruby.fluffy.helpme.events;
 
+import com.google.common.collect.Lists;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.Container;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -24,10 +28,17 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.event.entity.player.BonemealEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.items.wrapper.InvWrapper;
+import ruby.fluffy.helpme.configs.SlabsConfig;
 import ruby.fluffy.helpme.datagen.providers.RubysEnchantsProvider;
+import ruby.fluffy.helpme.datagen.providers.RubysRecipesProvider;
 import ruby.fluffy.helpme.registries.RubysBlocks;
+import ruby.fluffy.helpme.registries.RubysTags;
+import ruby.fluffy.helpme.utilites.RubysConfig;
+import ruby.fluffy.helpme.utilites.RubysRecipeData;
+import ruby.fluffy.helpme.utilites.RubysRecipeHelpers;
 
 @EventBusSubscriber
 public class RubysEvents {
@@ -126,5 +137,50 @@ public class RubysEvents {
         }
 
         player.setItemInHand(InteractionHand.MAIN_HAND, legsStack.copy());
+    }
+
+    public static void init() {
+        RubysConfig.init("slabstoblocks", SlabsConfig.class);
+
+        for (int i = 0; i < SlabsConfig.slabBlockList.size(); i++) {
+            String current = SlabsConfig.slabBlockList.get(i);
+            String[] set = ((current).replaceAll("\\s","")).split(",");
+            if (current.contains("-")){
+                RubysRecipeHelpers.createShapedRecipeJson(
+                        Lists.newArrayList(
+                                '#'
+                        ),
+                        Lists.newArrayList(String.valueOf(ResourceLocation.parse(set[0]))),
+                        Lists.newArrayList("item"),
+                        Lists.newArrayList(
+                                "##"
+                        ),
+                        String.valueOf(ResourceLocation.parse(set[1])), 1);
+            } else if (current.contains("/")) {
+                RubysRecipeHelpers.createShapedRecipeJson(
+                        Lists.newArrayList(
+                                '#'
+                        ),
+                        Lists.newArrayList(String.valueOf(ResourceLocation.parse(set[0]))),
+                        Lists.newArrayList("item"),
+                        Lists.newArrayList(
+                                "# ",
+                                " #"
+                        ),
+                        String.valueOf(ResourceLocation.parse(set[1])), 1);
+            } else {
+                RubysRecipeHelpers.createShapedRecipeJson(
+                        Lists.newArrayList(
+                                '#'
+                        ),
+                        Lists.newArrayList(String.valueOf(ResourceLocation.parse(set[0]))),
+                        Lists.newArrayList("item"),
+                        Lists.newArrayList(
+                                "#",
+                                "#"
+                        ),
+                        String.valueOf(ResourceLocation.parse(set[1])), 1);
+            }
+        }
     }
 }

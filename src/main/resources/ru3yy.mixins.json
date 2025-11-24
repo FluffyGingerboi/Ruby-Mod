@@ -8,7 +8,9 @@
     "ChestRendererMixin",
     "LanguageManagerMixin",
     "LanguageProviderAccessorMixin",
-    "ItemMixin"
+    "ItemMixin",
+    "RecipeManagerMixin",
+    "ArmorDyeRecipeMixin"
   ],
   "injectors": {
     "defaultRequire": 1
