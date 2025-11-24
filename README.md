@@ -4,3 +4,6 @@ Grass slabs become snowy when there's a snow layer on top
 Shearful enchant (more wool for shearing)
 Rename items for free
 Horse and squid meat
+Rotten flesh to leather
+Dyeable armor
+Deepslate furnace

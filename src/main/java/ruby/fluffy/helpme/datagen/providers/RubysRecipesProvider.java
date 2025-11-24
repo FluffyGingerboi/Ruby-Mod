@@ -116,103 +116,144 @@ public class RubysRecipesProvider extends RecipeProvider implements IConditionBu
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.CHAINMAIL_HELMET)
                 .requires(RubysItems.FIRED_ENAMELED_CHAIN_HELMET.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_CHAIN_HELMET.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_chainmail_helmet"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.CHAINMAIL_CHESTPLATE)
                 .requires(RubysItems.FIRED_ENAMELED_CHAIN_CHESTPLATE.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_CHAIN_CHESTPLATE.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_chainmail_chestplate"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.CHAINMAIL_LEGGINGS)
                 .requires(RubysItems.FIRED_ENAMELED_CHAIN_LEGGINGS.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_CHAIN_LEGGINGS.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_chainmail_leggings"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.CHAINMAIL_BOOTS)
                 .requires(RubysItems.FIRED_ENAMELED_CHAIN_BOOTS.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_CHAIN_BOOTS.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_chainmail_boots"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_HELMET)
                 .requires(RubysItems.FIRED_ENAMELED_IRON_HELMET.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_IRON_HELMET.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_iron_helmet"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_CHESTPLATE)
                 .requires(RubysItems.FIRED_ENAMELED_IRON_CHESTPLATE.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_IRON_CHESTPLATE.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_iron_chestplate"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_LEGGINGS)
                 .requires(RubysItems.FIRED_ENAMELED_IRON_LEGGINGS.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_IRON_LEGGINGS.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_iron_leggings"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_BOOTS)
                 .requires(RubysItems.FIRED_ENAMELED_IRON_BOOTS.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_IRON_BOOTS.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_iron_boots"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.GOLDEN_HELMET)
                 .requires(RubysItems.FIRED_ENAMELED_GOLD_HELMET.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_GOLD_HELMET.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_golden_helmet"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.GOLDEN_CHESTPLATE)
                 .requires(RubysItems.FIRED_ENAMELED_GOLD_CHESTPLATE.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_GOLD_CHESTPLATE.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_golden_chestplate"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.GOLDEN_LEGGINGS)
                 .requires(RubysItems.FIRED_ENAMELED_GOLD_LEGGINGS.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_GOLD_LEGGINGS.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_golden_leggings"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.GOLDEN_BOOTS)
                 .requires(RubysItems.FIRED_ENAMELED_GOLD_BOOTS.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_GOLD_BOOTS.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_golden_boots"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.DIAMOND_HELMET)
                 .requires(RubysItems.FIRED_ENAMELED_DIAMOND_HELMET.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_DIAMOND_HELMET.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_diamond_helmet"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.DIAMOND_CHESTPLATE)
                 .requires(RubysItems.FIRED_ENAMELED_DIAMOND_CHESTPLATE.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_DIAMOND_CHESTPLATE.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_diamond_chestplate"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.DIAMOND_LEGGINGS)
                 .requires(RubysItems.FIRED_ENAMELED_DIAMOND_LEGGINGS.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_DIAMOND_LEGGINGS.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_diamond_leggings"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.DIAMOND_BOOTS)
                 .requires(RubysItems.FIRED_ENAMELED_DIAMOND_BOOTS.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_DIAMOND_BOOTS.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_diamond_boots"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.NETHERITE_HELMET)
                 .requires(RubysItems.FIRED_ENAMELED_NETHERITE_HELMET.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_NETHERITE_HELMET.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_netherite_helmet"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.NETHERITE_CHESTPLATE)
                 .requires(RubysItems.FIRED_ENAMELED_NETHERITE_CHESTPLATE.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_NETHERITE_CHESTPLATE.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_netherite_chestplate"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.NETHERITE_LEGGINGS)
                 .requires(RubysItems.FIRED_ENAMELED_NETHERITE_LEGGINGS.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_NETHERITE_LEGGINGS.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_netherite_leggings"));
 
         UndyeingRecipeBuilder.shapeless(RecipeCategory.MISC, Items.NETHERITE_BOOTS)
                 .requires(RubysItems.FIRED_ENAMELED_NETHERITE_BOOTS.get())
+                .requires(RubysItems.SCRAPER.get())
+                .unlockedBy("has_scraper", has(RubysItems.SCRAPER.get()))
                 .unlockedBy("has_fired_enamel", has(RubysItems.FIRED_ENAMELED_NETHERITE_BOOTS.get()))
                 .save(output, ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "remove_enamel_on_fired_enameled_netherite_boots"));
+
         firing(output, RubysItems.ENAMELED_CHAIN_HELMET.get(), RecipeCategory.MISC,
 
                 RubysItems.FIRED_ENAMELED_CHAIN_HELMET.get(), 0.35f, 100, "firing"
@@ -294,6 +335,10 @@ public class RubysRecipesProvider extends RecipeProvider implements IConditionBu
                 RubysItems.FIRED_ENAMELED_NETHERITE_BOOTS.get(), 0.35f, 100, "firing"
         );
 
+        firing(output, Items.BRICK, RecipeCategory.MISC,
+                Items.CLAY_BALL, 0.10f, 100, "firing"
+        );
+
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, RubysItems.SAW.get())
                 .pattern("  I")
                 .pattern(" I ")
@@ -314,11 +359,38 @@ public class RubysRecipesProvider extends RecipeProvider implements IConditionBu
                 .unlockedBy("has_planks", has(ItemTags.PLANKS))
                 .save(output);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BLACK_DYE)
+                .requires(Items.COAL)
+                .requires(RubysItems.MORTAR_AND_PESTLE.get())
+                .unlockedBy("has_coal", has(Items.COAL))
+                .unlockedBy("has_mortar_and_pestle", has(RubysItems.MORTAR_AND_PESTLE.get()))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BLACK_DYE)
+                .requires(Items.CHARCOAL)
+                .requires(RubysItems.MORTAR_AND_PESTLE.get())
+                .unlockedBy("has_charcoal", has(Items.CHARCOAL))
+                .unlockedBy("has_mortar_and_pestle", has(RubysItems.MORTAR_AND_PESTLE.get()))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.MORTAR_AND_PESTLE.get())
+                .requires(Items.STICK)
+                .requires(Items.BOWL)
+                .unlockedBy("has_bowl", has(Items.BOWL))
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.MELON_SLICE)
+                .requires(Items.MELON)
+                .unlockedBy("has_melon", has(Items.MELON))
+                .save(output);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMEL.get())
                 .requires(RubysItems.MORTAR_AND_PESTLE.get())
                 .requires(Items.GLASS)
                 .requires(Items.SLIME_BALL)
                 .requires(waterBottleIngredient)
+                .unlockedBy("has_mortar_and_pestle", has(RubysItems.MORTAR_AND_PESTLE.get()))
                 .unlockedBy("has_glass", has(Items.GLASS))
                 .unlockedBy("has_slime_ball", has(Items.SLIME_BALL))
                 .save(output);
@@ -328,6 +400,139 @@ public class RubysRecipesProvider extends RecipeProvider implements IConditionBu
                 .requires(RubysItems.ENAMEL.get())
                 .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
                 .unlockedBy("has_chainmail_helmet", has(Items.CHAINMAIL_HELMET))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_CHAIN_CHESTPLATE.get())
+                .requires(Items.CHAINMAIL_CHESTPLATE)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_chainmail_chestplate", has(Items.CHAINMAIL_CHESTPLATE))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_CHAIN_LEGGINGS.get())
+                .requires(Items.CHAINMAIL_LEGGINGS)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_chainmail_leggings", has(Items.CHAINMAIL_LEGGINGS))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_CHAIN_BOOTS.get())
+                .requires(Items.CHAINMAIL_BOOTS)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_chainmail_boots", has(Items.IRON_BOOTS))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_IRON_HELMET.get())
+                .requires(Items.IRON_HELMET)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_iron_helmet", has(Items.IRON_HELMET))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_IRON_CHESTPLATE.get())
+                .requires(Items.IRON_CHESTPLATE)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_iron_chestplate", has(Items.IRON_CHESTPLATE))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_IRON_LEGGINGS.get())
+                .requires(Items.IRON_LEGGINGS)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_iron_leggings", has(Items.IRON_LEGGINGS))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_IRON_BOOTS.get())
+                .requires(Items.IRON_BOOTS)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_iron_boots", has(Items.IRON_BOOTS))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_GOLD_HELMET.get())
+                .requires(Items.GOLDEN_HELMET)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_golden_helmet", has(Items.GOLDEN_HELMET))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_GOLD_CHESTPLATE.get())
+                .requires(Items.GOLDEN_CHESTPLATE)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_golden_chestplate", has(Items.GOLDEN_CHESTPLATE))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_GOLD_LEGGINGS.get())
+                .requires(Items.GOLDEN_LEGGINGS)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_golden_leggings", has(Items.GOLDEN_LEGGINGS))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_GOLD_BOOTS.get())
+                .requires(Items.GOLDEN_BOOTS)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_golden_boots", has(Items.GOLDEN_BOOTS))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_DIAMOND_HELMET.get())
+                .requires(Items.DIAMOND_HELMET)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_diamond_helmet", has(Items.DIAMOND_HELMET))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_DIAMOND_CHESTPLATE.get())
+                .requires(Items.DIAMOND_CHESTPLATE)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_diamond_chestplate", has(Items.DIAMOND_CHESTPLATE))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_DIAMOND_LEGGINGS.get())
+                .requires(Items.DIAMOND_LEGGINGS)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_diamond_leggings", has(Items.DIAMOND_LEGGINGS))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_DIAMOND_BOOTS.get())
+                .requires(Items.DIAMOND_BOOTS)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_diamond_boots", has(Items.DIAMOND_BOOTS))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_NETHERITE_HELMET.get())
+                .requires(Items.NETHERITE_HELMET)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_netherite_helmet", has(Items.NETHERITE_HELMET))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_NETHERITE_CHESTPLATE.get())
+                .requires(Items.NETHERITE_CHESTPLATE)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_netherite_chestplate", has(Items.NETHERITE_CHESTPLATE))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_NETHERITE_LEGGINGS.get())
+                .requires(Items.NETHERITE_LEGGINGS)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_netherite_leggings", has(Items.NETHERITE_LEGGINGS))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.ENAMELED_NETHERITE_BOOTS.get())
+                .requires(Items.NETHERITE_BOOTS)
+                .requires(RubysItems.ENAMEL.get())
+                .unlockedBy("has_enamel", has(RubysItems.ENAMEL.get()))
+                .unlockedBy("has_netherite_boots", has(Items.NETHERITE_BOOTS))
                 .save(output);
     }
 
