@@ -7,3 +7,6 @@ Horse and squid meat
 Rotten flesh to leather
 Dyeable armor
 Deepslate furnace
+Copper armor and tools
+Increase cloud height
+Look at the oneblock datapack acheivments
