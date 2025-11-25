@@ -16,6 +16,9 @@ public class RubysItemModelsProvider extends RubysItemModelsHelpers {
     @Override
     protected void registerModels() {
         basicItem(RubysItems.MORTAR_AND_PESTLE.get());
+        basicItem(RubysItems.SAW.get());
+        basicItem(RubysItems.SCRAPER.get());
+        basicItem(RubysItems.ENAMEL.get());
 
         helmetItem(RubysItems.ENAMELED_CHAIN_HELMET.get(), "armor/chainmail/", "enameled_chainmail_helmet", "enameled_chainmail_helmet_overlay");
         chestplateItem(RubysItems.ENAMELED_CHAIN_CHESTPLATE.get(), "armor/chainmail/", "enameled_chainmail_chestplate", "enameled_chainmail_chestplate_overlay");

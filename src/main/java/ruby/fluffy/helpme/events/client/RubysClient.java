@@ -5,6 +5,8 @@ import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.ChestRenderer;
+import net.minecraft.client.renderer.texture.TextureAtlas;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -13,11 +15,14 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.neoforged.neoforge.client.event.TextureAtlasStitchedEvent;
+import ruby.fluffy.helpme.RubyMod;
 import ruby.fluffy.helpme.displays.screens.KilnScreen;
 import ruby.fluffy.helpme.registries.RubysBlocks;
 import ruby.fluffy.helpme.registries.RubysItems;
 import ruby.fluffy.helpme.registries.RubysMenus;
 
+@SuppressWarnings("deprecation")
 @EventBusSubscriber(Dist.CLIENT)
 public class RubysClient {
 

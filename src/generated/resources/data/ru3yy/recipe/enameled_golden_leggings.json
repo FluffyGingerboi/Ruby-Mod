@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_leggings"
+    },
+    {
+      "item": "ru3yy:enamel"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ru3yy:enameled_golden_leggings"
+  }
+}

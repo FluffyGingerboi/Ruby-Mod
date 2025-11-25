@@ -33,7 +33,7 @@
 
   "block.ru3yy.cherry_chest": "Cherry Chest",
   "block.ru3yy.spruce_chest": "Spruce Chest",
-  "block.ru3yy.kilm": "Kiln",
+  "block.ru3yy.kiln": "Kiln",
 
   "block.ru3yy.blue_white_wildflowers": "Blue & White Wildflowers",
   "block.ru3yy.purple_white_wildflowers": "Purple & White Wildflowers",
@@ -53,7 +53,7 @@
   "container.ru3yy.cherry_chest_double": "Large Cherry Chest",
   "container.ru3yy.spruce_chest": "Spruce Chest",
   "container.ru3yy.spruce_chest_double": "Large Spruce Chest",
-  "container.ru3yy.kiln": "Kiln",
+  "container.kiln": "Kiln",
 
   "item.ru3yy.bloock_pigment": "Bloock Pigment",
   "item.ru3yy.greype_pigment": "Greype Pigment",
@@ -88,14 +88,14 @@
   "item.ru3yy.fired_enameled_iron_chestplate": "Fired Enameled Iron Chestplate",
   "item.ru3yy.fired_enameled_iron_leggings": "Fired Enameled Iron Leggings",
   "item.ru3yy.fired_enameled_iron_boots": "Fired Enameled Iron Boots",
-  "item.ru3yy.enameled_gold_helmet": "Enameled Golden Helmet",
-  "item.ru3yy.enameled_gold_chestplate": "Enameled Golden Chestplate",
-  "item.ru3yy.enameled_gold_leggings": "Enameled Golden Leggings",
-  "item.ru3yy.enameled_gold_boots": "Enameled Golden Boots",
-  "item.ru3yy.fired_enameled_gold_helmet": "Fired Enameled Golden Helmet",
-  "item.ru3yy.fired_enameled_gold_chestplate": "Fired Enameled Golden Chestplate",
-  "item.ru3yy.fired_enameled_gold_leggings": "Fired Enameled Golden Leggings",
-  "item.ru3yy.fired_enameled_gold_boots": "Fired Enameled Golden Boots",
+  "item.ru3yy.enameled_golden_helmet": "Enameled Golden Helmet",
+  "item.ru3yy.enameled_golden_chestplate": "Enameled Golden Chestplate",
+  "item.ru3yy.enameled_golden_leggings": "Enameled Golden Leggings",
+  "item.ru3yy.enameled_golden_boots": "Enameled Golden Boots",
+  "item.ru3yy.fired_enameled_golden_helmet": "Fired Enameled Golden Helmet",
+  "item.ru3yy.fired_enameled_golden_chestplate": "Fired Enameled Golden Chestplate",
+  "item.ru3yy.fired_enameled_golden_leggings": "Fired Enameled Golden Leggings",
+  "item.ru3yy.fired_enameled_golden_boots": "Fired Enameled Golden Boots",
   "item.ru3yy.enameled_diamond_helmet": "Enameled Diamond Helmet",
   "item.ru3yy.enameled_diamond_chestplate": "Enameled Diamond Chestplate",
   "item.ru3yy.enameled_diamond_leggings": "Enameled Diamond Leggings",
@@ -114,5 +114,7 @@
   "item.ru3yy.fired_enameled_netherite_boots": "Fired Enameled Netherite Boots",
 
   "item.ru3yy.mortar_and_pestle": "Mortar And Pestle",
-  "item.ru3yy.saw": "Saw"
+  "item.ru3yy.saw": "Saw",
+  "item.ru3yy.scraper": "Scraper",
+  "item.ru3yy.enamel": "Enamel"
 }

@@ -364,14 +364,14 @@ public class RubysRecipesProvider extends RecipeProvider implements IConditionBu
                 .requires(RubysItems.MORTAR_AND_PESTLE.get())
                 .unlockedBy("has_coal", has(Items.COAL))
                 .unlockedBy("has_mortar_and_pestle", has(RubysItems.MORTAR_AND_PESTLE.get()))
-                .save(output);
+                .save(output, "black_dye_from_coal");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BLACK_DYE)
                 .requires(Items.CHARCOAL)
                 .requires(RubysItems.MORTAR_AND_PESTLE.get())
                 .unlockedBy("has_charcoal", has(Items.CHARCOAL))
                 .unlockedBy("has_mortar_and_pestle", has(RubysItems.MORTAR_AND_PESTLE.get()))
-                .save(output);
+                .save(output, "black_dye_from_charcoal");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, RubysItems.MORTAR_AND_PESTLE.get())
                 .requires(Items.STICK)

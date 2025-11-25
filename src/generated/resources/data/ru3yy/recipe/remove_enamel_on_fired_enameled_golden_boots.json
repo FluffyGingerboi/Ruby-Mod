@@ -1,0 +1,16 @@
+{
+  "type": "ru3yy:undye_item",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ru3yy:fired_enameled_golden_boots"
+    },
+    {
+      "item": "ru3yy:scraper"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:golden_boots"
+  }
+}

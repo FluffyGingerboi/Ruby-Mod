@@ -1,4 +1,5 @@
-// 1.21.1	2025-11-21T00:51:50.6329427	Item Models: ru3yy
+// 1.21.1	2025-11-25T10:02:58.9602831	Item Models: ru3yy
+dd50daa8aed17da030018d5f223376dd419789db assets/ru3yy/models/item/enamel.json
 eaffc46d9b92383c7518aa5e7b09c43beec04799 assets/ru3yy/models/item/enameled_chainmail_boots.json
 c031b2297317ef39691fa982dfa774ed64d1b114 assets/ru3yy/models/item/enameled_chainmail_boots_amethyst_trim.json
 2acde54718d3a18e59d6522ab453265ab430b845 assets/ru3yy/models/item/enameled_chainmail_boots_copper_trim.json
@@ -440,3 +441,5 @@ a391f13ba07a476b501514c7504145d37f887c6c assets/ru3yy/models/item/fired_enameled
 477d485fd6121b03c8571b7d83e7fa89ac1c6b9a assets/ru3yy/models/item/fired_enameled_netherite_leggings_quartz_trim.json
 2117a5d0e7790dbcb12a67457fc35138734aac8e assets/ru3yy/models/item/fired_enameled_netherite_leggings_redstone_trim.json
 c77403b45d3997da9025dc1542f9d0c655e7640f assets/ru3yy/models/item/mortar_and_pestle.json
+f44dcb48ff5f60a3e6d4dd43cc03ce29893b4cf0 assets/ru3yy/models/item/saw.json
+9853fd1081a801829f318a71b0ec005f67a415c9 assets/ru3yy/models/item/scraper.json

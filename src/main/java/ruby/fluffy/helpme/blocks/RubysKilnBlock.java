@@ -57,6 +57,7 @@ public class RubysKilnBlock extends AbstractFurnaceBlock {
             double d0 = (double)pos.getX() + (double)0.5F;
             double d1 = pos.getY();
             double d2 = (double)pos.getZ() + (double)0.5F;
+            level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, d0, d1 + 1.1, d2, 0.0F, 0.05F, 0.0F);
             if (random.nextDouble() < 0.1) {
                 level.playLocalSound(d0, d1, d2, SoundEvents.BLASTFURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 1.0F, 1.0F, false);
             }
@@ -69,7 +70,7 @@ public class RubysKilnBlock extends AbstractFurnaceBlock {
             double d6 = random.nextDouble() * (double)9.0F / (double)16.0F;
             double d7 = direction$axis == Direction.Axis.Z ? (double)direction.getStepZ() * 0.52 : d4;
             level.addParticle(ParticleTypes.SMOKE, d0 + d5, d1 + d6, d2 + d7, 0.0F, 0.0F, 0.0F);
+            }
         }
 
-    }
 }

@@ -3,7 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "ru3yy:enameled_chainmail_helmet"
+      "item": "ru3yy:fired_enameled_chainmail_helmet"
+    },
+    {
+      "item": "ru3yy:scraper"
     }
   ],
   "result": {
