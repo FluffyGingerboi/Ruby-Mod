@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "ru3yy:item/armor/diamond/enameled_diamond_helmet",
-    "layer1": "ru3yy:item/armor/diamond/enameled_diamond_helmet_overlay",
-    "layer2": "minecraft:trims/items/helmet_trim_amethyst"
-  }
-}

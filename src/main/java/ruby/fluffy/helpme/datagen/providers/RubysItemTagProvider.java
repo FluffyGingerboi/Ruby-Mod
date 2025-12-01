@@ -6,6 +6,7 @@ import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.apache.commons.lang3.math.IEEE754rUtils;
 import ruby.fluffy.helpme.RubyMod;
@@ -68,7 +69,16 @@ public class RubysItemTagProvider extends ItemTagsProvider {
                 .add(RubysItems.FIRED_ENAMELED_NETHERITE_HELMET.get())
                 .add(RubysItems.FIRED_ENAMELED_NETHERITE_CHESTPLATE.get())
                 .add(RubysItems.FIRED_ENAMELED_NETHERITE_LEGGINGS.get())
-                .add(RubysItems.FIRED_ENAMELED_NETHERITE_BOOTS.get());
+                .add(RubysItems.FIRED_ENAMELED_NETHERITE_BOOTS.get())
+
+                .add(RubysItems.ENAMELED_IRON_HORSE_ARMOR.get())
+                .add(RubysItems.FIRED_ENAMELED_IRON_HORSE_ARMOR.get())
+
+                .add(RubysItems.ENAMELED_GOLD_HORSE_ARMOR.get())
+                .add(RubysItems.FIRED_ENAMELED_GOLD_HORSE_ARMOR.get())
+
+                .add(RubysItems.ENAMELED_DIAMOND_HORSE_ARMOR.get())
+                .add(RubysItems.FIRED_ENAMELED_DIAMOND_HORSE_ARMOR.get());
 
         tag(RubysTags.Items.NOT_DYEABLE)
                 .add(RubysItems.FIRED_ENAMELED_CHAIN_HELMET.get())
@@ -94,7 +104,13 @@ public class RubysItemTagProvider extends ItemTagsProvider {
                 .add(RubysItems.FIRED_ENAMELED_NETHERITE_HELMET.get())
                 .add(RubysItems.FIRED_ENAMELED_NETHERITE_CHESTPLATE.get())
                 .add(RubysItems.FIRED_ENAMELED_NETHERITE_LEGGINGS.get())
-                .add(RubysItems.FIRED_ENAMELED_NETHERITE_BOOTS.get());
+                .add(RubysItems.FIRED_ENAMELED_NETHERITE_BOOTS.get())
+
+                .add(RubysItems.FIRED_ENAMELED_IRON_HORSE_ARMOR.get())
+
+                .add(RubysItems.FIRED_ENAMELED_GOLD_HORSE_ARMOR.get())
+
+                .add(RubysItems.FIRED_ENAMELED_DIAMOND_HORSE_ARMOR.get());
 
         tag(RubysTags.Items.ENAMEL_ARMOR)
                 .add(RubysItems.ENAMELED_CHAIN_HELMET.get())
@@ -140,7 +156,16 @@ public class RubysItemTagProvider extends ItemTagsProvider {
                 .add(RubysItems.FIRED_ENAMELED_NETHERITE_HELMET.get())
                 .add(RubysItems.FIRED_ENAMELED_NETHERITE_CHESTPLATE.get())
                 .add(RubysItems.FIRED_ENAMELED_NETHERITE_LEGGINGS.get())
-                .add(RubysItems.FIRED_ENAMELED_NETHERITE_BOOTS.get());
+                .add(RubysItems.FIRED_ENAMELED_NETHERITE_BOOTS.get())
+
+                .add(RubysItems.ENAMELED_IRON_HORSE_ARMOR.get())
+                .add(RubysItems.FIRED_ENAMELED_IRON_HORSE_ARMOR.get())
+
+                .add(RubysItems.ENAMELED_GOLD_HORSE_ARMOR.get())
+                .add(RubysItems.FIRED_ENAMELED_GOLD_HORSE_ARMOR.get())
+
+                .add(RubysItems.ENAMELED_DIAMOND_HORSE_ARMOR.get())
+                .add(RubysItems.FIRED_ENAMELED_DIAMOND_HORSE_ARMOR.get());
 
         tag(RubysTags.Items.LEATHER_ARMOR)
                 .add(Items.LEATHER_HELMET)
@@ -212,5 +237,44 @@ public class RubysItemTagProvider extends ItemTagsProvider {
 
                 .add(RubysItems.ENAMELED_NETHERITE_BOOTS.get())
                 .add(RubysItems.FIRED_ENAMELED_NETHERITE_BOOTS.get());
+
+        tag(RubysTags.Items.CHEST_LOGS)
+                .add(Items.OAK_LOG)
+                .add(Items.STRIPPED_OAK_LOG)
+                .add(Items.BIRCH_LOG)
+                .add(Items.STRIPPED_BIRCH_LOG)
+                .add(Items.JUNGLE_LOG)
+                .add(Items.STRIPPED_JUNGLE_LOG)
+                .add(Items.DARK_OAK_LOG)
+                .add(Items.STRIPPED_DARK_OAK_LOG)
+                .add(Items.MANGROVE_LOG)
+                .add(Items.STRIPPED_MANGROVE_LOG)
+                .add(Items.CRIMSON_STEM)
+                .add(Items.STRIPPED_CRIMSON_STEM)
+                .add(Items.WARPED_STEM)
+                .add(Items.STRIPPED_WARPED_STEM);
+
+        tag(RubysTags.Items.CHERRY_CHEST_LOGS)
+                .add(Items.CHERRY_LOG)
+                .add(Items.STRIPPED_CHERRY_LOG);
+
+        tag(RubysTags.Items.SPRUCE_CHEST_LOGS)
+                .add(Items.SPRUCE_LOG)
+                .add(Items.STRIPPED_SPRUCE_LOG);
+
+        tag(Tags.Items.FOODS_RAW_MEAT)
+                .add(RubysItems.RAW_SQUID_MEAT.get())
+                .add(RubysItems.RAW_HORSE_MEAT.get());
+
+        tag(Tags.Items.FOODS_COOKED_MEAT)
+                .add(RubysItems.COOKED_SQUID_MEAT.get())
+                .add(RubysItems.COOKED_HORSE_MEAT.get());
+
+        tag(ItemTags.MEAT)
+                .add(RubysItems.RAW_SQUID_MEAT.get())
+                .add(RubysItems.COOKED_SQUID_MEAT.get())
+                .add(RubysItems.RAW_HORSE_MEAT.get())
+                .add(RubysItems.COOKED_HORSE_MEAT.get());
+
     }
 }

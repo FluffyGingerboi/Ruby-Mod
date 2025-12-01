@@ -1,9 +1,7 @@
 package ruby.fluffy.helpme.registries;
 
 import net.minecraft.core.registries.Registries;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.DoubleHighBlockItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
@@ -12,10 +10,12 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ruby.fluffy.helpme.RubyMod;
-import ruby.fluffy.helpme.items.RubysBaseEnameledArmorItem;
-import ruby.fluffy.helpme.items.RubysBaseItem;
-import ruby.fluffy.helpme.items.RubysBasePersistentItem;
-import ruby.fluffy.helpme.items.SawItem;
+import ruby.fluffy.helpme.items.*;
+import ruby.fluffy.helpme.items.bases.*;
+import ruby.fluffy.helpme.items.food.RubysCookedHorseFoodItem;
+import ruby.fluffy.helpme.items.food.RubysCookedSquidFoodItem;
+import ruby.fluffy.helpme.items.food.RubysRawHorseFoodItem;
+import ruby.fluffy.helpme.items.food.RubysRawSquidFoodItem;
 
 public class RubysItems {
     public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(Registries.ITEM, RubyMod.MOD_ID);
@@ -182,6 +182,62 @@ public class RubysItems {
             () -> new RubysBaseEnameledArmorItem(RubysArmorMaterials.FIRED_ENAMELED_NETHERITE, RubysBaseEnameledArmorItem.Type.BOOTS,
                     new Item.Properties().durability(RubysBaseEnameledArmorItem.Type.HELMET.getDurability(37))));
 
+    public static final DeferredHolder<Item, Item> ENAMELED_IRON_HORSE_ARMOR = REGISTRY.register("enameled_iron_horse_armor",
+            () -> new RubysBaseEnameledHorseArmorItem(RubysArmorMaterials.ENAMELED_IRON, RubysBaseEnameledHorseArmorItem.BodyType.EQUESTRIAN, true,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_GOLD_HORSE_ARMOR = REGISTRY.register("enameled_gold_horse_armor",
+            () -> new RubysBaseEnameledHorseArmorItem(RubysArmorMaterials.ENAMELED_GOLD, RubysBaseEnameledHorseArmorItem.BodyType.EQUESTRIAN, true,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_DIAMOND_HORSE_ARMOR = REGISTRY.register("enameled_diamond_horse_armor",
+            () -> new RubysBaseEnameledHorseArmorItem(RubysArmorMaterials.ENAMELED_DIAMOND, RubysBaseEnameledHorseArmorItem.BodyType.EQUESTRIAN, true,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_IRON_HORSE_ARMOR = REGISTRY.register("fired_enameled_iron_horse_armor",
+            () -> new RubysBaseEnameledHorseArmorItem(RubysArmorMaterials.FIRED_ENAMELED_IRON, RubysBaseEnameledHorseArmorItem.BodyType.EQUESTRIAN, true,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_GOLD_HORSE_ARMOR = REGISTRY.register("fired_enameled_gold_horse_armor",
+            () -> new RubysBaseEnameledHorseArmorItem(RubysArmorMaterials.FIRED_ENAMELED_GOLD, RubysBaseEnameledHorseArmorItem.BodyType.EQUESTRIAN, true,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_DIAMOND_HORSE_ARMOR = REGISTRY.register("fired_enameled_diamond_horse_armor",
+            () -> new RubysBaseEnameledHorseArmorItem(RubysArmorMaterials.FIRED_ENAMELED_DIAMOND, RubysBaseEnameledHorseArmorItem.BodyType.EQUESTRIAN, true,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_IRON_SWORD = REGISTRY.register("enameled_iron_sword",
+            () -> new RubysBaseEnameledSwordItem(Tiers.WOOD,
+                    new Item.Properties().attributes(RubysBaseEnameledSwordItem.createAttributes(Tiers.WOOD, 1, -2.4F))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_GOLD_SWORD = REGISTRY.register("enameled_gold_sword",
+            () -> new RubysBaseEnameledSwordItem(Tiers.WOOD,
+                    new Item.Properties().attributes(RubysBaseEnameledSwordItem.createAttributes(Tiers.WOOD, 1, -2.4F))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_DIAMOND_SWORD = REGISTRY.register("enameled_diamond_sword",
+            () -> new RubysBaseEnameledSwordItem(Tiers.WOOD,
+                    new Item.Properties().attributes(RubysBaseEnameledSwordItem.createAttributes(Tiers.WOOD, 1, -2.4F))));
+
+    public static final DeferredHolder<Item, Item> ENAMELED_NETHERITE_SWORD = REGISTRY.register("enameled_netherite_sword",
+            () -> new RubysBaseEnameledSwordItem(Tiers.WOOD,
+                    new Item.Properties().attributes(RubysBaseEnameledSwordItem.createAttributes(Tiers.WOOD, 1, -2.4F))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_IRON_SWORD = REGISTRY.register("fired_enameled_iron_sword",
+            () -> new RubysBaseEnameledSwordItem(Tiers.IRON,
+                    new Item.Properties().attributes(RubysBaseEnameledSwordItem.createAttributes(Tiers.IRON, 3, -2.4F))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_GOLD_SWORD = REGISTRY.register("fired_enameled_gold_sword",
+            () -> new RubysBaseEnameledSwordItem(Tiers.GOLD,
+                    new Item.Properties().attributes(RubysBaseEnameledSwordItem.createAttributes(Tiers.GOLD, 3, -2.4F))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_DIAMOND_SWORD = REGISTRY.register("fired_enameled_diamond_sword",
+            () -> new RubysBaseEnameledSwordItem(Tiers.DIAMOND,
+                    new Item.Properties().attributes(RubysBaseEnameledSwordItem.createAttributes(Tiers.DIAMOND, 3, -2.4F))));
+
+    public static final DeferredHolder<Item, Item> FIRED_ENAMELED_NETHERITE_SWORD = REGISTRY.register("fired_enameled_netherite_sword",
+            () -> new RubysBaseEnameledSwordItem(Tiers.NETHERITE,
+                    new Item.Properties().attributes(RubysBaseEnameledSwordItem.createAttributes(Tiers.NETHERITE, 3, -2.4F))));
+
     public static final DeferredHolder<Item,Item> PERIOD_LANTERN = block(RubysBlocks.PERIOD_LANTERN);
     public static final DeferredHolder<Item,Item> PURPUR_LANTERN = block(RubysBlocks.PURPUR_LANTERN);
     public static final DeferredHolder<Item,Item> YELLER_LANTERN = block(RubysBlocks.YELLER_LANTERN);
@@ -209,8 +265,6 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> OCTUPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.OCTUPLE_COMPACTED_POPPY_BLOCK);
     public static final DeferredHolder<Item,Item> NONUPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.NONUPLE_COMPACTED_POPPY_BLOCK);
     public static final DeferredHolder<Item,Item> DECUPLE_COMPACTED_POPPY_BLOCK = block(RubysBlocks.DECUPLE_COMPACTED_POPPY_BLOCK);
-
-    public static final DeferredHolder<Item,Item> COBBLESTONE_KILN = block(RubysBlocks.COBBLESTONE_KILN);
 
     public static final DeferredHolder<Item,Item> FLOWERING_OAK_LEAVES = block(RubysBlocks.FLOWERING_OAK_LEAVES);
 
@@ -248,8 +302,15 @@ public class RubysItems {
     public static final DeferredHolder<Item,Item> SAW = REGISTRY.register("saw", SawItem::new);
     public static final DeferredHolder<Item,Item> ENAMEL = REGISTRY.register("enamel", RubysBaseItem::new);
 
-    public static final DeferredItem<BlockItem> CHERRY_CHEST_I = registerItem("cherry", RubysBlocks.CHERRY_CHEST);
-    public static final DeferredItem<BlockItem> SPRUCE_CHEST_I = registerItem("spruce", RubysBlocks.SPRUCE_CHEST);
+    public static final DeferredHolder<Item,Item> RAW_SQUID_MEAT = REGISTRY.register("raw_squid_meat", RubysRawSquidFoodItem::new);
+    public static final DeferredHolder<Item,Item> COOKED_SQUID_MEAT = REGISTRY.register("cooked_squid_meat", RubysCookedSquidFoodItem::new);
+    public static final DeferredHolder<Item,Item> RAW_HORSE_MEAT = REGISTRY.register("raw_horse_meat", RubysRawHorseFoodItem::new);
+    public static final DeferredHolder<Item,Item> COOKED_HORSE_MEAT = REGISTRY.register("cooked_horse_meat", RubysCookedHorseFoodItem::new);
+
+    public static final DeferredItem<BlockItem> CHERRY_CHEST = registerItem("cherry", RubysBlocks.CHERRY_CHEST);
+    public static final DeferredItem<BlockItem> SPRUCE_CHEST = registerItem("spruce", RubysBlocks.SPRUCE_CHEST);
+
+    public static final DeferredHolder<Item,Item> KILN = block(RubysBlocks.KILN);
 
     public static void registerItems(IEventBus modBus) {
         ITEMS_CHESTS.register(modBus);

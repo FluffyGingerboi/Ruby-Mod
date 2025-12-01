@@ -10,7 +10,8 @@
     "LanguageProviderAccessorMixin",
     "ItemMixin",
     "RecipeManagerMixin",
-    "ArmorDyeRecipeMixin"
+    "ArmorDyeRecipeMixin",
+    "DimensionSpecialEffectsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

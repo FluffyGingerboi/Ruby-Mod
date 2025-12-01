@@ -165,11 +165,11 @@ public class RubysArmorMaterials {
 
     public static final DeferredHolder<ArmorMaterial, ArmorMaterial> FIRED_ENAMELED_NETHERITE = ARMOR_MATERIALS.register(
             "fired_enameled_netherite", () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.BOOTS, 1);
-                map.put(ArmorItem.Type.LEGGINGS, 1);
-                map.put(ArmorItem.Type.CHESTPLATE, 1);
-                map.put(ArmorItem.Type.HELMET, 1);
-                map.put(ArmorItem.Type.BODY, 1);
+                map.put(ArmorItem.Type.BOOTS, 3);
+                map.put(ArmorItem.Type.LEGGINGS, 6);
+                map.put(ArmorItem.Type.CHESTPLATE, 8);
+                map.put(ArmorItem.Type.HELMET, 3);
+                map.put(ArmorItem.Type.BODY, 11);
             }), 15,
                     SoundEvents.ARMOR_EQUIP_NETHERITE, () ->
                     Ingredient.of(Items.NETHERITE_INGOT),

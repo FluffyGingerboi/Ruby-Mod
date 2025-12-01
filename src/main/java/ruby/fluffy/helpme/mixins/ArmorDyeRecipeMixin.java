@@ -29,7 +29,7 @@ public abstract class ArmorDyeRecipeMixin {
         for (int i = 0; i < input.size(); i++) {
             ItemStack stack = input.getItem(i);
             if (!stack.isEmpty()) {
-                // Block armor with your custom tag
+
                 if (stack.is(RubysTags.Items.NOT_DYEABLE)) {
                     cir.setReturnValue(false);
                     return;

@@ -10,6 +10,7 @@ import net.minecraft.data.recipes.RecipeBuilder;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -77,6 +78,18 @@ public class FiringRecipeBuilder implements RecipeBuilder {
                 cookingTime,
                 factory
         );
+    }
+
+    public static <T extends AbstractCookingRecipe> FiringRecipeBuilder firing(
+            TagKey<Item> tag,
+            RecipeCategory category,
+            ItemLike result,
+            float experience,
+            int cookingTime,
+            RecipeSerializer<T> serializer,
+            Factory<T> factory
+    ) {
+        return firing(Ingredient.of(tag), category, result, experience, cookingTime, serializer, factory);
     }
 
     @Override

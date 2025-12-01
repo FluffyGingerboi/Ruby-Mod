@@ -1,6 +1,7 @@
 package ruby.fluffy.helpme.events;
 
 import com.google.common.collect.Lists;
+import net.minecraft.client.renderer.entity.HorseRenderer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.ParticleTypes;
@@ -14,6 +15,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.Container;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
@@ -27,6 +29,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.entity.player.BonemealEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
@@ -40,6 +43,7 @@ import ruby.fluffy.helpme.utilites.RubysConfig;
 import ruby.fluffy.helpme.utilites.RubysRecipeData;
 import ruby.fluffy.helpme.utilites.RubysRecipeHelpers;
 
+@SuppressWarnings("deprecation")
 @EventBusSubscriber
 public class RubysEvents {
 
@@ -51,7 +55,6 @@ public class RubysEvents {
                 (be, context) -> new InvWrapper(be.getContainer())
         );
     }
-
 
     @SubscribeEvent
     public static void onBoneableFlowers(BonemealEvent event) {

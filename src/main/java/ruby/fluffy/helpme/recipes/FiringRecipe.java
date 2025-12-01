@@ -30,11 +30,8 @@ public class FiringRecipe extends AbstractCookingRecipe {
     @Override
     public ItemStack assemble(SingleRecipeInput input, HolderLookup.Provider registries) {
         ItemStack result = super.assemble(input, registries);
-
-        // the actual input stack
         ItemStack inputStack = input.item();
 
-        // Copy ALL components (replaces old NBT)
         result.applyComponents(inputStack.getComponents());
 
         return result;

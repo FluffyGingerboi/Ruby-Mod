@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "ru3yy:item/armor/iron/enameled_iron_boots",
-    "layer1": "ru3yy:item/armor/iron/enameled_iron_boots_overlay",
-    "layer2": "minecraft:trims/items/boots_trim_copper"
-  }
-}

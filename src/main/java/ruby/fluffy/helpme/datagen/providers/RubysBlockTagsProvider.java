@@ -19,7 +19,7 @@ public class RubysBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(RubysBlocks.COBBLESTONE_KILN.get());
+                .add(RubysBlocks.KILN.get());
 
         tag(BlockTags.SLABS)
                 .add(RubysBlocks.GRASS_SLAB.get())

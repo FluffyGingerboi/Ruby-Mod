@@ -33,6 +33,7 @@
 
   "block.ru3yy.cherry_chest": "Cherry Chest",
   "block.ru3yy.spruce_chest": "Spruce Chest",
+
   "block.ru3yy.kiln": "Kiln",
 
   "block.ru3yy.blue_white_wildflowers": "Blue & White Wildflowers",
@@ -113,8 +114,21 @@
   "item.ru3yy.fired_enameled_netherite_leggings": "Fired Enameled Netherite Leggings",
   "item.ru3yy.fired_enameled_netherite_boots": "Fired Enameled Netherite Boots",
 
+  "item.ru3yy.enameled_iron_horse_armor": "Enameled Iron Horse Armor",
+  "item.ru3yy.fired_enameled_iron_horse_armor": "Fired Enameled Iron Horse Armor",
+  "item.ru3yy.enameled_gold_horse_armor": "Enameled Golden Horse Armor",
+  "item.ru3yy.fired_enameled_gold_horse_armor": "Fired Enameled Golden Horse Armor",
+  "item.ru3yy.enameled_diamond_horse_armor": "Enameled Diamond Horse Armor",
+  "item.ru3yy.fired_enameled_diamond_horse_armor": "Fired Enameled Diamond Horse Armor",
+
   "item.ru3yy.mortar_and_pestle": "Mortar And Pestle",
   "item.ru3yy.saw": "Saw",
   "item.ru3yy.scraper": "Scraper",
-  "item.ru3yy.enamel": "Enamel"
+  "item.ru3yy.enamel": "Enamel",
+
+  "item.ru3yy.raw_squid_meat": "Raw Squid Meat",
+  "item.ru3yy.cooked_squid_meat": "Cooked Squid Meat",
+  "item.ru3yy.raw_horse_meat": "Raw Horse Meat",
+  "item.ru3yy.cooked_horse_meat": "Cooked Horse Meat"
+
 }

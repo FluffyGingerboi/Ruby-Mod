@@ -55,8 +55,9 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.FLOWERING_OAK_SAPLING.get());
                         tabData.accept(RubysItems.BLUE_WHITE_WILDFLOWERS.get());
                         tabData.accept(RubysItems.PURPLE_WHITE_WILDFLOWERS.get());
-                        tabData.accept(RubysItems.CHERRY_CHEST_I.get());
-                        tabData.accept(RubysItems.SPRUCE_CHEST_I.get());
+                        tabData.accept(RubysItems.CHERRY_CHEST.get());
+                        tabData.accept(RubysItems.SPRUCE_CHEST.get());
+                        tabData.accept(RubysItems.KILN.get());
                     })
                     .withSearchBar()
                     .build()
@@ -88,6 +89,10 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.SAW.get());
                         tabData.accept(RubysItems.ENAMEL.get());
                         tabData.accept(RubysItems.SCRAPER.get());
+                        tabData.accept(RubysItems.RAW_SQUID_MEAT.get());
+                        tabData.accept(RubysItems.COOKED_SQUID_MEAT.get());
+                        tabData.accept(RubysItems.RAW_HORSE_MEAT.get());
+                        tabData.accept(RubysItems.COOKED_HORSE_MEAT.get());
                     })
                     .withSearchBar()
                     .build()
@@ -139,6 +144,12 @@ public class RubysCreativeTabs {
                         tabData.accept(RubysItems.FIRED_ENAMELED_NETHERITE_CHESTPLATE.get());
                         tabData.accept(RubysItems.FIRED_ENAMELED_NETHERITE_LEGGINGS.get());
                         tabData.accept(RubysItems.FIRED_ENAMELED_NETHERITE_BOOTS.get());
+                        tabData.accept(RubysItems.ENAMELED_IRON_HORSE_ARMOR.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_IRON_HORSE_ARMOR.get());
+                        tabData.accept(RubysItems.ENAMELED_GOLD_HORSE_ARMOR.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_GOLD_HORSE_ARMOR.get());
+                        tabData.accept(RubysItems.ENAMELED_DIAMOND_HORSE_ARMOR.get());
+                        tabData.accept(RubysItems.FIRED_ENAMELED_DIAMOND_HORSE_ARMOR.get());
                     })
                     .withSearchBar()
                     .build()

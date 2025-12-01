@@ -1,9 +1,15 @@
-// 1.21.1	2025-11-21T00:51:50.6521914	Tags for minecraft:item mod id ru3yy
+// 1.21.1	2025-11-28T11:32:33.080869	Tags for minecraft:item mod id ru3yy
+b743305c2ce96526759049c670a0ddb31a3aeddb data/c/tags/item/foods/cooked_meat.json
+c2b649b2f1c87a1228cfac27b0452d446b83bf0c data/c/tags/item/foods/raw_meat.json
 ac383e7985a5f68a2cc42be1d422c4bcef049ff1 data/minecraft/tags/item/chest_armor.json
-f967e8e57b400fee1018ba2d0019603cd955cfac data/minecraft/tags/item/dyeable.json
+86bf637f647df0fb7011402de628a9764bc6ccae data/minecraft/tags/item/dyeable.json
 ef11089928e716f4a28627b645942a2229f269fb data/minecraft/tags/item/foot_armor.json
 1bc8be752b1a193f3db96cf31f3a1035ddb583c4 data/minecraft/tags/item/head_armor.json
 f186a734150b5544cc38b0dda32d1e945428c641 data/minecraft/tags/item/leg_armor.json
-f967e8e57b400fee1018ba2d0019603cd955cfac data/ru3yy/tags/item/enamel_armor.json
+b2d41b380f46330e75da3ad553c804467bf4cfb1 data/minecraft/tags/item/meat.json
+ac2b48fb946f7e88361e8b15a4bb2ea358057a8a data/ru3yy/tags/item/cherry_chest_logs.json
+6c5cb8c88abb00fcf3731f10dc4c3e5f45ad6a0b data/ru3yy/tags/item/chest_logs.json
+86bf637f647df0fb7011402de628a9764bc6ccae data/ru3yy/tags/item/enamel_armor.json
 bd797021fe378301635f449630032d83a857eba2 data/ru3yy/tags/item/leather_armor.json
-565fb287f56ba05878c084736e32a9c75da62c48 data/ru3yy/tags/item/not_dyeable.json
+c1c44b5590d5b67a11d534379614daca8b91c348 data/ru3yy/tags/item/not_dyeable.json
+3ec911645c937b1115eb09480c9761a8047aebff data/ru3yy/tags/item/spruce_chest_logs.json

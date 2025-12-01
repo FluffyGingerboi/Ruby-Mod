@@ -76,7 +76,7 @@ public class RubysBlocks {
     public static final DeferredBlock<Block> CHERRY_CHEST = registerChest("cherry", () -> new RubysBaseChestBlock(MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, "cherry"));
     public static final DeferredBlock<Block> SPRUCE_CHEST = registerChest("spruce", () -> new RubysBaseChestBlock(MapColor.TERRACOTTA_BROWN, SoundType.WOOD, "spruce"));
 
-    public static final DeferredBlock<Block> COBBLESTONE_KILN = registerKiln("", () -> new RubysKilnBlock(MapColor.TERRACOTTA_WHITE, SoundType.STONE));
+    public static final DeferredBlock<Block> KILN = registerKiln("", () -> new RubysKilnBlock(MapColor.TERRACOTTA_WHITE, SoundType.STONE));
 
     public static final DeferredBlock<Block> POTTED_FLOWERING_OAK_SAPLING =
             BLOCKS.register("potted_flowering_oak_sapling",
@@ -91,7 +91,7 @@ public class RubysBlocks {
         addToChestArray(CHERRY_CHEST);
         addToChestArray(SPRUCE_CHEST);
 
-        addToKilnArray(COBBLESTONE_KILN);
+        addToKilnArray(KILN);
 
         MORE_CHEST_BLOCK_ENTITY = BLOCKS_ENTITIES.register("chest_tile",
                 () -> BlockEntityType.Builder.of(RubysChestBlockEntity::new, chest.stream().map(DeferredBlock::get).toArray(Block[]::new)).build(null));

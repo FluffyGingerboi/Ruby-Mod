@@ -60,28 +60,28 @@ public abstract class RubysItemModelsHelpers extends ItemModelProvider {
                 .texture("layer0", this.modLoc("item/" + location + this.itemName(item)));
     }
 
-    public void helmetItem(Item item, String location, String baseTexture, String overlayTexture) {
-        this.dyedArmorItem(item, location, "helmet", baseTexture, overlayTexture);
+    public void helmetItem(Item item, String location, String baseTexture) {
+        this.dyedArmorItem(item, location, "helmet", baseTexture);
     }
 
-    public void chestplateItem(Item item, String location, String baseTexture, String overlayTexture) {
-        this.dyedArmorItem(item, location, "chestplate", baseTexture, overlayTexture);
+    public void chestplateItem(Item item, String location, String baseTexture) {
+        this.dyedArmorItem(item, location, "chestplate", baseTexture);
     }
 
-    public void leggingsItem(Item item, String location, String baseTexture, String overlayTexture) {
-        this.dyedArmorItem(item, location, "leggings", baseTexture, overlayTexture);
+    public void leggingsItem(Item item, String location, String baseTexture) {
+        this.dyedArmorItem(item, location, "leggings", baseTexture);
     }
 
-    public void bootsItem(Item item, String location, String baseTexture, String overlayTexture) {
-        this.dyedArmorItem(item, location, "boots", baseTexture, overlayTexture);
+    public void bootsItem(Item item, String location, String baseTexture) {
+        this.dyedArmorItem(item, location, "boots", baseTexture);
     }
 
-    public void dyedArmorItem(Item item, String location, String type, String baseTexture, String overlayTexture) {
+    public void dyedArmorItem(Item item, String location, String type, String baseTexture) {
         String itemName = this.itemName(item);
 
         ItemModelBuilder builder = this.withExistingParent(itemName, this.mcLoc("item/generated"))
                 .texture("layer0", this.modLoc("item/" + location + baseTexture))
-                .texture("layer1", this.modLoc("item/" + location + overlayTexture));
+                .texture("layer1", this.modLoc("item/" + location + baseTexture + "_overlay"));
 
         double index = 0.1;
 
@@ -91,7 +91,7 @@ public abstract class RubysItemModelsHelpers extends ItemModelProvider {
 
             this.withExistingParent(trimmed, this.mcLoc("item/generated"))
                     .texture("layer0", this.modLoc("item/" + location + baseTexture))
-                    .texture("layer1", this.modLoc("item/" + location + overlayTexture))
+                    .texture("layer1", this.modLoc("item/" + location + baseTexture + "_overlay"))
                     .texture("layer2", this.mcLoc("trims/items/" + type + "_trim_" + material));
 
             builder.override()
@@ -103,10 +103,10 @@ public abstract class RubysItemModelsHelpers extends ItemModelProvider {
         }
     }
 
-    public void dyedItem(Item item, String location) {
+    public void dyedItem(Item item, String location, String baseTexture) {
         this.withExistingParent(this.itemName(item), this.mcLoc("item/generated"))
-                .texture("layer0", this.modLoc("item/" + location + this.itemName(item)))
-                .texture("layer1", this.modLoc("item/" + location + this.itemName(item) + "_overlay"));
+                .texture("layer0", this.modLoc("item/" + location + baseTexture))
+                .texture("layer1", this.modLoc("item/" + location + baseTexture + "_overlay"));
     }
 
     public void itemBlock(Block block) {

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "ru3yy:block/lanterns/poo_lantern"
-  }
-}

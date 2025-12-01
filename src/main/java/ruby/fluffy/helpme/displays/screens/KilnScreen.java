@@ -4,13 +4,16 @@ import net.minecraft.client.gui.screens.inventory.AbstractFurnaceScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 import ruby.fluffy.helpme.RubyMod;
 import ruby.fluffy.helpme.displays.menus.KilnMenu;
 
+@OnlyIn(Dist.CLIENT)
 public class KilnScreen extends AbstractFurnaceScreen<KilnMenu> {
     private static final ResourceLocation MAIN_TEXTURE = ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "textures/gui/container/kiln.png");
-    private static final ResourceLocation LIT_TEXTURE = ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "containers/kiln/lit_progress.png");
-    private static final ResourceLocation BURN_TEXTURE = ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "containers/kiln/burn_progress.png");
+    private static final ResourceLocation LIT_TEXTURE = ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "containers/kiln/lit_progress");
+    private static final ResourceLocation BURN_TEXTURE = ResourceLocation.fromNamespaceAndPath(RubyMod.MOD_ID, "containers/kiln/burn_progress");
 
     public KilnScreen(KilnMenu menu, Inventory inventory, Component component) {
         super(menu, new KilnBookRecipeScreen(), inventory, component, MAIN_TEXTURE, LIT_TEXTURE, BURN_TEXTURE);

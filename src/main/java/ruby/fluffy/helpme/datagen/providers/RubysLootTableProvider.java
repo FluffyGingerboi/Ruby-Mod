@@ -49,7 +49,7 @@ public class RubysLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(RubysBlocks.CHERRY_CHEST.get());
         this.dropSelf(RubysBlocks.SPRUCE_CHEST.get());
 
-        this.dropSelf(RubysBlocks.COBBLESTONE_KILN.get());
+        this.dropSelf(RubysBlocks.KILN.get());
 
         this.dropSelf(RubysBlocks.LOG_STAIRS.get());
 
