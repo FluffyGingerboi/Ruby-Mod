@@ -42,13 +42,13 @@ public class RubysDatagen {
         generator.addProvider(event.includeServer(), new ColonThreeLanguageProvider(packOutput));
         generator.addProvider(event.includeClient(), new RubysItemModelsProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeServer(), new RubysBlockStatesProvider(packOutput, existingFileHelper));
+        generator.addProvider(true, new RubysGlobalLootModifersProvider(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(),
                 new LootTableProvider(
                         packOutput,
                         Collections.emptySet(),
                         List.of(
-                                new LootTableProvider.SubProviderEntry(RubysLootTableProvider::new, LootContextParamSets.BLOCK),
-                                new LootTableProvider.SubProviderEntry(RubysGlobalLootModifersProvider::new, LootContextParamSets.ENTITY)
+                                new LootTableProvider.SubProviderEntry(RubysLootTableProvider::new, LootContextParamSets.BLOCK)
                         ),
                         lookupProvider
                 )

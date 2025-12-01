@@ -34,12 +34,5 @@ public class RubysGlobalLootModifersProvider extends GlobalLootModifierProvider 
 
     @Override
     protected void start() {
-        this.add("raw_horse_meat_from_horses",
-                new AddTableLootModifier(new LootItemCondition[]{
-                        LootItem.lootTableItem(RubysItems.RAW_HORSE_MEAT.get())
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F)))
-                                .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F)))
-                                .apply(SmeltItemFunction.smelted().when(this.shouldSmeltLoot()))
-                }));
     }
 }
