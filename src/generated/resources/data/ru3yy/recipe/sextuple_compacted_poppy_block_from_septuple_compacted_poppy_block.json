@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ru3yy:septuple_compacted_poppy_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ru3yy:sextuple_compacted_poppy_block"
+  }
+}

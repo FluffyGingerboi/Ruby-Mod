@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "horse",
+  "ingredient": {
+    "item": "ru3yy:raw_horse_meat"
+  },
+  "result": {
+    "count": 1,
+    "id": "ru3yy:cooked_horse_meat"
+  }
+}

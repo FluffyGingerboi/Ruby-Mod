@@ -76,17 +76,29 @@ public class UndyeingRecipe implements CraftingRecipe {
     public ItemStack assemble(CraftingInput input, HolderLookup.Provider registries) {
         ItemStack output = this.result.copy();
 
-        // Copy full NBT + components from first matching ingredient
         outer:
         for (Ingredient ingredient : this.ingredients) {
             for (int i = 0; i < input.size(); i++) {
                 ItemStack slot = input.getItem(i);
                 if (!slot.isEmpty() && ingredient.test(slot)) {
-                    slot.copy();
-                    output.applyComponents(slot.getComponents());
-                    if (slot.has(DataComponents.DYED_COLOR)) {
-                        output.remove(DataComponents.DYED_COLOR);
+
+                    // --- COPY ONLY CERTAIN COMPONENTS ---
+
+                    // copy custom name
+                    if (slot.has(DataComponents.CUSTOM_NAME)) {
+                        output.set(DataComponents.CUSTOM_NAME,
+                                slot.get(DataComponents.CUSTOM_NAME));
                     }
+
+                    // copy enchantments
+                    if (slot.has(DataComponents.ENCHANTMENTS)) {
+                        output.set(DataComponents.ENCHANTMENTS,
+                                slot.get(DataComponents.ENCHANTMENTS));
+                    }
+
+                    // optionally remove dyed color if present
+                    output.remove(DataComponents.DYED_COLOR);
+
                     break outer;
                 }
             }

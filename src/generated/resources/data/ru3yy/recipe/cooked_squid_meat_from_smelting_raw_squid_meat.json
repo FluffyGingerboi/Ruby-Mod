@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "squid",
+  "ingredient": {
+    "item": "ru3yy:raw_squid_meat"
+  },
+  "result": {
+    "count": 1,
+    "id": "ru3yy:cooked_squid_meat"
+  }
+}

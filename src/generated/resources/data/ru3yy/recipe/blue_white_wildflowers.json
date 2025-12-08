@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:azure_bluet"
+    },
+    "C": {
+      "item": "minecraft:cornflower"
+    }
+  },
+  "pattern": [
+    "AC "
+  ],
+  "result": {
+    "count": 8,
+    "id": "ru3yy:blue_white_wildflowers"
+  }
+}

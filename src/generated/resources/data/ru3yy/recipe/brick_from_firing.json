@@ -1,0 +1,13 @@
+{
+  "type": "ru3yy:firing",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "minecraft:clay_ball"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:brick"
+  }
+}

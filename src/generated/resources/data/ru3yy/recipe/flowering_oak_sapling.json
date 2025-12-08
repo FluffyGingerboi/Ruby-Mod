@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "tag": "minecraft:flowers"
+    },
+    "S": {
+      "item": "minecraft:oak_sapling"
+    }
+  },
+  "pattern": [
+    "SF "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ru3yy:flowering_oak_sapling"
+  }
+}

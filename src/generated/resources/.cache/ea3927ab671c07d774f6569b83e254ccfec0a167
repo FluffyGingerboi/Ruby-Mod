@@ -1,0 +1,4 @@
+// 1.21.1	2025-12-01T13:33:12.4272376	Global Loot Modifiers : ru3yy
+cfd29c54563eb6e70d185e0efcf391a1a8d63350 data/neoforge/loot_modifiers/global_loot_modifiers.json
+f35589aaaf629add048188b83b1c0df37b95f1e4 data/ru3yy/loot_modifiers/horse_meat_from_horses.json
+ddefd12162ab86312a3192c0bcbc5c60f430f496 data/ru3yy/loot_modifiers/squid_meat_from_squids.json

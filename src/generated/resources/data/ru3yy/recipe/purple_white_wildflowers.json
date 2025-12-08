@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:allium"
+    },
+    "B": {
+      "item": "minecraft:azure_bluet"
+    }
+  },
+  "pattern": [
+    "BA "
+  ],
+  "result": {
+    "count": 8,
+    "id": "ru3yy:purple_white_wildflowers"
+  }
+}

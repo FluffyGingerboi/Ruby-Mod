@@ -48,7 +48,7 @@ public class RubysDatagen {
                         packOutput,
                         Collections.emptySet(),
                         List.of(
-                                new LootTableProvider.SubProviderEntry(RubysLootTableProvider::new, LootContextParamSets.BLOCK)
+                                new LootTableProvider.SubProviderEntry(RubysBlockLootTableProvider::new, LootContextParamSets.BLOCK)
                         ),
                         lookupProvider
                 )

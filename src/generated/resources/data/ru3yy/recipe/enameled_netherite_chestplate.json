@@ -1,0 +1,16 @@
+{
+  "type": "ru3yy:undye_item",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_chestplate"
+    },
+    {
+      "item": "ru3yy:enamel"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ru3yy:enameled_netherite_chestplate"
+  }
+}

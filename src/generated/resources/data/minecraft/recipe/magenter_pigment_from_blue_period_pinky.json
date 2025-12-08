@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ru3yy:blue_pigment"
+    },
+    {
+      "item": "ru3yy:period_pigment"
+    },
+    {
+      "item": "ru3yy:pinky_pigment"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "ru3yy:magenter_pigment"
+  }
+}

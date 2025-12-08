@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ru3yy:compacted_poppy_block"
+    },
+    {
+      "item": "ru3yy:compacted_poppy_block"
+    },
+    {
+      "item": "ru3yy:compacted_poppy_block"
+    },
+    {
+      "item": "ru3yy:compacted_poppy_block"
+    },
+    {
+      "item": "ru3yy:compacted_poppy_block"
+    },
+    {
+      "item": "ru3yy:compacted_poppy_block"
+    },
+    {
+      "item": "ru3yy:compacted_poppy_block"
+    },
+    {
+      "item": "ru3yy:compacted_poppy_block"
+    },
+    {
+      "item": "ru3yy:compacted_poppy_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ru3yy:double_compacted_poppy_block"
+  }
+}

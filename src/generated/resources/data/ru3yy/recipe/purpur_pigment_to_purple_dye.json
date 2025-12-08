@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "ru3yy:purpur_pigment"
+    },
+    {
+      "item": "ru3yy:purpur_pigment"
+    },
+    {
+      "item": "ru3yy:purpur_pigment"
+    },
+    {
+      "item": "ru3yy:purpur_pigment"
+    },
+    {
+      "item": "ru3yy:purpur_pigment"
+    },
+    {
+      "item": "ru3yy:purpur_pigment"
+    },
+    {
+      "item": "ru3yy:purpur_pigment"
+    },
+    {
+      "item": "ru3yy:purpur_pigment"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:purple_dye"
+  }
+}

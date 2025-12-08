@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "ru3yy:magenter_pigment"
+    },
+    {
+      "item": "ru3yy:magenter_pigment"
+    },
+    {
+      "item": "ru3yy:magenter_pigment"
+    },
+    {
+      "item": "ru3yy:magenter_pigment"
+    },
+    {
+      "item": "ru3yy:magenter_pigment"
+    },
+    {
+      "item": "ru3yy:magenter_pigment"
+    },
+    {
+      "item": "ru3yy:magenter_pigment"
+    },
+    {
+      "item": "ru3yy:magenter_pigment"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:magenta_dye"
+  }
+}

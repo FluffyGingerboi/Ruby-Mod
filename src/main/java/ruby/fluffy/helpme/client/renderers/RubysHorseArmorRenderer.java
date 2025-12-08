@@ -18,6 +18,7 @@ import net.minecraft.world.item.AnimalArmorItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.DyedItemColor;
 
+@SuppressWarnings("unchecked")
 public class RubysHorseArmorRenderer extends RenderLayer<Horse, HorseModel<Horse>> {
 
     private final HorseModel armorModel;

@@ -1,0 +1,13 @@
+{
+  "type": "ru3yy:firing",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "ru3yy:enameled_diamond_horse_armor"
+  },
+  "result": {
+    "count": 1,
+    "id": "ru3yy:fired_enameled_diamond_horse_armor"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "ru3yy:undye_item",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_horse_armor"
+    },
+    {
+      "item": "ru3yy:enamel"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ru3yy:enameled_gold_horse_armor"
+  }
+}

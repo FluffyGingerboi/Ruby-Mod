@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fired_enamel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ru3yy:fired_enameled_netherite_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_scraper": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ru3yy:scraper"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ru3yy:remove_enamel_on_fired_enameled_netherite_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_scraper",
+      "has_fired_enamel"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ru3yy:remove_enamel_on_fired_enameled_netherite_helmet"
+    ]
+  }
+}

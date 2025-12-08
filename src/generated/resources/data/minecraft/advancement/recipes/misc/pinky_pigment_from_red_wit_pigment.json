@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_period_pigment": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ru3yy:period_pigment"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:pinky_pigment_from_red_wit_pigment"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wit_pigment": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ru3yy:wit_pigment"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_period_pigment",
+      "has_wit_pigment"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:pinky_pigment_from_red_wit_pigment"
+    ]
+  }
+}

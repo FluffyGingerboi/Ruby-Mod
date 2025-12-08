@@ -9,6 +9,7 @@ import net.minecraft.world.level.GrassColor;
 import ruby.fluffy.helpme.registries.RubysBlocks;
 import ruby.fluffy.helpme.registries.RubysItems;
 
+@SuppressWarnings("deprecation")
 public class RubysBlockColors {
 
     public static void registerBlockColors() {
